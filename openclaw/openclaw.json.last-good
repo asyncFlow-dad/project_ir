@@ -1,0 +1,105 @@
+{
+  "gateway": {
+    "mode": "local",
+    "port": 19809,
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "test-token"
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "agents": {
+    "defaults": {
+      "workspace": ".",
+      "model": {
+        "primary": "ollama/llama3.2"
+      },
+      "sandbox": {
+        "mode": "off"
+      },
+      "subagents": {
+        "maxSpawnDepth": 1,
+        "maxChildrenPerAgent": 3,
+        "maxConcurrent": 4,
+        "runTimeoutSeconds": 600
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "identity": {
+          "name": "AI IR Dev",
+          "theme": "engineering",
+          "emoji": "🛠️"
+        }
+      }
+    ]
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434",
+        "apiKey": "ollama-local",
+        "api": "ollama",
+        "models": [
+          {
+            "id": "llama3.2",
+            "name": "Llama 3.2",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 8192,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "tools": {
+    "fs": {
+      "workspaceOnly": true
+    },
+    "exec": {
+      "security": "deny",
+      "ask": "always"
+    },
+    "elevated": {
+      "enabled": false
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "allowFrom": [],
+      "groupPolicy": "allowlist",
+      "groupAllowFrom": [],
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      },
+      "contextVisibility": "allowlist",
+      "configWrites": false
+    }
+  },
+  "logging": {
+    "redactSensitive": "tools"
+  },
+  "plugins": {
+    "entries": {
+      "codex": {
+        "enabled": true
+      }
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+[project]
+name = "ir-search"
+version = "0.1.0"
+description = "Small Python Information Retrieval demo with tokenization, inverted indexing, and BM25 ranking."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+aiir = [
+  "redis>=5.0",
+]
+baseline = [
+  "sentence-transformers==2.2.2",
+  "elasticsearch==8.8.0",
+  "openai==1.7.2",
+]
+
+[project.scripts]
+ir-search = "ir_search.cli:main"

@@ -1,0 +1,27 @@
+{
+  "name": "ir-openclaw",
+  "private": true,
+  "scripts": {
+    "ir": "python3 -B -m ir_search",
+    "ir:index": "python3 -B -m ir_search index",
+    "ir:sample": "python3 -B -m ir_search search \"retrieval augmented generation\"",
+    "config:render": "python3 scripts/render_openclaw_config.py",
+    "core:up": "docker compose up -d",
+    "core:down": "docker compose down",
+    "core:bootstrap": "python3 scripts/bootstrap_aiir_core.py",
+    "test": "python3 -B -m unittest discover -s tests",
+    "typecheck": "python3 -m compileall -q ir_search scripts tests",
+    "gateway": "python3 scripts/run_openclaw.py gateway run --verbose",
+    "gateway:install": "python3 scripts/run_openclaw.py gateway install --port 19809 --force",
+    "gateway:start": "python3 scripts/run_openclaw.py gateway start",
+    "gateway:stop": "python3 scripts/run_openclaw.py gateway stop",
+    "gateway:uninstall": "python3 scripts/run_openclaw.py gateway uninstall",
+    "legacy:stop": "launchctl bootout gui/$(id -u)/ai.openclaw.gateway 2>/dev/null; launchctl bootout gui/$(id -u)/ai.openclaw.ir 2>/dev/null; true",
+    "gateway:status": "python3 scripts/run_openclaw.py gateway status --deep",
+    "doctor": "python3 scripts/run_openclaw.py doctor",
+    "mcp": "python3 scripts/run_openclaw.py mcp serve --url ws://127.0.0.1:19809 --token-file ./.openclaw-state/private/gateway-mcp.token"
+  },
+  "dependencies": {
+    "openclaw": "2026.5.12"
+  }
+}

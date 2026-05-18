@@ -1,0 +1,9 @@
+.env
+.openclaw-state/
+openclaw/openclaw.json
+openclaw/openclaw.json.bak*
+node_modules/
+__pycache__/
+*.py[cod]
+data/indexes/
+charts/*/values-secret*.yaml
