@@ -69,7 +69,7 @@ spec:
           ports:
             - name: gateway
               containerPort: {{ .Values.gateway.port }}
-            - name: telegram-webhook
+            - name: tg-webhook
               containerPort: {{ .Values.telegram.webhookPort }}
           readinessProbe:
             httpGet:
