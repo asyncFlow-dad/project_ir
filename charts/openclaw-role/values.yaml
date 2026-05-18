@@ -3,24 +3,21 @@ namespace: openclaw-dev
 timezone: Asia/Seoul
 
 image:
-  repository: ghcr.io/your-org/openclaw
-  tag: "2026.5.12"
+  repository: ghcr.io/openclaw/openclaw
+  tag: "2026.5.18-beta.1-slim"
 
 gateway:
   port: 18789
 
 telegram:
-  ownerId: "123456789"
+  ownerId: "6579963228"
   webhookPath: /telegram/dev
   webhookPort: 8787
   agentEmoji: "🛠️"
 
-ollama:
-  baseUrl: http://ollama.aiir-core.svc.cluster.local:11434
-  modelId: llama3.2
-  modelName: Llama 3.2
-  contextWindow: 8192
-  maxTokens: 4096
+anthropic:
+  modelId: claude-sonnet-4-5
+  modelName: Claude Sonnet 4.5
 
 resources:
   requests:
@@ -32,11 +29,11 @@ resources:
 
 ingress:
   enabled: true
-  host: bots.example.com
+  host: bots.miiinssong.shop
   className: nginx
 
 initImage:
-  repository: ghcr.io/your-org/envsubst
+  repository: ghcr.io/asyncflow-dad/envsubst
   tag: "1.0"
 
 secrets:

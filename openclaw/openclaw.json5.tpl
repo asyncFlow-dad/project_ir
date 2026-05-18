@@ -15,7 +15,7 @@
     "defaults": {
       "workspace": "${OPENCLAW_WORKSPACE_DIR}",
       "model": {
-        "primary": "ollama/${OLLAMA_MODEL_ID}"
+        "primary": "anthropic/${ANTHROPIC_MODEL_ID}"
       },
       "sandbox": {
         "mode": "off"
@@ -40,24 +40,24 @@
   },
   "models": {
     "providers": {
-      "ollama": {
-        "baseUrl": "${OLLAMA_BASE_URL}",
-        "apiKey": "ollama-local",
-        "api": "ollama",
+      "anthropic": {
+        "baseUrl": "https://api.anthropic.com",
+        "apiKey": "${ANTHROPIC_API_KEY}",
+        "api": "anthropic-messages",
         "models": [
           {
-            "id": "${OLLAMA_MODEL_ID}",
-            "name": "${OLLAMA_MODEL_NAME}",
+            "id": "${ANTHROPIC_MODEL_ID}",
+            "name": "${ANTHROPIC_MODEL_NAME}",
             "reasoning": false,
             "input": ["text"],
             "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
+              "input": 3,
+              "output": 15,
+              "cacheRead": 0.3,
+              "cacheWrite": 3.75
             },
-            "contextWindow": ${OLLAMA_CONTEXT_WINDOW},
-            "maxTokens": ${OLLAMA_MAX_TOKENS}
+            "contextWindow": 200000,
+            "maxTokens": 8192
           }
         ]
       }

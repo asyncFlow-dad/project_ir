@@ -10,6 +10,6 @@ spec:
     - name: gateway
       port: {{ .Values.gateway.port }}
       targetPort: gateway
-    - name: telegram-webhook
+    - name: tg-webhook
       port: {{ .Values.telegram.webhookPort }}
-      targetPort: telegram-webhook
+      targetPort: tg-webhook
