@@ -36,6 +36,17 @@ initImage:
   repository: ghcr.io/asyncflow-dad/envsubst
   tag: "1.0"
 
+podSecurity:
+  enforce: restricted
+
+persistence:
+  state:
+    size: 5Gi
+    hostPath: ""
+  workspace:
+    size: 10Gi
+    hostPath: ""
+
 secrets:
   gatewayToken: ""
   telegramBotToken: ""

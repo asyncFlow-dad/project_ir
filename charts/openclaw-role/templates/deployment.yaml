@@ -98,10 +98,22 @@ spec:
           configMap:
             name: {{ include "openclaw-role.fullname" . }}-config
         - name: state
+          {{- if .Values.persistence.state.hostPath }}
+          hostPath:
+            path: {{ .Values.persistence.state.hostPath }}
+            type: DirectoryOrCreate
+          {{- else }}
           persistentVolumeClaim:
             claimName: {{ include "openclaw-role.fullname" . }}-state
+          {{- end }}
         - name: workspace
+          {{- if .Values.persistence.workspace.hostPath }}
+          hostPath:
+            path: {{ .Values.persistence.workspace.hostPath }}
+            type: DirectoryOrCreate
+          {{- else }}
           persistentVolumeClaim:
             claimName: {{ include "openclaw-role.fullname" . }}-workspace
+          {{- end }}
         - name: tmp
           emptyDir: {}

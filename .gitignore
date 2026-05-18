@@ -7,3 +7,4 @@ __pycache__/
 *.py[cod]
 data/indexes/
 charts/*/values-secret*.yaml
+openclaw/openclaw.json.last-good

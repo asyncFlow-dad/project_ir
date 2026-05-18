@@ -9,3 +9,12 @@ resources:
   limits:
     cpu: "2"
     memory: 4Gi
+
+podSecurity:
+  enforce: privileged
+
+persistence:
+  state:
+    hostPath: /Users/songminseong/openclaw-data/dev/state
+  workspace:
+    hostPath: /Users/songminseong/openclaw-data/dev/workspace
