@@ -33,7 +33,7 @@ jobs:
 
       - name: Helm lint
         run: |
-          helm lint charts/openclaw-role
-          helm template dev charts/openclaw-role -f charts/openclaw-role/values-dev.yaml >/tmp/dev.yaml
-          helm template qa charts/openclaw-role -f charts/openclaw-role/values-qa.yaml >/tmp/qa.yaml
-          helm template pm charts/openclaw-role -f charts/openclaw-role/values-pm.yaml >/tmp/pm.yaml
+          helm lint charts/openclaw-role -f charts/openclaw-role/values-ci.yaml
+          helm template dev charts/openclaw-role -f charts/openclaw-role/values-dev.yaml -f charts/openclaw-role/values-ci.yaml >/tmp/dev.yaml
+          helm template qa charts/openclaw-role -f charts/openclaw-role/values-qa.yaml -f charts/openclaw-role/values-ci.yaml >/tmp/qa.yaml
+          helm template pm charts/openclaw-role -f charts/openclaw-role/values-pm.yaml -f charts/openclaw-role/values-ci.yaml >/tmp/pm.yaml

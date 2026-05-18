@@ -1,0 +1,7 @@
+# CI-only placeholder secrets — never use in production
+secrets:
+  gatewayToken: "ci-placeholder-gateway-token"
+  telegramBotToken: "0000000000:ci-placeholder-telegram-bot-token"
+  telegramOwnerId: "1234567890"
+  telegramWebhookSecret: "ci-placeholder-webhook-secret"
+  anthropicApiKey: "sk-ant-placeholder"
