@@ -1,3 +1,4 @@
+{{- if not .Values.persistence.state.hostPath }}
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -7,7 +8,9 @@ spec:
   accessModes: ["ReadWriteOnce"]
   resources:
     requests:
-      storage: 5Gi
+      storage: {{ .Values.persistence.state.size }}
+{{- end }}
+{{- if not .Values.persistence.workspace.hostPath }}
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -18,4 +21,5 @@ spec:
   accessModes: ["ReadWriteOnce"]
   resources:
     requests:
-      storage: 10Gi
+      storage: {{ .Values.persistence.workspace.size }}
+{{- end }}
