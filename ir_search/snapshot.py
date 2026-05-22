@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from hashlib import sha256
 from pathlib import Path
 
@@ -47,7 +47,7 @@ def save_snapshot(index: SearchIndex, corpus_dir: Path, base_dir: Path | None = 
     postings = {term: sorted(doc_ids) for term, doc_ids in index.postings.items()}
 
     payload = {
-        "created_at": datetime.now(UTC).isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "corpus_dir": str(corpus_dir),
         "average_document_length": index.average_document_length,
         "documents": documents,

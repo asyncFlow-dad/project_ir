@@ -1,4 +1,9 @@
 .env
+config/vpn/auth.txt
+config/vpn/*.ovpn
+config/vpn/client.runtime.ovpn
+logs/openvpn.pid
+logs/openvpn.log
 .openclaw-state/
 openclaw/openclaw.json
 openclaw/openclaw.json.bak*
@@ -8,3 +13,5 @@ __pycache__/
 data/indexes/
 charts/*/values-secret*.yaml
 openclaw/openclaw.json.last-good
+remote_server.md
+*.pem 
