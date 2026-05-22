@@ -49,7 +49,9 @@ def chunk_document(
             if piece:
                 chunks.append(TextChunk(chunk_id=chunk_id, text=piece, section_path=[]))
                 chunk_id += 1
-            start = max(end - overlap, end)
+            if end >= len(paragraph):
+                break
+            start = max(0, end - overlap)
 
         buffer = ""
 

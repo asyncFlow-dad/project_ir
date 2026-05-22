@@ -213,6 +213,14 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
 
+## Project Runtime
+
+- For this `ir` project, run code execution and tests on the remote server described in `remote_server.md`.
+- Use `ir_mac.pem` as SSH identity. Do not print or expose private key contents.
+- Before SSH, ensure key permission is restricted, e.g. `chmod 600 ir_mac.pem`.
+- Treat `remote_server.md` as source of truth for host, port, username, and login notes.
+- Leaderboard submission files should use `.jsonl` extension and JSONL content. Do not submit CSV-formatted files.
+
 ## Related
 
 - [Default AGENTS.md](/reference/AGENTS.default)

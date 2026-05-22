@@ -35,6 +35,14 @@ Things like:
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
+### IR remote (OpenVPN + SSH)
+
+- VPN profile: `config/vpn/client.ovpn` ([download URL](https://aistages-api-public-prod.s3.ap-northeast-2.amazonaws.com/app/Vpn/openvpn01-TCP4-1188-config.ovpn))
+- VPN auth: `config/vpn/auth.txt` (from `remote_server.md`, gitignored)
+- Start VPN (background): `sudo ./scripts/vpn-up.sh`
+- Stop VPN: `sudo ./scripts/vpn-down.sh`
+- SSH: `ssh ir_mac` or `remote_server.md` command → `10.196.197.9:30421`
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
