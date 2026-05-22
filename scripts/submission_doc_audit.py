@@ -2,9 +2,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from ir_search.tokenize import tokenize
 
 
 @dataclass(frozen=True)
@@ -15,6 +20,9 @@ class AuditRow:
     candidate_top1: str
     baseline_text: str
     candidate_text: str
+    baseline_relevance: float
+    candidate_relevance: float
+    relevance_delta: float
 
 
 def build_audit_rows(
@@ -34,17 +42,38 @@ def build_audit_rows(
         baseline = baseline_by_id[eval_id]
         baseline_top1 = _top1(baseline["topk"])
         candidate_top1 = _top1(candidate["topk"])
+        query = str(candidate.get("standalone_query") or baseline.get("standalone_query") or "")
+        baseline_text = _doc_text(docs_by_id.get(baseline_top1))
+        candidate_text = _doc_text(docs_by_id.get(candidate_top1))
+        baseline_relevance = relevance_score(query, baseline_text)
+        candidate_relevance = relevance_score(query, candidate_text)
         rows.append(
             AuditRow(
                 eval_id=eval_id,
-                query=str(candidate.get("standalone_query") or baseline.get("standalone_query") or ""),
+                query=query,
                 baseline_top1=baseline_top1,
                 candidate_top1=candidate_top1,
-                baseline_text=_doc_text(docs_by_id.get(baseline_top1)),
-                candidate_text=_doc_text(docs_by_id.get(candidate_top1)),
+                baseline_text=baseline_text,
+                candidate_text=candidate_text,
+                baseline_relevance=baseline_relevance,
+                candidate_relevance=candidate_relevance,
+                relevance_delta=candidate_relevance - baseline_relevance,
             )
         )
     return rows
+
+
+def relevance_score(query: str, text: str) -> float:
+    query_terms = set(tokenize(query))
+    if not query_terms:
+        return 0.0
+    text_terms = set(tokenize(text))
+    term_coverage = len(query_terms & text_terms) / len(query_terms)
+    query_chars = _char_ngrams(query)
+    char_coverage = (
+        len(query_chars & _char_ngrams(text)) / len(query_chars) if query_chars else 0.0
+    )
+    return round((0.75 * term_coverage) + (0.25 * char_coverage), 6)
 
 
 def main() -> int:
@@ -66,8 +95,13 @@ def main() -> int:
         print(f"eval_id={row.eval_id}")
         print(f"query={row.query}")
         print(f"baseline_top1={row.baseline_top1}")
+        print(f"baseline_relevance={row.baseline_relevance:.6f}")
         print(_truncate(row.baseline_text, args.max_chars))
         print(f"candidate_top1={row.candidate_top1}")
+        print(
+            f"candidate_relevance={row.candidate_relevance:.6f} "
+            f"delta={row.relevance_delta:.6f}"
+        )
         print(_truncate(row.candidate_text, args.max_chars))
         print()
     return 0
@@ -89,6 +123,13 @@ def _truncate(value: str, max_chars: int) -> str:
     if len(value) <= max_chars:
         return value
     return value[: max_chars - 3].rstrip() + "..."
+
+
+def _char_ngrams(text: str, n: int = 2) -> set[str]:
+    compact = "".join(char for char in text.lower() if char.isalnum())
+    if len(compact) <= n:
+        return {compact} if compact else set()
+    return {compact[index : index + n] for index in range(len(compact) - n + 1)}
 
 
 def _load_rows(path: Path) -> list[dict[str, Any]]:

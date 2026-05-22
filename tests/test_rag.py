@@ -137,6 +137,21 @@ class RagSubmissionTests(TestCase):
 
         self.assertIn("기억 상실증", standalone_query(messages))
 
+    def test_standalone_query_keeps_two_recent_topics_for_short_followup(self) -> None:
+        messages = [
+            {"role": "user", "content": "광합성은 어떤 과정이야?"},
+            {"role": "assistant", "content": "식물이 빛으로 양분을 만드는 과정입니다."},
+            {"role": "user", "content": "동물 세포 호흡은?"},
+            {"role": "assistant", "content": "세포가 에너지를 얻는 과정입니다."},
+            {"role": "user", "content": "차이는?"},
+        ]
+
+        query = standalone_query(messages)
+
+        self.assertIn("광합성", query)
+        self.assertIn("동물", query)
+        self.assertIn("차이", query)
+
     def test_should_retrieve_skips_casual_chat(self) -> None:
         messages = [{"role": "user", "content": "요새 너무 힘들다."}]
 

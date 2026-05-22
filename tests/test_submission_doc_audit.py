@@ -30,7 +30,7 @@ class SubmissionDocAuditTests(TestCase):
                 corpus,
                 [
                     {"docid": "old-doc", "title": "Old", "content": "Old seed text."},
-                    {"docid": "new-doc", "title": "New", "content": "New seed text."},
+                    {"docid": "new-doc", "title": "New", "content": "New seed question text."},
                 ],
             )
 
@@ -47,7 +47,9 @@ class SubmissionDocAuditTests(TestCase):
         self.assertEqual(rows[0].baseline_top1, "old-doc")
         self.assertEqual(rows[0].candidate_top1, "new-doc")
         self.assertIn("Old seed text", rows[0].baseline_text)
-        self.assertIn("New seed text", rows[0].candidate_text)
+        self.assertIn("New seed question text", rows[0].candidate_text)
+        self.assertGreater(rows[0].candidate_relevance, rows[0].baseline_relevance)
+        self.assertGreater(rows[0].relevance_delta, 0)
 
 
 def _submission_row(eval_id: str, query: str, topk: list[str]) -> dict[str, object]:

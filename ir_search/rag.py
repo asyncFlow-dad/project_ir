@@ -322,7 +322,9 @@ def standalone_query(messages: list[dict[str, str]]) -> str:
         return _clean_query(user_texts[-1])
     last = user_texts[-1]
     if any(cue in last for cue in FOLLOWUP_CUES) or len(tokenize(last)) <= 4:
-        return _clean_query(f"{_topic_fragment(user_texts[-2])} {last}".strip())
+        topic_parts = [_topic_fragment(text) for text in user_texts[-3:-1]]
+        topic = " ".join(part for part in topic_parts if part)
+        return _clean_query(f"{topic} {last}".strip())
     return _clean_query(last)
 
 
