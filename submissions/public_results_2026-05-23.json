@@ -283,5 +283,13 @@
     "mrr": 0.9591,
     "submission": "submissions/residual_single_strict_20260526/residual_eval246_base_eval252.jsonl",
     "model": "solar-pro3"
+  },
+  {
+    "eval_id": "309",
+    "outcome": "improved",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl",
+    "model": "solar-pro3"
   }
 ]

@@ -827,3 +827,23 @@
   - Keep current best as `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`.
   - Lock out eval `252`; candidate beat current top-1 but did not improve public score, so next residual mining must require candidate to beat current top-k alternatives, not only baseline top-1.
   - Do not submit loose-gate file `submissions/residual_single_20260526/residual_eval246_base_eval7.jsonl`.
+
+## Eval309 Residual High-Risk Submission Result - 2026-05-26
+
+- Submitted file: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`
+  - Public MAP/MRR: `0.9545` / `0.9591`
+- Reported public MAP: `0.9561`
+- Reported public MRR: `0.9591`
+- Result: new best.
+- Improvement:
+  - MAP: `+0.0016` (`0.9545` -> `0.9561`)
+  - MRR: `+0.0000` (`0.9591` -> `0.9591`)
+- Changed eval ID: `309`
+- Query: `특정 농도 황산 sample 만드 방법`
+- Decision:
+  - Eval `309` is public-improved.
+  - Use `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl` as current best baseline.
+  - High-risk rank3 promotion can still improve MAP even when strict top-k guard rejects all candidates; next search should mine current rank2/rank3 promotions with high support, but exclude rows where current top1 already exactly answers.
