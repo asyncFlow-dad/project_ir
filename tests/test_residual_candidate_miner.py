@@ -246,3 +246,46 @@ class ResidualCandidateMinerTests(TestCase):
         self.assertEqual(len(reviews), 1)
         self.assertFalse(reviews[0].accepted)
         self.assertIn("topk_guard_failed", reviews[0].reason)
+
+    def test_highrisk_candidates_keep_supported_rank2_and_rank3_promotions(self) -> None:
+        miner = _load_module()
+        candidates = [
+            miner.ResidualCandidate("1", "정량 계산", "old-a", "rank2-a", ["rank2-a", "old-a"], 12, [], 2),
+            miner.ResidualCandidate("2", "절차", "old-b", "rank3-b", ["rank3-b", "old-b"], 11, [], 3),
+            miner.ResidualCandidate("3", "낮은 지지", "old-c", "rank2-c", ["rank2-c", "old-c"], 9, [], 2),
+            miner.ResidualCandidate("4", "topk 밖", "old-d", "new-d", ["new-d", "old-d"], 20, [], None),
+        ]
+
+        selected = miner.select_highrisk_rank_promotions(candidates, min_support=10, limit=10)
+
+        self.assertEqual([candidate.eval_id for candidate in selected], ["1", "2"])
+
+    def test_highrisk_review_allows_candidate_direct_answer_without_baseline_wrong(self) -> None:
+        miner = _load_module()
+        candidate = miner.ResidualCandidate(
+            "309",
+            "특정 농도 황산 sample 만드 방법",
+            "old-a",
+            "new-a",
+            ["new-a", "old-a"],
+            30,
+            [],
+            3,
+        )
+
+        review = miner.score_highrisk_judgement(
+            candidate,
+            miner.Judgement(
+                winner="candidate",
+                docid="new-a",
+                confidence=0.95,
+                reason="candidate gives exact concentration procedure",
+                baseline_is_wrong=False,
+                candidate_direct_answer=True,
+                candidate_offtopic=False,
+                submit_risk="low",
+            ),
+        )
+
+        self.assertTrue(review.accepted)
+        self.assertGreaterEqual(review.score, 7)

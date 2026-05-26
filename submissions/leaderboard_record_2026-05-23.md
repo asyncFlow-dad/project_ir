@@ -847,3 +847,21 @@
   - Eval `309` is public-improved.
   - Use `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl` as current best baseline.
   - High-risk rank3 promotion can still improve MAP even when strict top-k guard rejects all candidates; next search should mine current rank2/rank3 promotions with high support, but exclude rows where current top1 already exactly answers.
+
+## Eval207 High-Risk Rank Submission Result - 2026-05-26
+
+- Submitted file: `submissions/highrisk_rank_single_remote2_20260526/highrisk_rank_eval309_base_round2_eval207.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9561`
+- Reported public MRR: `0.9591`
+- Result: tied current best.
+- Changed eval ID: `207`
+- Query: `곤충 눈 구조`
+- Decision:
+  - Eval `207` is public-neutral.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `207`; high-support rank2 promotion looked semantically plausible but did not improve public score.
+  - Next search should require stronger public-signal proxy than Solar direct-answer judgement alone: prefer rows where baseline is clearly off-topic or where multiple independent candidate sources agree and current top1 lacks the key answer span.

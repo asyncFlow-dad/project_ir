@@ -214,6 +214,89 @@ def review_candidates(
     return sorted(reviews, key=lambda item: (-item.score, _sort_eval_id(item.candidate.eval_id)))
 
 
+def select_highrisk_rank_promotions(
+    candidates: Iterable[ResidualCandidate],
+    *,
+    min_support: int,
+    limit: int,
+) -> list[ResidualCandidate]:
+    selected = [
+        candidate
+        for candidate in candidates
+        if candidate.support >= min_support and candidate.baseline_rank in {2, 3}
+    ]
+    return sorted(selected, key=_highrisk_candidate_sort_key)[:limit]
+
+
+def score_highrisk_judgement(
+    candidate: ResidualCandidate,
+    judgement: Judgement,
+    *,
+    accept_threshold: int = 7,
+) -> ResidualReview:
+    score = base_score(candidate)
+    score += min(candidate.support // 10, 3)
+    if judgement.winner == "candidate" and judgement.docid == candidate.candidate_top1:
+        score += 1
+    if judgement.candidate_direct_answer is True:
+        score += 2
+    if judgement.candidate_offtopic is True:
+        score -= 5
+    if judgement.submit_risk == "high":
+        score -= 5
+    accepted = (
+        score >= accept_threshold
+        and judgement.winner == "candidate"
+        and judgement.docid == candidate.candidate_top1
+        and judgement.candidate_direct_answer is True
+        and judgement.candidate_offtopic is not True
+        and judgement.submit_risk != "high"
+    )
+    reason = (
+        f"support={candidate.support}; baseline_rank={candidate.baseline_rank}; "
+        f"winner={judgement.winner}; candidate_direct_answer={judgement.candidate_direct_answer}; "
+        f"risk={judgement.submit_risk}; {judgement.reason}"
+    )
+    return ResidualReview(
+        candidate=candidate,
+        score=score,
+        accepted=accepted,
+        reason=reason,
+        judgement=judgement,
+    )
+
+
+def review_highrisk_candidates(
+    *,
+    candidates: Iterable[ResidualCandidate],
+    corpus_path: Path,
+    provider: str,
+    model: str,
+    host: str,
+    api_key: str | None,
+    accept_threshold: int,
+    limit: int,
+) -> list[ResidualReview]:
+    doc_texts = _load_doc_texts(corpus_path)
+    reviews: list[ResidualReview] = []
+    for candidate in candidates:
+        judgement = judge_direct_answer_candidate(
+            query=candidate.query,
+            baseline_docid=candidate.baseline_top1,
+            baseline_text=doc_texts.get(candidate.baseline_top1, ""),
+            candidate_docid=candidate.candidate_top1,
+            candidate_text=doc_texts.get(candidate.candidate_top1, ""),
+            model=model,
+            host=host,
+            provider=provider,
+            api_key=api_key,
+        )
+        reviews.append(score_highrisk_judgement(candidate, judgement, accept_threshold=accept_threshold))
+        if sum(1 for review in reviews if review.accepted) >= limit:
+            break
+    return sorted(reviews, key=lambda item: (-item.score, _sort_eval_id(item.candidate.eval_id)))
+
+
 def write_single_row_outputs(
     *,
     baseline_path: Path,
@@ -266,6 +349,8 @@ def main() -> int:
     parser.add_argument("--review-limit", type=int, default=40)
     parser.add_argument("--accepted-limit", type=int, default=1)
     parser.add_argument("--disable-topk-guard", action="store_true")
+    parser.add_argument("--highrisk-rank-mode", action="store_true")
+    parser.add_argument("--min-highrisk-support", type=int, default=10)
     parser.add_argument("--audit-output", type=Path, default=None)
     parser.add_argument("--single-output-dir", type=Path, default=None)
     parser.add_argument("--name-prefix", default="residual_eval246_base")
@@ -279,19 +364,37 @@ def main() -> int:
         public_results_path=args.public_results,
         source_paths=args.source,
     )
-    reviews = review_candidates(
-        candidates=candidates[: args.review_limit],
-        corpus_path=args.corpus,
-        provider=args.provider,
-        model=args.model,
-        host=args.host or default_host(args.provider),
-        api_key=args.api_key or _upstage_api_key(),
-        accept_threshold=args.accept_threshold,
-        limit=args.accepted_limit,
-        require_topk_guard=not args.disable_topk_guard,
-    )
+    if args.highrisk_rank_mode:
+        review_candidates_input = select_highrisk_rank_promotions(
+            candidates,
+            min_support=args.min_highrisk_support,
+            limit=args.review_limit,
+        )
+        reviews = review_highrisk_candidates(
+            candidates=review_candidates_input,
+            corpus_path=args.corpus,
+            provider=args.provider,
+            model=args.model,
+            host=args.host or default_host(args.provider),
+            api_key=args.api_key or _upstage_api_key(),
+            accept_threshold=args.accept_threshold,
+            limit=args.accepted_limit,
+        )
+    else:
+        review_candidates_input = candidates[: args.review_limit]
+        reviews = review_candidates(
+            candidates=review_candidates_input,
+            corpus_path=args.corpus,
+            provider=args.provider,
+            model=args.model,
+            host=args.host or default_host(args.provider),
+            api_key=args.api_key or _upstage_api_key(),
+            accept_threshold=args.accept_threshold,
+            limit=args.accepted_limit,
+            require_topk_guard=not args.disable_topk_guard,
+        )
     if args.audit_output is not None:
-        write_audit(args.audit_output, candidates, reviews)
+        write_audit(args.audit_output, review_candidates_input, reviews)
         print(f"audit={args.audit_output}")
     for review in reviews:
         print(
@@ -358,6 +461,15 @@ def _passes_topk_guard(
         if judgement.winner != "candidate" or judgement.docid != candidate.candidate_top1:
             return False, f"lost_to={docid}; winner={judgement.winner}; reason={judgement.reason}"
     return True, "candidate_beats_current_topk"
+
+
+def _highrisk_candidate_sort_key(candidate: ResidualCandidate) -> tuple[int, int, int, str]:
+    return (
+        -candidate.support,
+        candidate.baseline_rank or 99,
+        _sort_eval_id(candidate.eval_id)[0],
+        candidate.candidate_top1,
+    )
 
 
 def _load_env_file(path: Path) -> None:
