@@ -886,3 +886,20 @@
   - Do not submit answer-span run files.
   - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
   - Answer-span Solar gate catches some weak rows but still overclaims baseline-missing facts; future gate should require literal baseline evidence absence before candidate review.
+
+## Answer-Span Strict Quote Candidate Run - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Current best public MAP/MRR: `0.9561` / `0.9591`
+- Remote audit: `submissions/answer_span_strict_quote_audit_20260526.json`
+- Gate change:
+  - Candidate must include exact quote evidence.
+  - Baseline present quote blocks acceptance.
+  - Previous manual rejects `7`, `279`, `250`, `303` remain locked out by public-result ledger.
+- Result:
+  - Accepted candidates: `0`
+  - No submission file recommended.
+- Decision:
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Strict quote gate successfully prevents weak semantic overclaims, but it found no public-score candidate in current residual pool.

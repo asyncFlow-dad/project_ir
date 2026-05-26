@@ -1,0 +1,1824 @@
+{
+  "candidates": [
+    {
+      "eval_id": "241",
+      "query": "정육면체 가라앉지 않고 물 위 떠 있 때 수면 윗부분 해당 부피 구 방법",
+      "baseline_top1": "0b269ea1-2650-4666-9958-500993921e03",
+      "candidate_top1": "468d098e-2322-4950-ac11-9756f3112944",
+      "candidate_topk": [
+        "468d098e-2322-4950-ac11-9756f3112944",
+        "0b269ea1-2650-4666-9958-500993921e03",
+        "cd6bb1fc-4c7f-420b-96bc-dc1e86cf7397"
+      ],
+      "support": 31,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "0b269ea1-2650-4666-9958-500993921e03",
+        "468d098e-2322-4950-ac11-9756f3112944",
+        "cd6bb1fc-4c7f-420b-96bc-dc1e86cf7397"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "277",
+      "query": "바닥 마찰 없 곳 두 사람 서 밀어낼때 무게 덜 나가 더 빨리 움직이게 되 이유",
+      "baseline_top1": "ba29d074-70ca-4cbc-a786-aad0870eecf1",
+      "candidate_top1": "077c844a-c03a-4d7f-99c2-e402e62f12af",
+      "candidate_topk": [
+        "077c844a-c03a-4d7f-99c2-e402e62f12af",
+        "ba29d074-70ca-4cbc-a786-aad0870eecf1",
+        "7c1a0ef7-62aa-48bc-9eec-ca967e89653e"
+      ],
+      "support": 31,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "ba29d074-70ca-4cbc-a786-aad0870eecf1",
+        "077c844a-c03a-4d7f-99c2-e402e62f12af",
+        "7c1a0ef7-62aa-48bc-9eec-ca967e89653e"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "c59f4bbd-71f6-4073-807f-09e8f0d3efcc",
+      "candidate_topk": [
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "1dc70815-2d4d-4b09-a03e-54005e7863b9"
+      ],
+      "support": 30,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc",
+        "1dc70815-2d4d-4b09-a03e-54005e7863b9"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "288",
+      "query": "건강한 입 가지고 있는지 판단할 수 있 방법",
+      "baseline_top1": "9954d917-170e-477f-84c9-6d1d42927eed",
+      "candidate_top1": "24991d92-c2dd-4cee-99a6-aa922b0f2eba",
+      "candidate_topk": [
+        "24991d92-c2dd-4cee-99a6-aa922b0f2eba",
+        "9954d917-170e-477f-84c9-6d1d42927eed",
+        "ae26be1f-76b3-4ffb-962f-e5f573055824"
+      ],
+      "support": 28,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "9954d917-170e-477f-84c9-6d1d42927eed",
+        "24991d92-c2dd-4cee-99a6-aa922b0f2eba",
+        "ae26be1f-76b3-4ffb-962f-e5f573055824"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "268",
+      "query": "빗방울 점점 커지게 되 요인",
+      "baseline_top1": "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+      "candidate_top1": "a35c09b4-e702-471c-9328-87108f9a1590",
+      "candidate_topk": [
+        "a35c09b4-e702-471c-9328-87108f9a1590",
+        "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+        "c8d7298b-3179-4d43-89bb-115cee7cd663"
+      ],
+      "support": 27,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/granite4_1_8b_c20_targeted_eval35_42_77_85_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_audited_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_cons_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_expanded_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_audited_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_eval35_77_85_98_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_expanded_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c20_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_100_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_214_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+        "a35c09b4-e702-471c-9328-87108f9a1590",
+        "c8d7298b-3179-4d43-89bb-115cee7cd663"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "23",
+      "query": "식물 동물중 누 번식력 높다고 할 수 있어",
+      "baseline_top1": "23a45ec2-749b-4dae-aec5-7cc047cd7117",
+      "candidate_top1": "a3c79177-5bfc-4d31-a542-fa6d9cd38c22",
+      "candidate_topk": [
+        "a3c79177-5bfc-4d31-a542-fa6d9cd38c22",
+        "23a45ec2-749b-4dae-aec5-7cc047cd7117",
+        "f6172329-b3f6-4c37-bd42-0c278f24be10"
+      ],
+      "support": 24,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/granite4_1_8b_c20_targeted_eval35_42_77_85_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_audited_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_cons_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_expanded_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_audited_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_eval35_77_85_98_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_expanded_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_w060_w050_eval87_207_268_295_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_w060_w050_safe_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c20_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_100_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_20260522.jsonl",
+        "submissions/granite4_1_8b_w050_targeted_eval207_268_295_20260522.jsonl",
+        "submissions/granite4_1_8b_w050_targeted_eval87_207_268_295_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_214_20260522.jsonl",
+        "submissions/ollama_submission.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "23a45ec2-749b-4dae-aec5-7cc047cd7117",
+        "a3c79177-5bfc-4d31-a542-fa6d9cd38c22",
+        "f6172329-b3f6-4c37-bd42-0c278f24be10"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "a2a29cc0-8116-47c0-9d90-44331c6f1914",
+      "candidate_topk": [
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "6b826cd7-adc3-4ae6-af58-c2de59f367b9"
+      ],
+      "support": 20,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914",
+        "6b826cd7-adc3-4ae6-af58-c2de59f367b9"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "26be1648-c827-4f51-ace4-ccb045e2aa34",
+      "candidate_topk": [
+        "26be1648-c827-4f51-ace4-ccb045e2aa34",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "c22486fa-d9be-46ad-9537-88624b8081e4"
+      ],
+      "support": 19,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/ollama_submission.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34",
+        "c22486fa-d9be-46ad-9537-88624b8081e4"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "87d1eda6-bfc4-49bb-9e35-5ee8e772726f",
+      "candidate_topk": [
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "706d6077-1474-431e-8d13-6ec573ef0419"
+      ],
+      "support": 19,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/ollama_submission.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f",
+        "706d6077-1474-431e-8d13-6ec573ef0419"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "256",
+      "query": "체질량 지수 한계",
+      "baseline_top1": "f1a89f8a-7510-4400-8fbe-20bcb0a2adc3",
+      "candidate_top1": "ac413814-d09e-478e-8c01-4f1963a669d8",
+      "candidate_topk": [
+        "ac413814-d09e-478e-8c01-4f1963a669d8",
+        "f1a89f8a-7510-4400-8fbe-20bcb0a2adc3",
+        "10668a9a-0c49-4078-89ae-cade2913f3e5"
+      ],
+      "support": 19,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "f1a89f8a-7510-4400-8fbe-20bcb0a2adc3",
+        "ac413814-d09e-478e-8c01-4f1963a669d8",
+        "10668a9a-0c49-4078-89ae-cade2913f3e5"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "244",
+      "query": "정상파 뭐야",
+      "baseline_top1": "fed07bdf-90e8-4236-bc5e-43eb5fe17061",
+      "candidate_top1": "24528236-6f25-4084-a6be-1d69293811dd",
+      "candidate_topk": [
+        "24528236-6f25-4084-a6be-1d69293811dd",
+        "fed07bdf-90e8-4236-bc5e-43eb5fe17061",
+        "6b5e0ad8-6108-4d20-93fb-e598d836b910"
+      ],
+      "support": 16,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "fed07bdf-90e8-4236-bc5e-43eb5fe17061",
+        "24528236-6f25-4084-a6be-1d69293811dd",
+        "6b5e0ad8-6108-4d20-93fb-e598d836b910"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "215",
+      "query": "dna 단백질 관계 역할",
+      "baseline_top1": "ae30b754-a275-43dc-a2c9-95ab33a7c557",
+      "candidate_top1": "97ed16c9-cc0b-4db0-962f-2f00b19f63e2",
+      "candidate_topk": [
+        "97ed16c9-cc0b-4db0-962f-2f00b19f63e2",
+        "ae30b754-a275-43dc-a2c9-95ab33a7c557",
+        "ea669c8e-8185-46f5-ab27-2d1d5494c32e"
+      ],
+      "support": 13,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c20_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w060_c30_20260522.jsonl",
+        "submissions/ollama_submission.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "ae30b754-a275-43dc-a2c9-95ab33a7c557",
+        "97ed16c9-cc0b-4db0-962f-2f00b19f63e2",
+        "ea669c8e-8185-46f5-ab27-2d1d5494c32e"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "296",
+      "query": "기생 공생 차",
+      "baseline_top1": "2570699b-b8c3-409e-b797-a1ee57c1fd86",
+      "candidate_top1": "02f79eed-d588-4f99-ac88-780855664a22",
+      "candidate_topk": [
+        "02f79eed-d588-4f99-ac88-780855664a22",
+        "2570699b-b8c3-409e-b797-a1ee57c1fd86",
+        "25a372af-10ba-4f67-b5dd-b199f649e6c8"
+      ],
+      "support": 13,
+      "sources": [
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "2570699b-b8c3-409e-b797-a1ee57c1fd86",
+        "02f79eed-d588-4f99-ac88-780855664a22",
+        "25a372af-10ba-4f67-b5dd-b199f649e6c8"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "31",
+      "query": "음파 어떻게 이동하는",
+      "baseline_top1": "8918f0f9-795d-4f15-8982-2cede58c202e",
+      "candidate_top1": "81762624-6b09-44e3-b5fb-973ed8f5b7de",
+      "candidate_topk": [
+        "81762624-6b09-44e3-b5fb-973ed8f5b7de",
+        "8918f0f9-795d-4f15-8982-2cede58c202e",
+        "bdbb01d8-16d1-44fc-b359-bd262644cd3a"
+      ],
+      "support": 11,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "8918f0f9-795d-4f15-8982-2cede58c202e",
+        "81762624-6b09-44e3-b5fb-973ed8f5b7de",
+        "bdbb01d8-16d1-44fc-b359-bd262644cd3a"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "263",
+      "query": "dna 조각들 서 결합되도록 돕 것",
+      "baseline_top1": "1a277fb7-4cd7-409b-9f28-d83cef78ca10",
+      "candidate_top1": "c8fd4323-9af9-4a0d-ab53-e563c71f9795",
+      "candidate_topk": [
+        "c8fd4323-9af9-4a0d-ab53-e563c71f9795",
+        "1a277fb7-4cd7-409b-9f28-d83cef78ca10",
+        "bf529b60-26c1-4400-985d-984229ca7c77"
+      ],
+      "support": 11,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "1a277fb7-4cd7-409b-9f28-d83cef78ca10",
+        "c8fd4323-9af9-4a0d-ab53-e563c71f9795",
+        "bf529b60-26c1-4400-985d-984229ca7c77"
+      ],
+      "base_score": 5
+    },
+    {
+      "eval_id": "85",
+      "query": "저항 2 배 증가하면 전력 어떻게 되나",
+      "baseline_top1": "cbb7fc5e-f284-4b66-bd88-ef53baf4ef25",
+      "candidate_top1": "022a3eb4-5f95-40ac-b208-66c2fa690ff6",
+      "candidate_topk": [
+        "022a3eb4-5f95-40ac-b208-66c2fa690ff6",
+        "cbb7fc5e-f284-4b66-bd88-ef53baf4ef25",
+        "15f317a8-1d4d-41c4-93ec-bc9be43c3984"
+      ],
+      "support": 11,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 3,
+      "baseline_topk": [
+        "cbb7fc5e-f284-4b66-bd88-ef53baf4ef25",
+        "15f317a8-1d4d-41c4-93ec-bc9be43c3984",
+        "022a3eb4-5f95-40ac-b208-66c2fa690ff6"
+      ],
+      "base_score": 5
+    }
+  ],
+  "reviews": [
+    {
+      "eval_id": "23",
+      "query": "식물 동물중 누 번식력 높다고 할 수 있어",
+      "baseline_top1": "23a45ec2-749b-4dae-aec5-7cc047cd7117",
+      "candidate_top1": "a3c79177-5bfc-4d31-a542-fa6d9cd38c22",
+      "candidate_topk": [
+        "a3c79177-5bfc-4d31-a542-fa6d9cd38c22",
+        "23a45ec2-749b-4dae-aec5-7cc047cd7117",
+        "f6172329-b3f6-4c37-bd42-0c278f24be10"
+      ],
+      "support": 24,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/granite4_1_8b_c20_targeted_eval35_42_77_85_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_audited_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_cons_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_expanded_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_audited_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_eval35_77_85_98_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_expanded_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_w060_w050_eval87_207_268_295_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_w060_w050_safe_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c20_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_100_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_20260522.jsonl",
+        "submissions/granite4_1_8b_w050_targeted_eval207_268_295_20260522.jsonl",
+        "submissions/granite4_1_8b_w050_targeted_eval87_207_268_295_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_214_20260522.jsonl",
+        "submissions/ollama_submission.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "23a45ec2-749b-4dae-aec5-7cc047cd7117",
+        "a3c79177-5bfc-4d31-a542-fa6d9cd38c22",
+        "f6172329-b3f6-4c37-bd42-0c278f24be10"
+      ],
+      "base_score": 5,
+      "score": 6,
+      "accepted": false,
+      "reason": "support=24; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=candidate; risk=low; topk_guard_failed=lost_to=23a45ec2-749b-4dae-aec5-7cc047cd7117; winner=baseline; reason=블랙베리 식물은 유성 생식과 무성 생식을 통해 번식할 수 있는 장점이 있습니다. 줄기가 땅에 닿을 때 새롭게 뿌리가 발생하여 무성 생식을 합니다. 이는 블랙베리 식물이 환경의 변화에 적응할 수 있는 능력을 갖고 있다는 것을 의미합니다. 또한, 꽃을 통해 유성 생식을 할 수 있어 다른 개체와의 교배가 가능합니다. 이는 블랙베리 식물이 새로운 조건에 적응할 수 있고, 다양한 유전적 다양성을 유지할 수 있다는 장점을 가지고 있습니다. 따라서, 블랙베리 식물은 번식과 생존에 있어서 다른 식물들보다 우수한 적응력을 갖고 있습니다.; baseline은 식물 번식력에 대한 언급이 없고, candidate는 표 정보를 통해 식물이 동물보다 번식력이 높다는 결론을 명시적으로 제시함.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "식물 번식력이 동물보다 높다"
+      ],
+      "baseline_missing_facts": [
+        "식물 번식력이 동물보다 높다"
+      ],
+      "candidate_covered_facts": [
+        "식물 번식력이 동물보다 높다"
+      ],
+      "answer_span_winner": "candidate",
+      "answer_span_docid": "a3c79177-5bfc-4d31-a542-fa6d9cd38c22",
+      "answer_span_confidence": 0.9,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline은 식물 번식력에 대한 언급이 없고, candidate는 표 정보를 통해 식물이 동물보다 번식력이 높다는 결론을 명시적으로 제시함.",
+      "baseline_present_quotes": [],
+      "candidate_exact_quotes": [
+        "식물이 다른 생물체들에 비해 번식력이 높거나, 생태계에서 더 중요한 역할을 한다는 것을 시사합니다."
+      ]
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "a2a29cc0-8116-47c0-9d90-44331c6f1914",
+      "candidate_topk": [
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "6b826cd7-adc3-4ae6-af58-c2de59f367b9"
+      ],
+      "support": 20,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914",
+        "6b826cd7-adc3-4ae6-af58-c2de59f367b9"
+      ],
+      "base_score": 5,
+      "score": 2,
+      "accepted": false,
+      "reason": "support=20; baseline_rank=2; required_answer_facts=3; baseline_missing_facts=3; candidate_covered_facts=3; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline already contains exact quote proving all required facts.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "산불 후 자연 회복 과정",
+        "이차 천이",
+        "야생화의 역할"
+      ],
+      "baseline_missing_facts": [
+        "산불 후 자연 회복 과정",
+        "이차 천이",
+        "야생화의 역할"
+      ],
+      "candidate_covered_facts": [
+        "산불 후 자연 회복 과정",
+        "이차 천이",
+        "야생화의 역할"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline already contains exact quote proving all required facts.",
+      "baseline_present_quotes": [
+        "산불 이후, 야생화가 이차 천이를 시작합니다."
+      ],
+      "candidate_exact_quotes": [
+        "산불 이후, 야생화가 이차 천이를 시작합니다."
+      ]
+    },
+    {
+      "eval_id": "244",
+      "query": "정상파 뭐야",
+      "baseline_top1": "fed07bdf-90e8-4236-bc5e-43eb5fe17061",
+      "candidate_top1": "24528236-6f25-4084-a6be-1d69293811dd",
+      "candidate_topk": [
+        "24528236-6f25-4084-a6be-1d69293811dd",
+        "fed07bdf-90e8-4236-bc5e-43eb5fe17061",
+        "6b5e0ad8-6108-4d20-93fb-e598d836b910"
+      ],
+      "support": 16,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "fed07bdf-90e8-4236-bc5e-43eb5fe17061",
+        "24528236-6f25-4084-a6be-1d69293811dd",
+        "6b5e0ad8-6108-4d20-93fb-e598d836b910"
+      ],
+      "base_score": 5,
+      "score": 1,
+      "accepted": false,
+      "reason": "support=16; baseline_rank=2; required_answer_facts=4; baseline_missing_facts=4; candidate_covered_facts=4; candidate_exact_quotes=3; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline이 모든 필수 사실을 정확히 포함하고 있으며, candidate은 동일한 내용을 반복하고 있어 추가 가치가 없음.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "정상파는 파동의 한 형태이다",
+        "정상파는 일정한 주기와 진폭을 가진다",
+        "정상파는 공간을 통해 전파된다",
+        "정상파는 자연 현상에서 관찰될 수 있다"
+      ],
+      "baseline_missing_facts": [
+        "정상파는 파동의 한 형태이다",
+        "정상파는 일정한 주기와 진폭을 가진다",
+        "정상파는 공간을 통해 전파된다",
+        "정상파는 자연 현상에서 관찰될 수 있다"
+      ],
+      "candidate_covered_facts": [
+        "정상파는 파동의 한 형태이다",
+        "정상파는 일정한 주기와 진폭을 가진다",
+        "정상파는 공간을 통해 전파된다",
+        "정상파는 자연 현상에서 관찰될 수 있다"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.9,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline이 모든 필수 사실을 정확히 포함하고 있으며, candidate은 동일한 내용을 반복하고 있어 추가 가치가 없음.",
+      "baseline_present_quotes": [
+        "정상파는 파동의 한 형태로, 이 모든 것에 의해 발생합니다.",
+        "정상파는 일정한 주기와 진폭을 가지며, 공간을 통해 전파됩니다.",
+        "이 모든 것은 자연 현상에서 발생하는 결과로, 우리 주변에서 다양한 형태로 관찰될 수 있습니다."
+      ],
+      "candidate_exact_quotes": [
+        "정상파는 파동의 한 형태로, 이 모든 것에 의해 발생합니다.",
+        "정상파는 일정한 주기와 진폭을 가지며, 공간을 통해 전파됩니다.",
+        "이 모든 것은 자연 현상에서 발생하는 결과로, 우리 주변에서 다양한 형태로 관찰될 수 있습니다."
+      ]
+    },
+    {
+      "eval_id": "277",
+      "query": "바닥 마찰 없 곳 두 사람 서 밀어낼때 무게 덜 나가 더 빨리 움직이게 되 이유",
+      "baseline_top1": "ba29d074-70ca-4cbc-a786-aad0870eecf1",
+      "candidate_top1": "077c844a-c03a-4d7f-99c2-e402e62f12af",
+      "candidate_topk": [
+        "077c844a-c03a-4d7f-99c2-e402e62f12af",
+        "ba29d074-70ca-4cbc-a786-aad0870eecf1",
+        "7c1a0ef7-62aa-48bc-9eec-ca967e89653e"
+      ],
+      "support": 31,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "ba29d074-70ca-4cbc-a786-aad0870eecf1",
+        "077c844a-c03a-4d7f-99c2-e402e62f12af",
+        "7c1a0ef7-62aa-48bc-9eec-ca967e89653e"
+      ],
+      "base_score": 5,
+      "score": 1,
+      "accepted": false,
+      "reason": "support=31; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=candidate; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; 후보 문서가 동일한 핵심 사실을 포함하고 있어 제출 위험이 낮음",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "바닥 마찰이 없는 곳에서 두 사람이 서로 밀어낼 때, 가벼운 사람의 가속도가 무거운 사람의 가속도보다 두 배 더 크다"
+      ],
+      "baseline_missing_facts": [
+        "바닥 마찰이 없는 곳에서 두 사람이 서로 밀어낼 때, 가벼운 사람의 가속도가 무거운 사람의 가속도보다 두 배 더 크다"
+      ],
+      "candidate_covered_facts": [
+        "바닥 마찰이 없는 곳에서 두 사람이 서로 밀어낼 때, 가벼운 사람의 가속도가 무거운 사람의 가속도보다 두 배 더 크다"
+      ],
+      "answer_span_winner": "candidate",
+      "answer_span_docid": "077c844a-c03a-4d7f-99c2-e402e62f12af",
+      "answer_span_confidence": 0.9,
+      "answer_span_risk": "low",
+      "answer_span_reason": "후보 문서가 동일한 핵심 사실을 포함하고 있어 제출 위험이 낮음",
+      "baseline_present_quotes": [
+        "가벼운 사람의 가속도 크기는 무거운 사람의 가속도 크기의 두 배일 것입니다."
+      ],
+      "candidate_exact_quotes": [
+        "가벼운 사람의 가속도 크기는 무거운 사람의 가속도 크기의 두 배일 것입니다."
+      ]
+    },
+    {
+      "eval_id": "296",
+      "query": "기생 공생 차",
+      "baseline_top1": "2570699b-b8c3-409e-b797-a1ee57c1fd86",
+      "candidate_top1": "02f79eed-d588-4f99-ac88-780855664a22",
+      "candidate_topk": [
+        "02f79eed-d588-4f99-ac88-780855664a22",
+        "2570699b-b8c3-409e-b797-a1ee57c1fd86",
+        "25a372af-10ba-4f67-b5dd-b199f649e6c8"
+      ],
+      "support": 13,
+      "sources": [
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "2570699b-b8c3-409e-b797-a1ee57c1fd86",
+        "02f79eed-d588-4f99-ac88-780855664a22",
+        "25a372af-10ba-4f67-b5dd-b199f649e6c8"
+      ],
+      "base_score": 5,
+      "score": 1,
+      "accepted": false,
+      "reason": "support=13; baseline_rank=2; required_answer_facts=2; baseline_missing_facts=2; candidate_covered_facts=2; candidate_exact_quotes=2; winner=candidate; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; 기생 관계의 정의와 구체적 예시(배스 촌충)가 baseline에 누락되어 있어 candidate가 필수 사실을 직접 제공함.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "기생 관계는 한 생물이 다른 생물에게 피해를 주면서 이익을 얻는 관계이다",
+        "기생 관계의 예시로는 배스 촌충이 배스의 아가미와 장에 붙어 영양분을 빼앗는 경우가 있다"
+      ],
+      "baseline_missing_facts": [
+        "기생 관계는 한 생물이 다른 생물에게 피해를 주면서 이익을 얻는 관계이다",
+        "기생 관계의 예시로는 배스 촌충이 배스의 아가미와 장에 붙어 영양분을 빼앗는 경우가 있다"
+      ],
+      "candidate_covered_facts": [
+        "기생 관계는 한 생물이 다른 생물에게 피해를 주면서 이익을 얻는 관계이다",
+        "기생 관계의 예시로는 배스 촌충이 배스의 아가미와 장에 붙어 영양분을 빼앗는 경우가 있다"
+      ],
+      "answer_span_winner": "candidate",
+      "answer_span_docid": "02f79eed-d588-4f99-ac88-780855664a22",
+      "answer_span_confidence": 0.95,
+      "answer_span_risk": "low",
+      "answer_span_reason": "기생 관계의 정의와 구체적 예시(배스 촌충)가 baseline에 누락되어 있어 candidate가 필수 사실을 직접 제공함.",
+      "baseline_present_quotes": [
+        "기생은 한 생물이 다른 생물에게 피해를 주면서 이익을 얻는 관계로, 한 쪽은 이익을 얻지만 다른 쪽은 손해를 입습니다."
+      ],
+      "candidate_exact_quotes": [
+        "기생 관계는 한 종류의 생물이 다른 종류의 생물에게 피해를 주면서 이익을 얻는 관계입니다.",
+        "배스 촌충은 배스의 몸에서 영양분을 빼앗아 자신의 생존에 도움을 얻습니다."
+      ]
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "c59f4bbd-71f6-4073-807f-09e8f0d3efcc",
+      "candidate_topk": [
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "1dc70815-2d4d-4b09-a03e-54005e7863b9"
+      ],
+      "support": 30,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc",
+        "1dc70815-2d4d-4b09-a03e-54005e7863b9"
+      ],
+      "base_score": 5,
+      "score": -1,
+      "accepted": false,
+      "reason": "support=30; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline에 핵심 답변 구절이 이미 포함되어 있어 추가 후보 필요 없음",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "전류가 통하는 와이어 주변의 자기장 선은 원 형태를 띤다"
+      ],
+      "baseline_missing_facts": [
+        "전류가 통하는 와이어 주변의 자기장 선은 원 형태를 띤다"
+      ],
+      "candidate_covered_facts": [
+        "전류가 통하는 와이어 주변의 자기장 선은 원 형태를 띤다"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "answer_span_confidence": 0.9,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline에 핵심 답변 구절이 이미 포함되어 있어 추가 후보 필요 없음",
+      "baseline_present_quotes": [
+        "전류가 통하는 와이어 주변의 자기장 선은 원 형태를 띠게 됩니다."
+      ],
+      "candidate_exact_quotes": [
+        "전류가 통하는 와이어 주변의 자기장 선은 원 형태를 띠게 됩니다."
+      ]
+    },
+    {
+      "eval_id": "85",
+      "query": "저항 2 배 증가하면 전력 어떻게 되나",
+      "baseline_top1": "cbb7fc5e-f284-4b66-bd88-ef53baf4ef25",
+      "candidate_top1": "022a3eb4-5f95-40ac-b208-66c2fa690ff6",
+      "candidate_topk": [
+        "022a3eb4-5f95-40ac-b208-66c2fa690ff6",
+        "cbb7fc5e-f284-4b66-bd88-ef53baf4ef25",
+        "15f317a8-1d4d-41c4-93ec-bc9be43c3984"
+      ],
+      "support": 11,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 3,
+      "baseline_topk": [
+        "cbb7fc5e-f284-4b66-bd88-ef53baf4ef25",
+        "15f317a8-1d4d-41c4-93ec-bc9be43c3984",
+        "022a3eb4-5f95-40ac-b208-66c2fa690ff6"
+      ],
+      "base_score": 5,
+      "score": -1,
+      "accepted": false,
+      "reason": "support=11; baseline_rank=3; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=candidate; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline은 전력이 절반으로 감소한다고 잘못 설명했으며, candidate는 정확한 1/4 감소 사실을 직접 인용하여 제시함",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "저항이 2배 증가하면 전력은 1/4로 감소한다"
+      ],
+      "baseline_missing_facts": [
+        "저항이 2배 증가하면 전력은 1/4로 감소한다"
+      ],
+      "candidate_covered_facts": [
+        "저항이 2배 증가하면 전력은 1/4로 감소한다"
+      ],
+      "answer_span_winner": "candidate",
+      "answer_span_docid": "022a3eb4-5f95-40ac-b208-66c2fa690ff6",
+      "answer_span_confidence": 0.95,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline은 전력이 절반으로 감소한다고 잘못 설명했으며, candidate는 정확한 1/4 감소 사실을 직접 인용하여 제시함",
+      "baseline_present_quotes": [
+        "R이 두 배가 된다면 회로에서 발산되는 총 전력은 절반이 됩니다."
+      ],
+      "candidate_exact_quotes": [
+        "R이 두 배가 되면 전력은 (1/2)^2 = 1/4로 감소하게 됩니다."
+      ]
+    },
+    {
+      "eval_id": "241",
+      "query": "정육면체 가라앉지 않고 물 위 떠 있 때 수면 윗부분 해당 부피 구 방법",
+      "baseline_top1": "0b269ea1-2650-4666-9958-500993921e03",
+      "candidate_top1": "468d098e-2322-4950-ac11-9756f3112944",
+      "candidate_topk": [
+        "468d098e-2322-4950-ac11-9756f3112944",
+        "0b269ea1-2650-4666-9958-500993921e03",
+        "cd6bb1fc-4c7f-420b-96bc-dc1e86cf7397"
+      ],
+      "support": 31,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "0b269ea1-2650-4666-9958-500993921e03",
+        "468d098e-2322-4950-ac11-9756f3112944",
+        "cd6bb1fc-4c7f-420b-96bc-dc1e86cf7397"
+      ],
+      "base_score": 5,
+      "score": -1,
+      "accepted": false,
+      "reason": "support=31; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline이 query에 필요한 정육면체 부피 중 수면 윗부분 해당 부피 구하는 방법을 정확히 설명하고 있음",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "정육면체 부피 중 수면 윗부분 해당 부피 구하는 방법"
+      ],
+      "baseline_missing_facts": [
+        "정육면체 부피 중 수면 윗부분 해당 부피 구하는 방법"
+      ],
+      "candidate_covered_facts": [
+        "정육면체 부피 중 수면 윗부분 해당 부피 구하는 방법"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline이 query에 필요한 정육면체 부피 중 수면 윗부분 해당 부피 구하는 방법을 정확히 설명하고 있음",
+      "baseline_present_quotes": [
+        "큐브의 부피 중 액체 표면 위로 떠 있는 부분의 비율은 큐브의 부피를 액체의 부피로 나눈 값과 같습니다. 따라서, 큐브의 부피 중 액체 표면 위로 떠 있는 부분의 비율은 0.0833m^3 / 0.125m^3 = 1.0/3입니다."
+      ],
+      "candidate_exact_quotes": [
+        "물체의 부피 중 물 위로 떠 있는 부분의 부피는 물체의 부피 중 물 위로 떠 있는 부분의 무게를 물의 밀도로 나눈 값입니다."
+      ]
+    },
+    {
+      "eval_id": "268",
+      "query": "빗방울 점점 커지게 되 요인",
+      "baseline_top1": "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+      "candidate_top1": "a35c09b4-e702-471c-9328-87108f9a1590",
+      "candidate_topk": [
+        "a35c09b4-e702-471c-9328-87108f9a1590",
+        "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+        "c8d7298b-3179-4d43-89bb-115cee7cd663"
+      ],
+      "support": 27,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/granite4_1_8b_c20_targeted_eval35_42_77_85_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_audited_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_cons_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_expanded_w060_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_audited_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_eval35_77_85_98_109_288_20260522.jsonl",
+        "submissions/granite4_1_8b_c30_targeted_expanded_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c20_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_100_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_106_20260522.jsonl",
+        "submissions/granite4_1_8b_revert_eval308_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_20260522.jsonl",
+        "submissions/granite4_1_8b_w060_targeted_eval15_96_214_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+        "a35c09b4-e702-471c-9328-87108f9a1590",
+        "c8d7298b-3179-4d43-89bb-115cee7cd663"
+      ],
+      "base_score": 5,
+      "score": -2,
+      "accepted": false,
+      "reason": "support=27; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline에 물방울이 구름 안에서 충돌하고 합쳐져서 점점 커지는 과정이 정확히 포함되어 있어, 해당 필수 사실을 이미 충족하므로 baseline을 선택함.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "물방울이 구름 안에서 충돌하고 합쳐져서 점점 커지는 과정"
+      ],
+      "baseline_missing_facts": [
+        "물방울이 구름 안에서 충돌하고 합쳐져서 점점 커지는 과정"
+      ],
+      "candidate_covered_facts": [
+        "물방울이 구름 안에서 충돌하고 합쳐져서 점점 커지는 과정"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline에 물방울이 구름 안에서 충돌하고 합쳐져서 점점 커지는 과정이 정확히 포함되어 있어, 해당 필수 사실을 이미 충족하므로 baseline을 선택함.",
+      "baseline_present_quotes": [
+        "이 물방울들은 구름 안에서 충돌하고 서로 합쳐져서 점점 커지게 됩니다."
+      ],
+      "candidate_exact_quotes": [
+        "구름은 계속해서 성장하다가 충분한 양의 수증기가 모이면 비로 내리게 됩니다."
+      ]
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "26be1648-c827-4f51-ace4-ccb045e2aa34",
+      "candidate_topk": [
+        "26be1648-c827-4f51-ace4-ccb045e2aa34",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "c22486fa-d9be-46ad-9537-88624b8081e4"
+      ],
+      "support": 19,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/ollama_submission.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34",
+        "c22486fa-d9be-46ad-9537-88624b8081e4"
+      ],
+      "base_score": 5,
+      "score": -3,
+      "accepted": false,
+      "reason": "support=19; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; 후보 문서는 엔진오일과 무관한 동전 연소 방법을 다루고 있어 핵심 사실을 제공하지 못함.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "엔진오일을 폐기할 때 환경적으로 안전하게 처리하는 방법"
+      ],
+      "baseline_missing_facts": [
+        "엔진오일을 폐기할 때 환경적으로 안전하게 처리하는 방법"
+      ],
+      "candidate_covered_facts": [
+        "엔진오일을 폐기할 때 환경적으로 안전하게 처리하는 방법"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "low",
+      "answer_span_reason": "후보 문서는 엔진오일과 무관한 동전 연소 방법을 다루고 있어 핵심 사실을 제공하지 못함.",
+      "baseline_present_quotes": [
+        "엔진 오일을 폐기할 때는 환경에 안전하게 처리하는 것이 중요합니다."
+      ],
+      "candidate_exact_quotes": [
+        "은 동전을 연소시키는 가장 쉬운 방법은 은 동전을 아주 작은 먼지 크기의 입자로 분쇄하고, 이 입자들을 분젠 버너 불꽃으로 분사하는 것입니다."
+      ]
+    },
+    {
+      "eval_id": "31",
+      "query": "음파 어떻게 이동하는",
+      "baseline_top1": "8918f0f9-795d-4f15-8982-2cede58c202e",
+      "candidate_top1": "81762624-6b09-44e3-b5fb-973ed8f5b7de",
+      "candidate_topk": [
+        "81762624-6b09-44e3-b5fb-973ed8f5b7de",
+        "8918f0f9-795d-4f15-8982-2cede58c202e",
+        "bdbb01d8-16d1-44fc-b359-bd262644cd3a"
+      ],
+      "support": 11,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "8918f0f9-795d-4f15-8982-2cede58c202e",
+        "81762624-6b09-44e3-b5fb-973ed8f5b7de",
+        "bdbb01d8-16d1-44fc-b359-bd262644cd3a"
+      ],
+      "base_score": 5,
+      "score": -3,
+      "accepted": false,
+      "reason": "support=11; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline already contains the exact answer span; candidate is adjacent topic (암석 vs 철) and not required.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "음파가 가장 빠르게 이동하는 물질"
+      ],
+      "baseline_missing_facts": [
+        "음파가 가장 빠르게 이동하는 물질"
+      ],
+      "candidate_covered_facts": [
+        "음파가 가장 빠르게 이동하는 물질"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "8918f0f9-795d-4f15-8982-2cede58c202e",
+      "answer_span_confidence": 0.95,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline already contains the exact answer span; candidate is adjacent topic (암석 vs 철) and not required.",
+      "baseline_present_quotes": [
+        "철은 음파가 가장 빠르게 이동하는 물질입니다."
+      ],
+      "candidate_exact_quotes": [
+        "음파는 암석을 통해 가장 빠르게 이동합니다."
+      ]
+    },
+    {
+      "eval_id": "215",
+      "query": "dna 단백질 관계 역할",
+      "baseline_top1": "ae30b754-a275-43dc-a2c9-95ab33a7c557",
+      "candidate_top1": "97ed16c9-cc0b-4db0-962f-2f00b19f63e2",
+      "candidate_topk": [
+        "97ed16c9-cc0b-4db0-962f-2f00b19f63e2",
+        "ae30b754-a275-43dc-a2c9-95ab33a7c557",
+        "ea669c8e-8185-46f5-ab27-2d1d5494c32e"
+      ],
+      "support": 13,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_dense.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c20_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w060_c30_20260522.jsonl",
+        "submissions/ollama_submission.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "ae30b754-a275-43dc-a2c9-95ab33a7c557",
+        "97ed16c9-cc0b-4db0-962f-2f00b19f63e2",
+        "ea669c8e-8185-46f5-ab27-2d1d5494c32e"
+      ],
+      "base_score": 5,
+      "score": -3,
+      "accepted": false,
+      "reason": "support=13; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline already contains the exact answer span about DNA and protein relationship and roles.",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "DNA와 단백질의 관계 및 역할"
+      ],
+      "baseline_missing_facts": [
+        "DNA와 단백질의 관계 및 역할"
+      ],
+      "candidate_covered_facts": [
+        "DNA와 단백질의 관계 및 역할"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline already contains the exact answer span about DNA and protein relationship and roles.",
+      "baseline_present_quotes": [
+        "DNA와 단백질은 생물체 내에서 중요한 역할을 담당하는 분자들입니다. DNA는 유전 정보를 저장하고 전달하는 역할을 담당하며, 단백질은 다양한 생화학적 기능을 수행합니다. 이 두 분자는 서로 긴밀하게 상호작용하여 생물체의 생존과 발달에 기여합니다."
+      ],
+      "candidate_exact_quotes": [
+        "디엔에이 결합 단백질은 DNA와 상호작용하여 유전자 발현을 조절하는 역할을 합니다."
+      ]
+    },
+    {
+      "eval_id": "263",
+      "query": "dna 조각들 서 결합되도록 돕 것",
+      "baseline_top1": "1a277fb7-4cd7-409b-9f28-d83cef78ca10",
+      "candidate_top1": "c8fd4323-9af9-4a0d-ab53-e563c71f9795",
+      "candidate_topk": [
+        "c8fd4323-9af9-4a0d-ab53-e563c71f9795",
+        "1a277fb7-4cd7-409b-9f28-d83cef78ca10",
+        "bf529b60-26c1-4400-985d-984229ca7c77"
+      ],
+      "support": 11,
+      "sources": [
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "1a277fb7-4cd7-409b-9f28-d83cef78ca10",
+        "c8fd4323-9af9-4a0d-ab53-e563c71f9795",
+        "bf529b60-26c1-4400-985d-984229ca7c77"
+      ],
+      "base_score": 5,
+      "score": -3,
+      "accepted": false,
+      "reason": "support=11; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=1; winner=baseline; risk=low; baseline_present_quote; topk_guard_failed=answer_span_primary_failed; baseline에 핵심 답변 구절이 이미 포함되어 있음",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "제한 효소에 의해 생성된 '점착성 말단'이 DNA 조각들을 결합하도록 돕는다"
+      ],
+      "baseline_missing_facts": [
+        "제한 효소에 의해 생성된 '점착성 말단'이 DNA 조각들을 결합하도록 돕는다"
+      ],
+      "candidate_covered_facts": [
+        "제한 효소에 의해 생성된 '점착성 말단'이 DNA 조각들을 결합하도록 돕는다"
+      ],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "low",
+      "answer_span_reason": "baseline에 핵심 답변 구절이 이미 포함되어 있음",
+      "baseline_present_quotes": [
+        "제한 효소에 의해 생성된 '점착성 말단'은 다른 소스에서의 디엔에이 조각들이 서로 혼성화되고 결합되도록 함."
+      ],
+      "candidate_exact_quotes": [
+        "디엔에이 리가아제는 정상적인 디엔에이 복제에서 조각을 결합하는 효소입니다."
+      ]
+    },
+    {
+      "eval_id": "288",
+      "query": "건강한 입 가지고 있는지 판단할 수 있 방법",
+      "baseline_top1": "9954d917-170e-477f-84c9-6d1d42927eed",
+      "candidate_top1": "24991d92-c2dd-4cee-99a6-aa922b0f2eba",
+      "candidate_topk": [
+        "24991d92-c2dd-4cee-99a6-aa922b0f2eba",
+        "9954d917-170e-477f-84c9-6d1d42927eed",
+        "ae26be1f-76b3-4ffb-962f-e5f573055824"
+      ],
+      "support": 28,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w075_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w080_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w084_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c15_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c25_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c35_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w085_c50_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w086_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_rerank_w090_c30_20260521.jsonl",
+        "submissions/e5_large_semantic_targeted_eval68_106_20260522.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/granite4_1_8b_ollama_rerank_w050_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "9954d917-170e-477f-84c9-6d1d42927eed",
+        "24991d92-c2dd-4cee-99a6-aa922b0f2eba",
+        "ae26be1f-76b3-4ffb-962f-e5f573055824"
+      ],
+      "base_score": 5,
+      "score": -5,
+      "accepted": false,
+      "reason": "support=28; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=0; winner=tie; risk=high; candidate_missing_exact_quote; topk_guard_failed=answer_span_primary_failed; 두 문서 모두 건강한 입의 판단 방법에 대한 직접적인 정보를 제공하지 않음",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "건강한 입 가지고 있는지 판단할 수 있는 방법"
+      ],
+      "baseline_missing_facts": [
+        "건강한 입 가지고 있는지 판단할 수 있는 방법"
+      ],
+      "candidate_covered_facts": [
+        "건강한 입 가지고 있는지 판단할 수 있는 방법"
+      ],
+      "answer_span_winner": "tie",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "high",
+      "answer_span_reason": "두 문서 모두 건강한 입의 판단 방법에 대한 직접적인 정보를 제공하지 않음",
+      "baseline_present_quotes": [],
+      "candidate_exact_quotes": []
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "87d1eda6-bfc4-49bb-9e35-5ee8e772726f",
+      "candidate_topk": [
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "706d6077-1474-431e-8d13-6ec573ef0419"
+      ],
+      "support": 19,
+      "sources": [
+        "submissions/dense_submission.jsonl",
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/ollama_submission.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f",
+        "706d6077-1474-431e-8d13-6ec573ef0419"
+      ],
+      "base_score": 5,
+      "score": -6,
+      "accepted": false,
+      "reason": "support=19; baseline_rank=2; required_answer_facts=1; baseline_missing_facts=1; candidate_covered_facts=1; candidate_exact_quotes=0; winner=tie; risk=high; candidate_missing_exact_quote; topk_guard_failed=answer_span_primary_failed; 두 문서 모두 성대 주름의 긴장 여부를 확인하는 방법에 대한 정보를 제공하지 않음",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [
+        "성대 주름이 긴장되었는지 확인하는 방법"
+      ],
+      "baseline_missing_facts": [
+        "성대 주름이 긴장되었는지 확인하는 방법"
+      ],
+      "candidate_covered_facts": [
+        "성대 주름이 긴장되었는지 확인하는 방법"
+      ],
+      "answer_span_winner": "tie",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "high",
+      "answer_span_reason": "두 문서 모두 성대 주름의 긴장 여부를 확인하는 방법에 대한 정보를 제공하지 않음",
+      "baseline_present_quotes": [],
+      "candidate_exact_quotes": []
+    },
+    {
+      "eval_id": "256",
+      "query": "체질량 지수 한계",
+      "baseline_top1": "f1a89f8a-7510-4400-8fbe-20bcb0a2adc3",
+      "candidate_top1": "ac413814-d09e-478e-8c01-4f1963a669d8",
+      "candidate_topk": [
+        "ac413814-d09e-478e-8c01-4f1963a669d8",
+        "f1a89f8a-7510-4400-8fbe-20bcb0a2adc3",
+        "10668a9a-0c49-4078-89ae-cade2913f3e5"
+      ],
+      "support": 19,
+      "sources": [
+        "submissions/e5_large_dedup_casual_20260520.jsonl",
+        "submissions/e5_large_dedup_casual_20260520_v2.jsonl",
+        "submissions/e5_large_preproc.jsonl",
+        "submissions/e5_large_rrf_balanced_20260521.jsonl",
+        "submissions/e5_large_rrf_strict_20260521.jsonl",
+        "submissions/e5_large_score_balanced_20260521.jsonl",
+        "submissions/e5_large_score_strict_typos_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_20260521.jsonl",
+        "submissions/e5_large_strict_science_aliases_trojan_targeted_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_expanded_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v2_safe_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v3_eval88_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v4_eval209_only_20260521.jsonl",
+        "submissions/e5_large_strict_targeted_v5_eval98_only_20260521.jsonl",
+        "submissions/gemma4_e4b_e5_w050_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w055_c30_20260522.jsonl",
+        "submissions/gemma4_e4b_e5_w060_c30_20260522.jsonl",
+        "submissions/submit_e5_large_dedup_casual_20260521.jsonl"
+      ],
+      "baseline_rank": 2,
+      "baseline_topk": [
+        "f1a89f8a-7510-4400-8fbe-20bcb0a2adc3",
+        "ac413814-d09e-478e-8c01-4f1963a669d8",
+        "10668a9a-0c49-4078-89ae-cade2913f3e5"
+      ],
+      "base_score": 5,
+      "score": -14,
+      "accepted": false,
+      "reason": "support=19; baseline_rank=2; required_answer_facts=0; baseline_missing_facts=0; candidate_covered_facts=0; candidate_exact_quotes=0; winner=baseline; risk=high; baseline_has_key_span; candidate_missing_exact_quote; topk_guard_failed=answer_span_primary_failed; malformed response",
+      "judge_winner": null,
+      "judge_docid": null,
+      "judge_confidence": null,
+      "judge_reason": null,
+      "baseline_is_wrong": null,
+      "candidate_direct_answer": null,
+      "candidate_offtopic": null,
+      "submit_risk": null,
+      "required_answer_facts": [],
+      "baseline_missing_facts": [],
+      "candidate_covered_facts": [],
+      "answer_span_winner": "baseline",
+      "answer_span_docid": "",
+      "answer_span_confidence": 0.0,
+      "answer_span_risk": "high",
+      "answer_span_reason": "malformed response",
+      "baseline_present_quotes": null,
+      "candidate_exact_quotes": null
+    }
+  ],
+  "accepted": []
+}

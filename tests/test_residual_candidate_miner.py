@@ -348,6 +348,8 @@ class ResidualCandidateMinerTests(TestCase):
                 confidence=0.94,
                 submit_risk="low",
                 reason="candidate gives concentration procedure",
+                baseline_present_quotes=[],
+                candidate_exact_quotes=["add acid to water"],
             ),
             topk_guard_pass=True,
             topk_guard_reason="candidate_beats_current_topk",
@@ -389,3 +391,75 @@ class ResidualCandidateMinerTests(TestCase):
 
         self.assertFalse(review.accepted)
         self.assertIn("topk_guard_failed=lost_to=rank2-a", review.reason)
+
+    def test_answer_span_review_requires_absent_baseline_and_exact_candidate_quote(self) -> None:
+        miner = _load_module()
+        candidate = miner.ResidualCandidate(
+            "312",
+            "건강한 입 판단 방법",
+            "old-a",
+            "new-a",
+            ["new-a", "old-a"],
+            18,
+            [],
+            2,
+            baseline_topk=["old-a", "new-a"],
+        )
+
+        baseline_contains_answer = miner.score_answer_span_judgement(
+            candidate,
+            miner.AnswerSpanJudgement(
+                required_answer_facts=["healthy mouth marker"],
+                baseline_missing_facts=["healthy mouth marker"],
+                candidate_covered_facts=["healthy mouth marker"],
+                winner="candidate",
+                docid="new-a",
+                confidence=0.9,
+                submit_risk="low",
+                reason="candidate gives method",
+                baseline_present_quotes=["pink gum color shows healthy state"],
+                candidate_exact_quotes=["check gum color"],
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+        candidate_lacks_quote = miner.score_answer_span_judgement(
+            candidate,
+            miner.AnswerSpanJudgement(
+                required_answer_facts=["healthy mouth marker"],
+                baseline_missing_facts=["healthy mouth marker"],
+                candidate_covered_facts=["healthy mouth marker"],
+                winner="candidate",
+                docid="new-a",
+                confidence=0.9,
+                submit_risk="low",
+                reason="candidate gives method",
+                baseline_present_quotes=[],
+                candidate_exact_quotes=[],
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+        strict_pass = miner.score_answer_span_judgement(
+            candidate,
+            miner.AnswerSpanJudgement(
+                required_answer_facts=["healthy mouth marker"],
+                baseline_missing_facts=["healthy mouth marker"],
+                candidate_covered_facts=["healthy mouth marker"],
+                winner="candidate",
+                docid="new-a",
+                confidence=0.9,
+                submit_risk="low",
+                reason="candidate gives method",
+                baseline_present_quotes=[],
+                candidate_exact_quotes=["check gum color"],
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+
+        self.assertFalse(baseline_contains_answer.accepted)
+        self.assertIn("baseline_present_quote", baseline_contains_answer.reason)
+        self.assertFalse(candidate_lacks_quote.accepted)
+        self.assertIn("candidate_missing_exact_quote", candidate_lacks_quote.reason)
+        self.assertTrue(strict_pass.accepted)

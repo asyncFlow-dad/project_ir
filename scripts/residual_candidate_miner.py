@@ -54,6 +54,8 @@ class AnswerSpanJudgement:
     confidence: float
     submit_risk: str
     reason: str
+    baseline_present_quotes: list[str] | None = None
+    candidate_exact_quotes: list[str] | None = None
 
 
 def collect_residual_candidates(
@@ -302,6 +304,10 @@ def score_answer_span_judgement(
         score -= 5
     if not topk_guard_pass:
         score -= 5
+    if judgement.baseline_present_quotes:
+        score -= 6
+    if not judgement.candidate_exact_quotes:
+        score -= 4
 
     reason_parts = [
         f"support={candidate.support}",
@@ -309,11 +315,16 @@ def score_answer_span_judgement(
         f"required_answer_facts={len(judgement.required_answer_facts)}",
         f"baseline_missing_facts={len(judgement.baseline_missing_facts)}",
         f"candidate_covered_facts={len(judgement.candidate_covered_facts)}",
+        f"candidate_exact_quotes={len(judgement.candidate_exact_quotes or [])}",
         f"winner={judgement.winner}",
         f"risk={judgement.submit_risk}",
     ]
     if not judgement.baseline_missing_facts:
         reason_parts.append("baseline_has_key_span")
+    if judgement.baseline_present_quotes:
+        reason_parts.append("baseline_present_quote")
+    if not judgement.candidate_exact_quotes:
+        reason_parts.append("candidate_missing_exact_quote")
     if not topk_guard_pass:
         reason_parts.append(f"topk_guard_failed={topk_guard_reason}")
     if judgement.reason:
@@ -326,6 +337,8 @@ def score_answer_span_judgement(
         and bool(judgement.required_answer_facts)
         and bool(judgement.baseline_missing_facts)
         and bool(judgement.candidate_covered_facts)
+        and not judgement.baseline_present_quotes
+        and bool(judgement.candidate_exact_quotes)
         and judgement.submit_risk != "high"
         and topk_guard_pass
     )
@@ -435,11 +448,14 @@ def judge_answer_span_candidate(
         "Strict Korean IR answer-span judge. Submit budget is scarce. "
         "Extract 1-3 required answer facts for the query. "
         "Choose candidate only when baseline misses at least one required fact AND candidate directly covers it. "
+        "Return exact candidate quote(s) proving coverage. "
+        "Return baseline_present_quotes when baseline has any exact quote proving the same required fact; then choose baseline. "
         "If baseline already contains the key answer span, choose baseline even when candidate is broader or clearer. "
         "Reject adjacent topics, generic explanations, and keyword-only overlap. "
         "Output JSON only: "
         '{"required_answer_facts":["fact"],"baseline_missing_facts":["fact"],'
-        '"candidate_covered_facts":["fact"],"winner":"baseline|candidate|tie",'
+        '"candidate_covered_facts":["fact"],"baseline_present_quotes":["exact baseline quote"],'
+        '"candidate_exact_quotes":["exact candidate quote"],"winner":"baseline|candidate|tie",'
         '"docid":"candidate-docid-or-empty","confidence":0.0,'
         '"submit_risk":"low|medium|high","reason":"short Korean evidence"}\n\n'
         f"query={query}\n"
@@ -465,6 +481,8 @@ def judge_answer_span_candidate(
         confidence=float(payload.get("confidence") or 0.0),
         submit_risk=str(payload.get("submit_risk") or "high"),
         reason=str(payload.get("reason") or ""),
+        baseline_present_quotes=_string_list(payload.get("baseline_present_quotes")),
+        candidate_exact_quotes=_string_list(payload.get("candidate_exact_quotes")),
     )
 
 
@@ -743,6 +761,12 @@ def _review_payload(review: ResidualReview) -> dict[str, Any]:
         "answer_span_confidence": answer_span_judgement.confidence if answer_span_judgement else None,
         "answer_span_risk": answer_span_judgement.submit_risk if answer_span_judgement else None,
         "answer_span_reason": answer_span_judgement.reason if answer_span_judgement else None,
+        "baseline_present_quotes": (
+            answer_span_judgement.baseline_present_quotes if answer_span_judgement else None
+        ),
+        "candidate_exact_quotes": (
+            answer_span_judgement.candidate_exact_quotes if answer_span_judgement else None
+        ),
     }
 
 
