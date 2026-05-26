@@ -941,3 +941,24 @@
   - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
   - Lock out eval `34`; broader/more detailed candidate hurt public score.
   - Do not submit more “more detailed but same topic” promotions today.
+
+## Fault Candidate Run - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Current best public MAP/MRR: `0.9561` / `0.9591`
+- Submission budget remaining when planned: `4`
+- Remote audits:
+  - `submissions/fault_candidate_audit_20260526.json`
+  - `submissions/fault_candidate_lenient_audit_20260526.json`
+- Gate change:
+  - Accept only `off_topic`, `wrong_entity`, `wrong_formula`, or `contradiction` baseline faults.
+  - Reject `missing_answer`, broader/detail-richer candidates, and candidates without exact evidence quote.
+  - Keep one-row outputs only.
+- Result:
+  - Accepted candidates: `0`
+  - No submission file recommended.
+- Decision:
+  - Do not spend remaining daily submissions on this run.
+  - High-score rejected rows remain risky: `241` has arithmetic contradiction, `85` has conflicting formula interpretations, `31` is not clearly better than baseline for generic sound propagation.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.

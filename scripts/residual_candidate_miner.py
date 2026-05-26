@@ -58,6 +58,19 @@ class AnswerSpanJudgement:
     candidate_exact_quotes: list[str] | None = None
 
 
+@dataclass(frozen=True)
+class FaultJudgement:
+    baseline_failure_type: str
+    baseline_failure_quote: str
+    candidate_exact_quote: str
+    candidate_is_broader: bool
+    winner: str
+    docid: str
+    confidence: float
+    submit_risk: str
+    reason: str
+
+
 def collect_residual_candidates(
     *,
     baseline_path: Path,
@@ -215,6 +228,7 @@ def review_candidates(
                 model=model,
                 host=host,
                 api_key=api_key,
+                allow_empty_candidate_docid=True,
             )
         reviews.append(
             score_with_judgement(
@@ -351,6 +365,71 @@ def score_answer_span_judgement(
     )
 
 
+def score_fault_judgement(
+    candidate: ResidualCandidate,
+    judgement: FaultJudgement,
+    *,
+    topk_guard_pass: bool,
+    topk_guard_reason: str,
+    accept_threshold: int = 7,
+) -> ResidualReview:
+    strong_failure_types = {"off_topic", "wrong_entity", "wrong_formula", "contradiction"}
+    score = base_score(candidate)
+    score += min(candidate.support // 10, 3)
+    if judgement.baseline_failure_type in strong_failure_types:
+        score += 4
+    else:
+        score -= 4
+    if judgement.winner == "candidate" and judgement.docid == candidate.candidate_top1:
+        score += 2
+    if judgement.candidate_exact_quote:
+        score += 2
+    else:
+        score -= 5
+    if judgement.candidate_is_broader:
+        score -= 5
+    if judgement.submit_risk == "high":
+        score -= 5
+    if not topk_guard_pass:
+        score -= 5
+
+    reason_parts = [
+        f"support={candidate.support}",
+        f"baseline_rank={candidate.baseline_rank}",
+        f"baseline_failure_type={judgement.baseline_failure_type}",
+        f"winner={judgement.winner}",
+        f"risk={judgement.submit_risk}",
+    ]
+    if judgement.baseline_failure_type not in strong_failure_types:
+        reason_parts.append(f"weak_failure_type={judgement.baseline_failure_type}")
+    if not judgement.candidate_exact_quote:
+        reason_parts.append("candidate_missing_exact_quote")
+    if judgement.candidate_is_broader:
+        reason_parts.append("candidate_is_broader")
+    if not topk_guard_pass:
+        reason_parts.append(f"topk_guard_failed={topk_guard_reason}")
+    if judgement.reason:
+        reason_parts.append(judgement.reason)
+
+    accepted = (
+        score >= accept_threshold
+        and judgement.baseline_failure_type in strong_failure_types
+        and bool(judgement.baseline_failure_quote)
+        and bool(judgement.candidate_exact_quote)
+        and not judgement.candidate_is_broader
+        and judgement.winner == "candidate"
+        and judgement.docid == candidate.candidate_top1
+        and judgement.submit_risk != "high"
+        and topk_guard_pass
+    )
+    return ResidualReview(
+        candidate=candidate,
+        score=score,
+        accepted=accepted,
+        reason="; ".join(reason_parts),
+    )
+
+
 def review_highrisk_candidates(
     *,
     candidates: Iterable[ResidualCandidate],
@@ -430,6 +509,111 @@ def review_answer_span_candidates(
         if sum(1 for review in reviews if review.accepted) >= limit:
             break
     return sorted(reviews, key=lambda item: (-item.score, _sort_eval_id(item.candidate.eval_id)))
+
+
+def review_fault_candidates(
+    *,
+    candidates: Iterable[ResidualCandidate],
+    corpus_path: Path,
+    provider: str,
+    model: str,
+    host: str,
+    api_key: str | None,
+    accept_threshold: int,
+    limit: int,
+) -> list[ResidualReview]:
+    doc_texts = _load_doc_texts(corpus_path)
+    reviews: list[ResidualReview] = []
+    for candidate in candidates:
+        judgement = judge_fault_candidate(
+            query=candidate.query,
+            baseline_docid=candidate.baseline_top1,
+            baseline_text=doc_texts.get(candidate.baseline_top1, ""),
+            candidate_docid=candidate.candidate_top1,
+            candidate_text=doc_texts.get(candidate.candidate_top1, ""),
+            model=model,
+            host=host,
+            provider=provider,
+            api_key=api_key,
+        )
+        topk_guard_pass = False
+        topk_guard_reason = "fault_primary_failed"
+        if _fault_can_pass_primary(candidate, judgement, accept_threshold):
+            topk_guard_pass, topk_guard_reason = _passes_topk_guard(
+                candidate=candidate,
+                doc_texts=doc_texts,
+                provider=provider,
+                model=model,
+                host=host,
+                api_key=api_key,
+            )
+        reviews.append(
+            score_fault_judgement(
+                candidate,
+                judgement,
+                topk_guard_pass=topk_guard_pass,
+                topk_guard_reason=topk_guard_reason,
+                accept_threshold=accept_threshold,
+            )
+        )
+        if sum(1 for review in reviews if review.accepted) >= limit:
+            break
+    return sorted(reviews, key=lambda item: (-item.score, _sort_eval_id(item.candidate.eval_id)))
+
+
+def judge_fault_candidate(
+    *,
+    query: str,
+    baseline_docid: str,
+    baseline_text: str,
+    candidate_docid: str,
+    candidate_text: str,
+    model: str,
+    host: str,
+    provider: str,
+    api_key: str | None,
+) -> FaultJudgement:
+    prompt = (
+        "Strict Korean IR baseline-fault judge. Submit budget is very scarce. "
+        "Choose candidate only when baseline top1 has a clear fault: off_topic, wrong_entity, wrong_formula, or contradiction. "
+        "Do not choose candidate for missing_answer, broader detail, same topic, better wording, or more complete explanation. "
+        "candidate_is_broader must be true when candidate is merely broader or more detailed than baseline. "
+        "Return exact baseline failure quote and exact candidate quote. "
+        "Output JSON only: "
+        '{"baseline_failure_type":"off_topic|wrong_entity|wrong_formula|contradiction|missing_answer|none",'
+        '"baseline_failure_quote":"exact baseline quote",'
+        '"candidate_exact_quote":"exact candidate quote",'
+        '"candidate_is_broader":false,'
+        '"winner":"baseline|candidate|tie","docid":"candidate-docid-or-empty",'
+        '"confidence":0.0,"submit_risk":"low|medium|high","reason":"short Korean evidence"}\n\n'
+        f"query={query}\n"
+        f"baseline={{\"docid\":{json.dumps(baseline_docid, ensure_ascii=False)},"
+        f"\"content\":{json.dumps(baseline_text[:1500], ensure_ascii=False)}}}\n"
+        f"candidate={{\"docid\":{json.dumps(candidate_docid, ensure_ascii=False)},"
+        f"\"content\":{json.dumps(candidate_text[:1500], ensure_ascii=False)}}}"
+    )
+    content = _chat(provider=provider, host=host, model=model, prompt=prompt, api_key=api_key)
+    try:
+        payload = _parse_json_object(content)
+    except (ValueError, json.JSONDecodeError):
+        return FaultJudgement("none", "", "", True, "baseline", "", 0.0, "high", "malformed response")
+    failure_type = str(payload.get("baseline_failure_type") or "none")
+    if failure_type not in {"off_topic", "wrong_entity", "wrong_formula", "contradiction", "missing_answer", "none"}:
+        failure_type = "none"
+    winner = str(payload.get("winner") or "")
+    if winner not in {"baseline", "candidate", "tie"}:
+        winner = "baseline"
+    return FaultJudgement(
+        baseline_failure_type=failure_type,
+        baseline_failure_quote=str(payload.get("baseline_failure_quote") or ""),
+        candidate_exact_quote=str(payload.get("candidate_exact_quote") or ""),
+        candidate_is_broader=_bool(payload.get("candidate_is_broader")),
+        winner=winner,
+        docid=str(payload.get("docid") or ""),
+        confidence=float(payload.get("confidence") or 0.0),
+        submit_risk=str(payload.get("submit_risk") or "high"),
+        reason=str(payload.get("reason") or ""),
+    )
 
 
 def judge_answer_span_candidate(
@@ -540,8 +724,10 @@ def main() -> int:
     parser.add_argument("--disable-topk-guard", action="store_true")
     parser.add_argument("--highrisk-rank-mode", action="store_true")
     parser.add_argument("--answer-span-mode", action="store_true")
+    parser.add_argument("--fault-mode", action="store_true")
     parser.add_argument("--min-highrisk-support", type=int, default=10)
     parser.add_argument("--min-answer-span-support", type=int, default=10)
+    parser.add_argument("--min-fault-support", type=int, default=2)
     parser.add_argument("--audit-output", type=Path, default=None)
     parser.add_argument("--single-output-dir", type=Path, default=None)
     parser.add_argument("--name-prefix", default="residual_eval246_base")
@@ -555,7 +741,23 @@ def main() -> int:
         public_results_path=args.public_results,
         source_paths=args.source,
     )
-    if args.answer_span_mode:
+    if args.fault_mode:
+        review_candidates_input = select_highrisk_rank_promotions(
+            candidates,
+            min_support=args.min_fault_support,
+            limit=args.review_limit,
+        )
+        reviews = review_fault_candidates(
+            candidates=review_candidates_input,
+            corpus_path=args.corpus,
+            provider=args.provider,
+            model=args.model,
+            host=args.host or default_host(args.provider),
+            api_key=args.api_key or _upstage_api_key(),
+            accept_threshold=args.accept_threshold,
+            limit=args.accepted_limit,
+        )
+    elif args.answer_span_mode:
         review_candidates_input = select_highrisk_rank_promotions(
             candidates,
             min_support=args.min_answer_span_support,
@@ -655,6 +857,20 @@ def _answer_span_can_pass_primary(
     ).accepted
 
 
+def _fault_can_pass_primary(
+    candidate: ResidualCandidate,
+    judgement: FaultJudgement,
+    accept_threshold: int,
+) -> bool:
+    return score_fault_judgement(
+        candidate,
+        judgement,
+        topk_guard_pass=True,
+        topk_guard_reason="candidate_beats_current_topk",
+        accept_threshold=accept_threshold,
+    ).accepted
+
+
 def _passes_topk_guard(
     *,
     candidate: ResidualCandidate,
@@ -663,6 +879,7 @@ def _passes_topk_guard(
     model: str,
     host: str,
     api_key: str | None,
+    allow_empty_candidate_docid: bool = False,
 ) -> tuple[bool, str]:
     baseline_topk = candidate.baseline_topk or [candidate.baseline_top1]
     for docid in baseline_topk[:3]:
@@ -679,7 +896,10 @@ def _passes_topk_guard(
             provider=provider,
             api_key=api_key,
         )
-        if judgement.winner != "candidate" or judgement.docid != candidate.candidate_top1:
+        docid_matches = judgement.docid == candidate.candidate_top1 or (
+            allow_empty_candidate_docid and judgement.winner == "candidate" and not judgement.docid
+        )
+        if judgement.winner != "candidate" or not docid_matches:
             return False, f"lost_to={docid}; winner={judgement.winner}; reason={judgement.reason}"
     return True, "candidate_beats_current_topk"
 
@@ -796,6 +1016,14 @@ def _string_list(value: object) -> list[str]:
     if not isinstance(value, list):
         return []
     return [str(item).strip() for item in value if str(item).strip()]
+
+
+def _bool(value: object) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        return value.strip().lower() in {"true", "1", "yes"}
+    return bool(value)
 
 
 def _write_rows(path: Path, rows: list[dict[str, Any]]) -> None:

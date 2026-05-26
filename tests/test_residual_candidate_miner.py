@@ -463,3 +463,107 @@ class ResidualCandidateMinerTests(TestCase):
         self.assertFalse(candidate_lacks_quote.accepted)
         self.assertIn("candidate_missing_exact_quote", candidate_lacks_quote.reason)
         self.assertTrue(strict_pass.accepted)
+
+    def test_fault_review_accepts_only_clear_baseline_fault_with_exact_candidate_quote(self) -> None:
+        miner = _load_module()
+        candidate = miner.ResidualCandidate(
+            "313",
+            "저항 2 배 증가하면 전력 어떻게 되나",
+            "old-a",
+            "new-a",
+            ["new-a", "old-a"],
+            11,
+            [],
+            2,
+            baseline_topk=["old-a", "new-a"],
+        )
+
+        accepted = miner.score_fault_judgement(
+            candidate,
+            miner.FaultJudgement(
+                baseline_failure_type="wrong_formula",
+                baseline_failure_quote="전력은 절반이 됩니다",
+                candidate_exact_quote="전력은 1/4로 감소한다",
+                candidate_is_broader=False,
+                winner="candidate",
+                docid="new-a",
+                confidence=0.93,
+                submit_risk="low",
+                reason="baseline contradicts constant-voltage formula",
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+        missing_only = miner.score_fault_judgement(
+            candidate,
+            miner.FaultJudgement(
+                baseline_failure_type="missing_answer",
+                baseline_failure_quote="",
+                candidate_exact_quote="전력은 1/4로 감소한다",
+                candidate_is_broader=False,
+                winner="candidate",
+                docid="new-a",
+                confidence=0.93,
+                submit_risk="low",
+                reason="baseline less detailed",
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+        no_quote = miner.score_fault_judgement(
+            candidate,
+            miner.FaultJudgement(
+                baseline_failure_type="wrong_formula",
+                baseline_failure_quote="전력은 절반이 됩니다",
+                candidate_exact_quote="",
+                candidate_is_broader=False,
+                winner="candidate",
+                docid="new-a",
+                confidence=0.93,
+                submit_risk="low",
+                reason="no candidate evidence",
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+
+        self.assertTrue(accepted.accepted)
+        self.assertIn("baseline_failure_type=wrong_formula", accepted.reason)
+        self.assertFalse(missing_only.accepted)
+        self.assertIn("weak_failure_type=missing_answer", missing_only.reason)
+        self.assertFalse(no_quote.accepted)
+        self.assertIn("candidate_missing_exact_quote", no_quote.reason)
+
+    def test_fault_topk_guard_allows_blank_docid_when_pairwise_winner_is_candidate(self) -> None:
+        miner = _load_module()
+        candidate = miner.ResidualCandidate(
+            eval_id="31",
+            query="음파 어떻게 이동하는",
+            baseline_top1="old-a",
+            candidate_top1="new-a",
+            candidate_topk=["new-a", "old-a"],
+            support=11,
+            sources=[],
+            baseline_rank=2,
+            baseline_topk=["old-a", "new-a"],
+        )
+        with patch.object(miner, "judge_pairwise_candidate") as pairwise_judge:
+            pairwise_judge.return_value = miner.Judgement(
+                winner="candidate",
+                docid="",
+                confidence=0.9,
+                reason="candidate exact quote",
+            )
+
+            passed, reason = miner._passes_topk_guard(
+                candidate=candidate,
+                doc_texts={"old-a": "철", "new-a": "암석"},
+                provider="upstage",
+                model="solar-pro3",
+                host="https://api.upstage.ai/v1",
+                api_key="secret",
+                allow_empty_candidate_docid=True,
+            )
+
+        self.assertTrue(passed)
+        self.assertEqual(reason, "candidate_beats_current_topk")
