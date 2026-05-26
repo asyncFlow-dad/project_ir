@@ -289,3 +289,103 @@ class ResidualCandidateMinerTests(TestCase):
 
         self.assertTrue(review.accepted)
         self.assertGreaterEqual(review.score, 7)
+
+    def test_answer_span_review_rejects_when_baseline_has_required_facts(self) -> None:
+        miner = _load_module()
+        candidate = miner.ResidualCandidate(
+            "207",
+            "곤충 눈 구조",
+            "old-a",
+            "new-a",
+            ["new-a", "old-a"],
+            19,
+            [],
+            2,
+            baseline_topk=["old-a", "new-a", "rank3-a"],
+        )
+
+        review = miner.score_answer_span_judgement(
+            candidate,
+            miner.AnswerSpanJudgement(
+                required_answer_facts=["compound eyes", "many small visual units"],
+                baseline_missing_facts=[],
+                candidate_covered_facts=["compound eyes", "many small visual units"],
+                winner="candidate",
+                docid="new-a",
+                confidence=0.91,
+                submit_risk="low",
+                reason="baseline already contains compound-eye facts",
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+
+        self.assertFalse(review.accepted)
+        self.assertIn("baseline_has_key_span", review.reason)
+
+    def test_answer_span_review_accepts_missing_baseline_and_candidate_beats_topk(self) -> None:
+        miner = _load_module()
+        candidate = miner.ResidualCandidate(
+            "310",
+            "특정 농도 황산 sample 만드 방법",
+            "old-a",
+            "new-a",
+            ["new-a", "old-a", "rank2-a"],
+            24,
+            [],
+            3,
+            baseline_topk=["old-a", "rank2-a", "new-a"],
+        )
+
+        review = miner.score_answer_span_judgement(
+            candidate,
+            miner.AnswerSpanJudgement(
+                required_answer_facts=["dilution calculation", "add acid to water"],
+                baseline_missing_facts=["dilution calculation"],
+                candidate_covered_facts=["dilution calculation", "add acid to water"],
+                winner="candidate",
+                docid="new-a",
+                confidence=0.94,
+                submit_risk="low",
+                reason="candidate gives concentration procedure",
+            ),
+            topk_guard_pass=True,
+            topk_guard_reason="candidate_beats_current_topk",
+        )
+
+        self.assertTrue(review.accepted)
+        self.assertIn("baseline_missing_facts=1", review.reason)
+        self.assertIn("candidate_covered_facts=2", review.reason)
+
+    def test_answer_span_review_rejects_when_candidate_loses_topk_guard(self) -> None:
+        miner = _load_module()
+        candidate = miner.ResidualCandidate(
+            "311",
+            "해구 생겨나 원리",
+            "old-a",
+            "new-a",
+            ["new-a", "old-a", "rank2-a"],
+            30,
+            [],
+            3,
+            baseline_topk=["old-a", "rank2-a", "new-a"],
+        )
+
+        review = miner.score_answer_span_judgement(
+            candidate,
+            miner.AnswerSpanJudgement(
+                required_answer_facts=["subduction"],
+                baseline_missing_facts=["subduction"],
+                candidate_covered_facts=["subduction"],
+                winner="candidate",
+                docid="new-a",
+                confidence=0.9,
+                submit_risk="low",
+                reason="candidate mentions subduction",
+            ),
+            topk_guard_pass=False,
+            topk_guard_reason="lost_to=rank2-a",
+        )
+
+        self.assertFalse(review.accepted)
+        self.assertIn("topk_guard_failed=lost_to=rank2-a", review.reason)

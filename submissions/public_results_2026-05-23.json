@@ -299,5 +299,25 @@
     "mrr": 0.9591,
     "submission": "submissions/highrisk_rank_single_remote2_20260526/highrisk_rank_eval309_base_round2_eval207.jsonl",
     "model": "solar-pro3"
+  },
+  {
+    "eval_id": "7",
+    "outcome": "manual_rejected",
+    "reason": "answer-span candidate nearly duplicates baseline; baseline already directly answers light speed in nonmagnetic dielectric"
+  },
+  {
+    "eval_id": "279",
+    "outcome": "manual_rejected",
+    "reason": "baseline already directly links literacy to social development and uses newer 2015 statistic; candidate uses older 1950 statistic"
+  },
+  {
+    "eval_id": "250",
+    "outcome": "manual_rejected",
+    "reason": "answer-span candidate adds delta/river-mouth noise; baseline already directly explains canyon erosion by river"
+  },
+  {
+    "eval_id": "303",
+    "outcome": "manual_rejected",
+    "reason": "baseline already directly explains camouflage survival; candidate contains lower-quality examples and no clear answer-span gain"
   }
 ]

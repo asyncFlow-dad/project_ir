@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.ollama_candidate_judge import (
     Judgement,
+    _chat,
     judge_direct_answer_candidate,
     judge_pairwise_candidate,
     promoted_topk,
@@ -40,6 +41,19 @@ class ResidualReview:
     accepted: bool
     reason: str
     judgement: Judgement | None = None
+    answer_span_judgement: "AnswerSpanJudgement | None" = None
+
+
+@dataclass(frozen=True)
+class AnswerSpanJudgement:
+    required_answer_facts: list[str]
+    baseline_missing_facts: list[str]
+    candidate_covered_facts: list[str]
+    winner: str
+    docid: str
+    confidence: float
+    submit_risk: str
+    reason: str
 
 
 def collect_residual_candidates(
@@ -266,6 +280,64 @@ def score_highrisk_judgement(
     )
 
 
+def score_answer_span_judgement(
+    candidate: ResidualCandidate,
+    judgement: AnswerSpanJudgement,
+    *,
+    topk_guard_pass: bool,
+    topk_guard_reason: str,
+    accept_threshold: int = 7,
+) -> ResidualReview:
+    score = base_score(candidate)
+    score += min(candidate.support // 10, 3)
+    if judgement.winner == "candidate" and judgement.docid == candidate.candidate_top1:
+        score += 2
+    if judgement.baseline_missing_facts:
+        score += min(len(judgement.baseline_missing_facts), 3)
+    if judgement.candidate_covered_facts:
+        score += min(len(judgement.candidate_covered_facts), 3)
+    if not judgement.baseline_missing_facts:
+        score -= 6
+    if judgement.submit_risk == "high":
+        score -= 5
+    if not topk_guard_pass:
+        score -= 5
+
+    reason_parts = [
+        f"support={candidate.support}",
+        f"baseline_rank={candidate.baseline_rank}",
+        f"required_answer_facts={len(judgement.required_answer_facts)}",
+        f"baseline_missing_facts={len(judgement.baseline_missing_facts)}",
+        f"candidate_covered_facts={len(judgement.candidate_covered_facts)}",
+        f"winner={judgement.winner}",
+        f"risk={judgement.submit_risk}",
+    ]
+    if not judgement.baseline_missing_facts:
+        reason_parts.append("baseline_has_key_span")
+    if not topk_guard_pass:
+        reason_parts.append(f"topk_guard_failed={topk_guard_reason}")
+    if judgement.reason:
+        reason_parts.append(judgement.reason)
+
+    accepted = (
+        score >= accept_threshold
+        and judgement.winner == "candidate"
+        and judgement.docid == candidate.candidate_top1
+        and bool(judgement.required_answer_facts)
+        and bool(judgement.baseline_missing_facts)
+        and bool(judgement.candidate_covered_facts)
+        and judgement.submit_risk != "high"
+        and topk_guard_pass
+    )
+    return ResidualReview(
+        candidate=candidate,
+        score=score,
+        accepted=accepted,
+        reason="; ".join(reason_parts),
+        answer_span_judgement=judgement,
+    )
+
+
 def review_highrisk_candidates(
     *,
     candidates: Iterable[ResidualCandidate],
@@ -295,6 +367,105 @@ def review_highrisk_candidates(
         if sum(1 for review in reviews if review.accepted) >= limit:
             break
     return sorted(reviews, key=lambda item: (-item.score, _sort_eval_id(item.candidate.eval_id)))
+
+
+def review_answer_span_candidates(
+    *,
+    candidates: Iterable[ResidualCandidate],
+    corpus_path: Path,
+    provider: str,
+    model: str,
+    host: str,
+    api_key: str | None,
+    accept_threshold: int,
+    limit: int,
+) -> list[ResidualReview]:
+    doc_texts = _load_doc_texts(corpus_path)
+    reviews: list[ResidualReview] = []
+    for candidate in candidates:
+        judgement = judge_answer_span_candidate(
+            query=candidate.query,
+            baseline_docid=candidate.baseline_top1,
+            baseline_text=doc_texts.get(candidate.baseline_top1, ""),
+            candidate_docid=candidate.candidate_top1,
+            candidate_text=doc_texts.get(candidate.candidate_top1, ""),
+            model=model,
+            host=host,
+            provider=provider,
+            api_key=api_key,
+        )
+        topk_guard_pass = False
+        topk_guard_reason = "answer_span_primary_failed"
+        if _answer_span_can_pass_primary(candidate, judgement, accept_threshold):
+            topk_guard_pass, topk_guard_reason = _passes_topk_guard(
+                candidate=candidate,
+                doc_texts=doc_texts,
+                provider=provider,
+                model=model,
+                host=host,
+                api_key=api_key,
+            )
+        reviews.append(
+            score_answer_span_judgement(
+                candidate,
+                judgement,
+                topk_guard_pass=topk_guard_pass,
+                topk_guard_reason=topk_guard_reason,
+                accept_threshold=accept_threshold,
+            )
+        )
+        if sum(1 for review in reviews if review.accepted) >= limit:
+            break
+    return sorted(reviews, key=lambda item: (-item.score, _sort_eval_id(item.candidate.eval_id)))
+
+
+def judge_answer_span_candidate(
+    *,
+    query: str,
+    baseline_docid: str,
+    baseline_text: str,
+    candidate_docid: str,
+    candidate_text: str,
+    model: str,
+    host: str,
+    provider: str,
+    api_key: str | None,
+) -> AnswerSpanJudgement:
+    prompt = (
+        "Strict Korean IR answer-span judge. Submit budget is scarce. "
+        "Extract 1-3 required answer facts for the query. "
+        "Choose candidate only when baseline misses at least one required fact AND candidate directly covers it. "
+        "If baseline already contains the key answer span, choose baseline even when candidate is broader or clearer. "
+        "Reject adjacent topics, generic explanations, and keyword-only overlap. "
+        "Output JSON only: "
+        '{"required_answer_facts":["fact"],"baseline_missing_facts":["fact"],'
+        '"candidate_covered_facts":["fact"],"winner":"baseline|candidate|tie",'
+        '"docid":"candidate-docid-or-empty","confidence":0.0,'
+        '"submit_risk":"low|medium|high","reason":"short Korean evidence"}\n\n'
+        f"query={query}\n"
+        f"baseline={{\"docid\":{json.dumps(baseline_docid, ensure_ascii=False)},"
+        f"\"content\":{json.dumps(baseline_text[:1500], ensure_ascii=False)}}}\n"
+        f"candidate={{\"docid\":{json.dumps(candidate_docid, ensure_ascii=False)},"
+        f"\"content\":{json.dumps(candidate_text[:1500], ensure_ascii=False)}}}"
+    )
+    content = _chat(provider=provider, host=host, model=model, prompt=prompt, api_key=api_key)
+    try:
+        payload = _parse_json_object(content)
+    except (ValueError, json.JSONDecodeError):
+        return AnswerSpanJudgement([], [], [], "baseline", "", 0.0, "high", "malformed response")
+    winner = str(payload.get("winner") or "")
+    if winner not in {"baseline", "candidate", "tie"}:
+        winner = "baseline"
+    return AnswerSpanJudgement(
+        required_answer_facts=_string_list(payload.get("required_answer_facts")),
+        baseline_missing_facts=_string_list(payload.get("baseline_missing_facts")),
+        candidate_covered_facts=_string_list(payload.get("candidate_covered_facts")),
+        winner=winner,
+        docid=str(payload.get("docid") or ""),
+        confidence=float(payload.get("confidence") or 0.0),
+        submit_risk=str(payload.get("submit_risk") or "high"),
+        reason=str(payload.get("reason") or ""),
+    )
 
 
 def write_single_row_outputs(
@@ -350,7 +521,9 @@ def main() -> int:
     parser.add_argument("--accepted-limit", type=int, default=1)
     parser.add_argument("--disable-topk-guard", action="store_true")
     parser.add_argument("--highrisk-rank-mode", action="store_true")
+    parser.add_argument("--answer-span-mode", action="store_true")
     parser.add_argument("--min-highrisk-support", type=int, default=10)
+    parser.add_argument("--min-answer-span-support", type=int, default=10)
     parser.add_argument("--audit-output", type=Path, default=None)
     parser.add_argument("--single-output-dir", type=Path, default=None)
     parser.add_argument("--name-prefix", default="residual_eval246_base")
@@ -364,7 +537,23 @@ def main() -> int:
         public_results_path=args.public_results,
         source_paths=args.source,
     )
-    if args.highrisk_rank_mode:
+    if args.answer_span_mode:
+        review_candidates_input = select_highrisk_rank_promotions(
+            candidates,
+            min_support=args.min_answer_span_support,
+            limit=args.review_limit,
+        )
+        reviews = review_answer_span_candidates(
+            candidates=review_candidates_input,
+            corpus_path=args.corpus,
+            provider=args.provider,
+            model=args.model,
+            host=args.host or default_host(args.provider),
+            api_key=args.api_key or _upstage_api_key(),
+            accept_threshold=args.accept_threshold,
+            limit=args.accepted_limit,
+        )
+    elif args.highrisk_rank_mode:
         review_candidates_input = select_highrisk_rank_promotions(
             candidates,
             min_support=args.min_highrisk_support,
@@ -432,6 +621,20 @@ def _candidate_can_pass_primary(
     accept_threshold: int,
 ) -> bool:
     return score_with_judgement(candidate, judgement, accept_threshold=accept_threshold).accepted
+
+
+def _answer_span_can_pass_primary(
+    candidate: ResidualCandidate,
+    judgement: AnswerSpanJudgement,
+    accept_threshold: int,
+) -> bool:
+    return score_answer_span_judgement(
+        candidate,
+        judgement,
+        topk_guard_pass=True,
+        topk_guard_reason="candidate_beats_current_topk",
+        accept_threshold=accept_threshold,
+    ).accepted
 
 
 def _passes_topk_guard(
@@ -512,6 +715,7 @@ def _candidate_payload(candidate: ResidualCandidate) -> dict[str, Any]:
 
 def _review_payload(review: ResidualReview) -> dict[str, Any]:
     judgement = review.judgement
+    answer_span_judgement = review.answer_span_judgement
     return {
         **_candidate_payload(review.candidate),
         "score": review.score,
@@ -525,6 +729,20 @@ def _review_payload(review: ResidualReview) -> dict[str, Any]:
         "candidate_direct_answer": judgement.candidate_direct_answer if judgement else None,
         "candidate_offtopic": judgement.candidate_offtopic if judgement else None,
         "submit_risk": judgement.submit_risk if judgement else None,
+        "required_answer_facts": (
+            answer_span_judgement.required_answer_facts if answer_span_judgement else None
+        ),
+        "baseline_missing_facts": (
+            answer_span_judgement.baseline_missing_facts if answer_span_judgement else None
+        ),
+        "candidate_covered_facts": (
+            answer_span_judgement.candidate_covered_facts if answer_span_judgement else None
+        ),
+        "answer_span_winner": answer_span_judgement.winner if answer_span_judgement else None,
+        "answer_span_docid": answer_span_judgement.docid if answer_span_judgement else None,
+        "answer_span_confidence": answer_span_judgement.confidence if answer_span_judgement else None,
+        "answer_span_risk": answer_span_judgement.submit_risk if answer_span_judgement else None,
+        "answer_span_reason": answer_span_judgement.reason if answer_span_judgement else None,
     }
 
 
@@ -537,6 +755,23 @@ def _rank_in_topk(docid: str, topk: list[str]) -> int | None:
 
 def _sort_eval_id(eval_id: str) -> tuple[int, str]:
     return (int(eval_id), eval_id) if eval_id.isdigit() else (10**9, eval_id)
+
+
+def _parse_json_object(content: str) -> dict[str, Any]:
+    start = content.find("{")
+    end = content.rfind("}")
+    if start == -1 or end == -1 or end < start:
+        raise ValueError("No JSON object")
+    payload = json.loads(content[start : end + 1])
+    if not isinstance(payload, dict):
+        raise ValueError("JSON payload must be an object")
+    return payload
+
+
+def _string_list(value: object) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    return [str(item).strip() for item in value if str(item).strip()]
 
 
 def _write_rows(path: Path, rows: list[dict[str, Any]]) -> None:

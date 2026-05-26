@@ -865,3 +865,24 @@
   - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
   - Lock out eval `207`; high-support rank2 promotion looked semantically plausible but did not improve public score.
   - Next search should require stronger public-signal proxy than Solar direct-answer judgement alone: prefer rows where baseline is clearly off-topic or where multiple independent candidate sources agree and current top1 lacks the key answer span.
+
+## Answer-Span Candidate Run - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Current best public MAP/MRR: `0.9561` / `0.9591`
+- Remote audits:
+  - `submissions/answer_span_audit_20260526.json`
+  - `submissions/answer_span_audit_round2_20260526.json`
+- Result:
+  - Accepted by automated answer-span gate: `7`, `279`, `250`, `303`
+  - Submitted files generated but not recommended.
+- Manual rejection:
+  - Eval `7`: baseline and candidate are near-duplicate; baseline already directly answers light speed in nonmagnetic dielectric.
+  - Eval `279`: baseline already links literacy to social development and uses newer 2015 statistic; candidate uses older 1950 statistic.
+  - Eval `250`: baseline directly explains canyon erosion by river; candidate adds delta/river-mouth noise.
+  - Eval `303`: baseline directly explains camouflage survival; candidate has lower-quality examples and no clear answer-span gain.
+- Decision:
+  - Do not submit answer-span run files.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Answer-span Solar gate catches some weak rows but still overclaims baseline-missing facts; future gate should require literal baseline evidence absence before candidate review.
