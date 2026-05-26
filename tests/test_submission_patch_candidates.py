@@ -159,6 +159,27 @@ class SubmissionPatchCandidatesTests(TestCase):
 
         self.assertEqual([promotion.eval_id for promotion in filtered], ["2"])
 
+    def test_filter_promotions_by_public_results_keeps_only_untried_eval_ids(self) -> None:
+        candidates = _load_candidates_module()
+        promotions = [
+            candidates.Rank2Promotion("42", "old-a", "new-a", 2, "source", ["new-a"]),
+            candidates.Rank2Promotion("81", "old-b", "new-b", 2, "source", ["new-b"]),
+            candidates.Rank2Promotion("285", "old-c", "new-c", 2, "source", ["new-c"]),
+            candidates.Rank2Promotion("295", "old-d", "new-d", 2, "source", ["new-d"]),
+        ]
+        public_results = [
+            candidates.PublicResult("42", "improved", 0.9227, 0.9273),
+            candidates.PublicResult("81", "regressed", 0.9136, 0.9182),
+            candidates.PublicResult("285", "neutral", 0.9273, 0.9318),
+        ]
+
+        filtered = candidates.filter_promotions_by_public_results(
+            promotions,
+            public_results=public_results,
+        )
+
+        self.assertEqual([promotion.eval_id for promotion in filtered], ["295"])
+
 
 def _row(eval_id: str, topk: list[str]) -> dict[str, object]:
     return {

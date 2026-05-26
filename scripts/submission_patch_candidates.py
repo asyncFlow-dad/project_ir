@@ -27,6 +27,14 @@ class Rank2Promotion:
     candidate_topk: list[str]
 
 
+@dataclass(frozen=True)
+class PublicResult:
+    eval_id: str
+    outcome: str
+    public_map: float | None = None
+    public_mrr: float | None = None
+
+
 def find_consensus_changes(
     *,
     baseline_path: Path,
@@ -144,6 +152,15 @@ def filter_promotions(
     return [promotion for promotion in rows if promotion.eval_id in only_eval_ids]
 
 
+def filter_promotions_by_public_results(
+    promotions: Iterable[Rank2Promotion],
+    *,
+    public_results: Iterable[PublicResult],
+) -> list[Rank2Promotion]:
+    blocked = {result.eval_id for result in public_results}
+    return [promotion for promotion in promotions if promotion.eval_id not in blocked]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Find eval rows where multiple candidate submissions agree on a new top-1."
@@ -154,6 +171,7 @@ def main() -> int:
     parser.add_argument("--rank2-only", action="store_true")
     parser.add_argument("--exclude-eval-id", action="append", default=[])
     parser.add_argument("--only-eval-id", action="append", default=[])
+    parser.add_argument("--public-results", type=Path, default=None)
     parser.add_argument("--single-output-dir", type=Path, default=None)
     parser.add_argument("--name-prefix", default="rank2_promotion")
     args = parser.parse_args()
@@ -168,6 +186,11 @@ def main() -> int:
             promotions,
             only_eval_ids={str(eval_id) for eval_id in args.only_eval_id},
         )
+        if args.public_results is not None:
+            promotions = filter_promotions_by_public_results(
+                promotions,
+                public_results=load_public_results(args.public_results),
+            )
         for promotion in promotions:
             print(
                 f"eval_id={promotion.eval_id} baseline_top1={promotion.baseline_top1} "
@@ -198,6 +221,25 @@ def main() -> int:
     return 0
 
 
+def load_public_results(path: Path) -> list[PublicResult]:
+    rows = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(rows, list):
+        raise ValueError("public results must be a JSON array")
+    results: list[PublicResult] = []
+    for index, row in enumerate(rows, start=1):
+        if not isinstance(row, dict):
+            raise ValueError(f"public results row {index} must be an object")
+        results.append(
+            PublicResult(
+                eval_id=str(row["eval_id"]),
+                outcome=str(row["outcome"]),
+                public_map=_optional_float(row.get("map")),
+                public_mrr=_optional_float(row.get("mrr")),
+            )
+        )
+    return results
+
+
 def _top1(topk: list[str]) -> str:
     return topk[0] if topk else ""
 
@@ -221,6 +263,10 @@ def _write_rows(path: Path, rows: list[dict[str, Any]]) -> None:
         "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows),
         encoding="utf-8",
     )
+
+
+def _optional_float(value: Any) -> float | None:
+    return float(value) if value is not None else None
 
 
 def _load_rows(path: Path) -> list[dict[str, Any]]:
