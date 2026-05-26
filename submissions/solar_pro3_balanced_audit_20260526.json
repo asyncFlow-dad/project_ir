@@ -1,0 +1,1337 @@
+{
+  "recall_candidates": [
+    {
+      "eval_id": "97",
+      "query": "세균 나쁜줄 알았는데 그게 아니야 그럼 순기능 알려줄래",
+      "tier": "existing_2",
+      "baseline_top1": "1655c90b-29c7-47ef-a092-01f2550db3aa",
+      "candidate_top1": "42f21317-42df-47c9-998f-a1a566f52c33",
+      "baseline_relevance": 0.116477,
+      "candidate_relevance": 0.116477,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "42f21317-42df-47c9-998f-a1a566f52c33",
+        "1655c90b-29c7-47ef-a092-01f2550db3aa",
+        "85d28a10-9380-4afe-afef-b34449ef86bf"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "d239aacb-29fe-48fa-9263-492cfda160f0",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "d239aacb-29fe-48fa-9263-492cfda160f0",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "bb33e3f3-d470-4276-80ca-168d4102b932",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "bb33e3f3-d470-4276-80ca-168d4102b932",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "9306246e-9aab-400f-ac13-cde110e9bc1a",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "9306246e-9aab-400f-ac13-cde110e9bc1a",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "943f11af-707a-4a95-b146-7508b186f01c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "943f11af-707a-4a95-b146-7508b186f01c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "79cad82b-570c-4112-b726-3701a37b4466",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "79cad82b-570c-4112-b726-3701a37b4466",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "19",
+      "query": "차량 매연 발생하지 않게 만드 장치 무엇",
+      "tier": "existing_2",
+      "baseline_top1": "d8ad7175-469b-45b5-8eb9-69504cd04f0f",
+      "candidate_top1": "abf99ff1-d6bf-4020-b752-da7cb8611915",
+      "baseline_relevance": 0.157143,
+      "candidate_relevance": 0.12381,
+      "relevance_delta": -0.033333,
+      "candidate_topk": [
+        "abf99ff1-d6bf-4020-b752-da7cb8611915",
+        "d8ad7175-469b-45b5-8eb9-69504cd04f0f",
+        "2e4315bf-dcc1-460b-9795-4a565d17e0d8"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "88935197-f45b-49d3-b9ab-a9dede55b731",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "88935197-f45b-49d3-b9ab-a9dede55b731",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "b965108a-9221-47d3-8fa5-858f10a042c1",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "b965108a-9221-47d3-8fa5-858f10a042c1",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "672b3d37-063e-4f90-99aa-302cc17d4704",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "672b3d37-063e-4f90-99aa-302cc17d4704",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "existing_2",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "26529255-fafb-4583-9255-ab14d801a1bb",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.158333,
+      "relevance_delta": -0.05,
+      "candidate_topk": [
+        "26529255-fafb-4583-9255-ab14d801a1bb",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "241",
+      "query": "정육면체 가라앉지 않고 물 위 떠 있 때 수면 윗부분 해당 부피 구 방법",
+      "tier": "existing_2",
+      "baseline_top1": "0b269ea1-2650-4666-9958-500993921e03",
+      "candidate_top1": "131bb8c5-596d-4b6d-a12d-38631db8edd2",
+      "baseline_relevance": 0.243132,
+      "candidate_relevance": 0.243132,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "131bb8c5-596d-4b6d-a12d-38631db8edd2",
+        "0b269ea1-2650-4666-9958-500993921e03",
+        "468d098e-2322-4950-ac11-9756f3112944"
+      ]
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "existing_2",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "5130f23b-20e9-45a8-ba7f-456e8a9bceed",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.223214,
+      "relevance_delta": -0.035715,
+      "candidate_topk": [
+        "5130f23b-20e9-45a8-ba7f-456e8a9bceed",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.532738,
+      "relevance_delta": 0.255952,
+      "candidate_topk": [
+        "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "c7733506-e361-403a-9d55-bd572b80e838",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "c7733506-e361-403a-9d55-bd572b80e838",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "14",
+      "query": "세제 거품 만들어지 원리",
+      "tier": "existing_2",
+      "baseline_top1": "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+      "candidate_top1": "5a67b487-c00d-4de2-a112-98ece21a0d13",
+      "baseline_relevance": 0.298611,
+      "candidate_relevance": 0.243056,
+      "relevance_delta": -0.055555,
+      "candidate_topk": [
+        "5a67b487-c00d-4de2-a112-98ece21a0d13",
+        "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+        "69014dde-e2b5-4cfc-ac59-811f799b2cfa"
+      ]
+    },
+    {
+      "eval_id": "238",
+      "query": "전류 흐름 극대화 하려면 배터리 저항 어떻게 연결해야 하나",
+      "tier": "existing_2",
+      "baseline_top1": "f48600d6-e492-43eb-b564-1860aa81da5f",
+      "candidate_top1": "3418f00c-20cc-4780-8614-a2cf42b92dff",
+      "baseline_relevance": 0.304348,
+      "candidate_relevance": 0.293478,
+      "relevance_delta": -0.01087,
+      "candidate_topk": [
+        "3418f00c-20cc-4780-8614-a2cf42b92dff",
+        "f48600d6-e492-43eb-b564-1860aa81da5f",
+        "dbe8518e-42c7-4178-9b63-cc08a0ca61f9"
+      ]
+    },
+    {
+      "eval_id": "226",
+      "query": "축전기 병렬 이어주면 전체 용량 어떻게 되는",
+      "tier": "existing_2",
+      "baseline_top1": "e21aceaf-be57-426c-b999-7ee8a309db36",
+      "candidate_top1": "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+      "baseline_relevance": 0.340074,
+      "candidate_relevance": 0.123162,
+      "relevance_delta": -0.216912,
+      "candidate_topk": [
+        "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+        "e21aceaf-be57-426c-b999-7ee8a309db36",
+        "f7ede7c9-fa3f-45a4-8f69-5e54a2635920"
+      ]
+    },
+    {
+      "eval_id": "268",
+      "query": "빗방울 점점 커지게 되 요인",
+      "tier": "existing_2",
+      "baseline_top1": "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+      "candidate_top1": "33b36e7c-2107-408e-b749-75fd6fc66b53",
+      "baseline_relevance": 0.425,
+      "candidate_relevance": 0.35,
+      "relevance_delta": -0.075,
+      "candidate_topk": [
+        "33b36e7c-2107-408e-b749-75fd6fc66b53",
+        "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+        "a35c09b4-e702-471c-9328-87108f9a1590"
+      ]
+    },
+    {
+      "eval_id": "25",
+      "query": "금성 달 어떻게 보일까",
+      "tier": "existing_2",
+      "baseline_top1": "35c5dcc7-4720-4318-901e-770105ae63fd",
+      "candidate_top1": "840c3bcf-3caf-43fb-b4b8-e77b450e0fee",
+      "baseline_relevance": 0.4375,
+      "candidate_relevance": 0.1875,
+      "relevance_delta": -0.25,
+      "candidate_topk": [
+        "840c3bcf-3caf-43fb-b4b8-e77b450e0fee",
+        "35c5dcc7-4720-4318-901e-770105ae63fd",
+        "340485f8-4e78-44f4-a53a-2df21915367f"
+      ]
+    },
+    {
+      "eval_id": "289",
+      "query": "글리코겐 분해 인체 왜 필요한",
+      "tier": "existing_2",
+      "baseline_top1": "1f442344-084b-44f8-838b-332be289083c",
+      "candidate_top1": "1655c90b-29c7-47ef-a092-01f2550db3aa",
+      "baseline_relevance": 0.459091,
+      "candidate_relevance": 0.540909,
+      "relevance_delta": 0.081818,
+      "candidate_topk": [
+        "1655c90b-29c7-47ef-a092-01f2550db3aa",
+        "1f442344-084b-44f8-838b-332be289083c",
+        "421aac6b-49ce-4697-a68f-850152f323d7"
+      ]
+    },
+    {
+      "eval_id": "254",
+      "query": "화산 폭발 발생한 후 새로운 생물 군집 생겨나 것 무엇이라 부르나",
+      "tier": "existing_2",
+      "baseline_top1": "af966ff7-109a-4c28-a644-393f5333ce69",
+      "candidate_top1": "f532c956-a335-4688-9078-b1a13a0cfe58",
+      "baseline_relevance": 0.529091,
+      "candidate_relevance": 0.254545,
+      "relevance_delta": -0.274546,
+      "candidate_topk": [
+        "f532c956-a335-4688-9078-b1a13a0cfe58",
+        "af966ff7-109a-4c28-a644-393f5333ce69",
+        "3488a8a3-8568-418e-a455-b9045d5d3d3c"
+      ]
+    },
+    {
+      "eval_id": "221",
+      "query": "전구 병렬 연결될 때 전류 줄어드 원인",
+      "tier": "existing_2",
+      "baseline_top1": "8ae1234f-2a28-4069-a017-e99de5d67cc6",
+      "candidate_top1": "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+      "baseline_relevance": 0.571429,
+      "candidate_relevance": 0.392857,
+      "relevance_delta": -0.178572,
+      "candidate_topk": [
+        "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+        "8ae1234f-2a28-4069-a017-e99de5d67cc6",
+        "599ad500-33a1-4e93-82e1-1623d391f418"
+      ]
+    },
+    {
+      "eval_id": "236",
+      "query": "기름 물 섞여 있 수 있나",
+      "tier": "existing_2",
+      "baseline_top1": "6acde723-5e70-4789-9fa2-dbee23d5a250",
+      "candidate_top1": "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+      "baseline_relevance": 0.59375,
+      "candidate_relevance": 0.46875,
+      "relevance_delta": -0.125,
+      "candidate_topk": [
+        "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+        "6acde723-5e70-4789-9fa2-dbee23d5a250",
+        "e0cc986d-d94d-459a-9825-04a8619e0e9f"
+      ]
+    },
+    {
+      "eval_id": "78",
+      "query": "나무 분류 방법",
+      "tier": "existing_2",
+      "baseline_top1": "c63b9e3a-716f-423a-9c9b-0bcaa1b9f35d",
+      "candidate_top1": "c63e3bf8-3a0f-457d-9e86-7aaf31ec4144",
+      "baseline_relevance": 0.6,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "c63e3bf8-3a0f-457d-9e86-7aaf31ec4144",
+        "c63b9e3a-716f-423a-9c9b-0bcaa1b9f35d",
+        "9712bdf6-9419-4953-a8f1-8a4015dee986"
+      ]
+    },
+    {
+      "eval_id": "270",
+      "query": "나무 생태계 하 역할",
+      "tier": "existing_2",
+      "baseline_top1": "a729b4f2-c734-4c60-9205-1518ba762593",
+      "candidate_top1": "d54c5350-be49-4cc9-8c7d-fc147436365d",
+      "baseline_relevance": 0.705357,
+      "candidate_relevance": 0.705357,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "d54c5350-be49-4cc9-8c7d-fc147436365d",
+        "a729b4f2-c734-4c60-9205-1518ba762593",
+        "191c4b9f-6feb-49dd-90ad-9f2eebb6113e"
+      ]
+    },
+    {
+      "eval_id": "104",
+      "query": "혼합물 특성",
+      "tier": "existing_2",
+      "baseline_top1": "778661ac-836f-4d41-87ce-74ada9cdb276",
+      "candidate_top1": "73089763-06d2-4395-b235-aa3e6a399531",
+      "baseline_relevance": 0.9375,
+      "candidate_relevance": 0.9375,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "73089763-06d2-4395-b235-aa3e6a399531",
+        "778661ac-836f-4d41-87ce-74ada9cdb276",
+        "3549df30-3ce1-4d57-bfcd-0c465229c81d"
+      ]
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "eval_id": "97",
+      "query": "세균 나쁜줄 알았는데 그게 아니야 그럼 순기능 알려줄래",
+      "tier": "existing_2",
+      "baseline_top1": "1655c90b-29c7-47ef-a092-01f2550db3aa",
+      "candidate_top1": "42f21317-42df-47c9-998f-a1a566f52c33",
+      "baseline_relevance": 0.116477,
+      "candidate_relevance": 0.116477,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "42f21317-42df-47c9-998f-a1a566f52c33",
+        "1655c90b-29c7-47ef-a092-01f2550db3aa",
+        "85d28a10-9380-4afe-afef-b34449ef86bf"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "1655c90b-29c7-47ef-a092-01f2550db3aa",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.0,
+      "judge_reason": "baseline_failure=query asks for reasons why nature reserves are needed, but baseline discusses general environmental benefits of nature reserves without directly addressing the specific question; candidate_evidence=생태계에서 순일차 생산성이 중요한 이유는 다양한 이유가 있습니다. 그 중 가장 대표적인 이유는 순일차 생산성은 종속용양생물이 사용 가능한 에너지를 나타냅니다. 이는 생태계 내에서 다른 생물들이 생존하고 번식하는 데 필요한 에너지원으로 사용됩니다. 따라서, 생태계에서 순일차 생산성은 중요한 개념이며, 생태계의 안정성과 생물 다양성을 유지하는 데 핵심적인 역할을 합니다."
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "d239aacb-29fe-48fa-9263-492cfda160f0",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "d239aacb-29fe-48fa-9263-492cfda160f0",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "bb33e3f3-d470-4276-80ca-168d4102b932",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "bb33e3f3-d470-4276-80ca-168d4102b932",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "9306246e-9aab-400f-ac13-cde110e9bc1a",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "9306246e-9aab-400f-ac13-cde110e9bc1a",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=현미경은 물체를 50배로 확대한다는 내용은 맞지만, query는 '어떤 물체 매우 크게 확대해서 볼 수 있는 기계'를 묻는 것이며, 현미경은 일반적으로 50배 정도의 배율을 가진 광학 현미경으로, query가 요구하는 '매우 크게 확대'와는 맞지 않음; candidate_evidence=경사면은 어떤 단순 기계가 부하가 이동하는 거리를 늘리고 필요한 힘을 줄이는 데 사용됩니다."
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.0,
+      "judge_reason": "baseline_failure=현미경에 대한 설명이 query와 무관함; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "943f11af-707a-4a95-b146-7508b186f01c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "943f11af-707a-4a95-b146-7508b186f01c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "79cad82b-570c-4112-b726-3701a37b4466",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "79cad82b-570c-4112-b726-3701a37b4466",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks about why the same flu can occur again, but baseline discusses memory cells and immune response, which is unrelated to the query; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "19",
+      "query": "차량 매연 발생하지 않게 만드 장치 무엇",
+      "tier": "existing_2",
+      "baseline_top1": "d8ad7175-469b-45b5-8eb9-69504cd04f0f",
+      "candidate_top1": "abf99ff1-d6bf-4020-b752-da7cb8611915",
+      "baseline_relevance": 0.157143,
+      "candidate_relevance": 0.12381,
+      "relevance_delta": -0.033333,
+      "candidate_topk": [
+        "abf99ff1-d6bf-4020-b752-da7cb8611915",
+        "d8ad7175-469b-45b5-8eb9-69504cd04f0f",
+        "2e4315bf-dcc1-460b-9795-4a565d17e0d8"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "d8ad7175-469b-45b5-8eb9-69504cd04f0f",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=매연 발생 방지 장치에 대한 언급이 없음; candidate_evidence=전기-가솔린 하이브리드 차량은 주로 더 나은 연비를 제공하기 위해 설계되었습니다."
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query asks about relationship between atomic number and subatomic particles, but baseline discusses copper's atomic number and protons only; candidate_evidence=역학적 효과 측정은 노출과 결과 사이의 연관성의 강도를 평가합니다."
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "88935197-f45b-49d3-b9ab-a9dede55b731",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "88935197-f45b-49d3-b9ab-a9dede55b731",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks about relationship between atomic number and subatomic particles, but baseline only discusses copper's atomic number and protons without explaining the general relationship; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "b965108a-9221-47d3-8fa5-858f10a042c1",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "b965108a-9221-47d3-8fa5-858f10a042c1",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query asks about relationship between atomic number and subatomic particles, but baseline discusses copper's atomic number and protons only, not the requested relationship; candidate_evidence=나무는 산소가 필요합니다. 땅 표면 가까이에 있는 뿌리가 나무에 필요로 하는 산소를 흡수합니다. 그러나 나무가 산소를 얻는 데 어떤 생물이 도움을 줄까요? 나무 근처 땅에 구멍을 뚫는 지렁이가 도움을 줄 수 있습니다. 지렁이는 땅 속에서 토양을 통해 공기를 흡입하고, 이를 나무 근처로 이동시킵니다. 이렇게 나무 근처에 구멍을 뚫어 산소를 공급함으로써, 지렁이는 나무의 생존을 도와줍니다. 나무와 지렁이는 서로 상생하는 관계를 형성하여 자연 생태계의 균형을 유지합니다."
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "672b3d37-063e-4f90-99aa-302cc17d4704",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "672b3d37-063e-4f90-99aa-302cc17d4704",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query is about atomic number and subatomic particles, but baseline discusses copper's atomic number and protons only; candidate_evidence=empty"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=기억 상실증의 구체적인 원인에 대한 설명이 없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=기억 상실증의 구체적 원인에 대한 설명이 없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "existing_2",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "26529255-fafb-4583-9255-ab14d801a1bb",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.158333,
+      "relevance_delta": -0.05,
+      "candidate_topk": [
+        "26529255-fafb-4583-9255-ab14d801a1bb",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks about causes of amnesia, but baseline discusses general brain structure and function without specifying causes; candidate_evidence=비만 확산의 주요 원인은 증가된 에너지 양/밀도와 사무적 생활 방식입니다."
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "241",
+      "query": "정육면체 가라앉지 않고 물 위 떠 있 때 수면 윗부분 해당 부피 구 방법",
+      "tier": "existing_2",
+      "baseline_top1": "0b269ea1-2650-4666-9958-500993921e03",
+      "candidate_top1": "131bb8c5-596d-4b6d-a12d-38631db8edd2",
+      "baseline_relevance": 0.243132,
+      "candidate_relevance": 0.243132,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "131bb8c5-596d-4b6d-a12d-38631db8edd2",
+        "0b269ea1-2650-4666-9958-500993921e03",
+        "468d098e-2322-4950-ac11-9756f3112944"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "0b269ea1-2650-4666-9958-500993921e03",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=질문에 대한 정확한 계산 방법이 제시되지 않음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "existing_2",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "5130f23b-20e9-45a8-ba7f-456e8a9bceed",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.223214,
+      "relevance_delta": -0.035715,
+      "candidate_topk": [
+        "5130f23b-20e9-45a8-ba7f-456e8a9bceed",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.532738,
+      "relevance_delta": 0.255952,
+      "candidate_topk": [
+        "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query is about magnetic impurities, not tides; candidate_evidence=달의 위치는 조수의 강도에 직접적인 영향을 미치며"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "c7733506-e361-403a-9d55-bd572b80e838",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "c7733506-e361-403a-9d55-bd572b80e838",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query is about magnetic impurities, not carbon; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "14",
+      "query": "세제 거품 만들어지 원리",
+      "tier": "existing_2",
+      "baseline_top1": "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+      "candidate_top1": "5a67b487-c00d-4de2-a112-98ece21a0d13",
+      "baseline_relevance": 0.298611,
+      "candidate_relevance": 0.243056,
+      "relevance_delta": -0.055555,
+      "candidate_topk": [
+        "5a67b487-c00d-4de2-a112-98ece21a0d13",
+        "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+        "69014dde-e2b5-4cfc-ac59-811f799b2cfa"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks about soap bubble formation but baseline incorrectly describes soap bubbles as containing oil; candidate_evidence=물이 끓을 때 거품이 생기는 현상은 물의 물리적 변화로 인해 발생합니다."
+    },
+    {
+      "eval_id": "238",
+      "query": "전류 흐름 극대화 하려면 배터리 저항 어떻게 연결해야 하나",
+      "tier": "existing_2",
+      "baseline_top1": "f48600d6-e492-43eb-b564-1860aa81da5f",
+      "candidate_top1": "3418f00c-20cc-4780-8614-a2cf42b92dff",
+      "baseline_relevance": 0.304348,
+      "candidate_relevance": 0.293478,
+      "relevance_delta": -0.01087,
+      "candidate_topk": [
+        "3418f00c-20cc-4780-8614-a2cf42b92dff",
+        "f48600d6-e492-43eb-b564-1860aa81da5f",
+        "dbe8518e-42c7-4178-9b63-cc08a0ca61f9"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "f48600d6-e492-43eb-b564-1860aa81da5f",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "226",
+      "query": "축전기 병렬 이어주면 전체 용량 어떻게 되는",
+      "tier": "existing_2",
+      "baseline_top1": "e21aceaf-be57-426c-b999-7ee8a309db36",
+      "candidate_top1": "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+      "baseline_relevance": 0.340074,
+      "candidate_relevance": 0.123162,
+      "relevance_delta": -0.216912,
+      "candidate_topk": [
+        "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+        "e21aceaf-be57-426c-b999-7ee8a309db36",
+        "f7ede7c9-fa3f-45a4-8f69-5e54a2635920"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "e21aceaf-be57-426c-b999-7ee8a309db36",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "268",
+      "query": "빗방울 점점 커지게 되 요인",
+      "tier": "existing_2",
+      "baseline_top1": "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+      "candidate_top1": "33b36e7c-2107-408e-b749-75fd6fc66b53",
+      "baseline_relevance": 0.425,
+      "candidate_relevance": 0.35,
+      "relevance_delta": -0.075,
+      "candidate_topk": [
+        "33b36e7c-2107-408e-b749-75fd6fc66b53",
+        "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+        "a35c09b4-e702-471c-9328-87108f9a1590"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "7c14c33c-f15c-41f6-ab5c-4d37c2eb3513",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "25",
+      "query": "금성 달 어떻게 보일까",
+      "tier": "existing_2",
+      "baseline_top1": "35c5dcc7-4720-4318-901e-770105ae63fd",
+      "candidate_top1": "840c3bcf-3caf-43fb-b4b8-e77b450e0fee",
+      "baseline_relevance": 0.4375,
+      "candidate_relevance": 0.1875,
+      "relevance_delta": -0.25,
+      "candidate_topk": [
+        "840c3bcf-3caf-43fb-b4b8-e77b450e0fee",
+        "35c5dcc7-4720-4318-901e-770105ae63fd",
+        "340485f8-4e78-44f4-a53a-2df21915367f"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.0,
+      "judge_reason": "baseline_failure=금성에서의 달 관측에 대한 설명이 전혀 없음; candidate_evidence=달의 바다는 어두운 용암으로 채워진 더 오래된 충돌 분지입니다."
+    },
+    {
+      "eval_id": "289",
+      "query": "글리코겐 분해 인체 왜 필요한",
+      "tier": "existing_2",
+      "baseline_top1": "1f442344-084b-44f8-838b-332be289083c",
+      "candidate_top1": "1655c90b-29c7-47ef-a092-01f2550db3aa",
+      "baseline_relevance": 0.459091,
+      "candidate_relevance": 0.540909,
+      "relevance_delta": 0.081818,
+      "candidate_topk": [
+        "1655c90b-29c7-47ef-a092-01f2550db3aa",
+        "1f442344-084b-44f8-838b-332be289083c",
+        "421aac6b-49ce-4697-a68f-850152f323d7"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "1f442344-084b-44f8-838b-332be289083c",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "254",
+      "query": "화산 폭발 발생한 후 새로운 생물 군집 생겨나 것 무엇이라 부르나",
+      "tier": "existing_2",
+      "baseline_top1": "af966ff7-109a-4c28-a644-393f5333ce69",
+      "candidate_top1": "f532c956-a335-4688-9078-b1a13a0cfe58",
+      "baseline_relevance": 0.529091,
+      "candidate_relevance": 0.254545,
+      "relevance_delta": -0.274546,
+      "candidate_topk": [
+        "f532c956-a335-4688-9078-b1a13a0cfe58",
+        "af966ff7-109a-4c28-a644-393f5333ce69",
+        "3488a8a3-8568-418e-a455-b9045d5d3d3c"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "af966ff7-109a-4c28-a644-393f5333ce69",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "221",
+      "query": "전구 병렬 연결될 때 전류 줄어드 원인",
+      "tier": "existing_2",
+      "baseline_top1": "8ae1234f-2a28-4069-a017-e99de5d67cc6",
+      "candidate_top1": "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+      "baseline_relevance": 0.571429,
+      "candidate_relevance": 0.392857,
+      "relevance_delta": -0.178572,
+      "candidate_topk": [
+        "be583ef1-7d5a-4541-b11d-e23848aa3a3b",
+        "8ae1234f-2a28-4069-a017-e99de5d67cc6",
+        "599ad500-33a1-4e93-82e1-1623d391f418"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "8ae1234f-2a28-4069-a017-e99de5d67cc6",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=전류 감소 원인을 전압 공유로 잘못 설명함; candidate_evidence=전류가 각 경로를 따라 분할되어 흐른다"
+    },
+    {
+      "eval_id": "236",
+      "query": "기름 물 섞여 있 수 있나",
+      "tier": "existing_2",
+      "baseline_top1": "6acde723-5e70-4789-9fa2-dbee23d5a250",
+      "candidate_top1": "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+      "baseline_relevance": 0.59375,
+      "candidate_relevance": 0.46875,
+      "relevance_delta": -0.125,
+      "candidate_topk": [
+        "2077ea5b-53ac-4242-bbfc-20005ad63db8",
+        "6acde723-5e70-4789-9fa2-dbee23d5a250",
+        "e0cc986d-d94d-459a-9825-04a8619e0e9f"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "6acde723-5e70-4789-9fa2-dbee23d5a250",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "78",
+      "query": "나무 분류 방법",
+      "tier": "existing_2",
+      "baseline_top1": "c63b9e3a-716f-423a-9c9b-0bcaa1b9f35d",
+      "candidate_top1": "c63e3bf8-3a0f-457d-9e86-7aaf31ec4144",
+      "baseline_relevance": 0.6,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "c63e3bf8-3a0f-457d-9e86-7aaf31ec4144",
+        "c63b9e3a-716f-423a-9c9b-0bcaa1b9f35d",
+        "9712bdf6-9419-4953-a8f1-8a4015dee986"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "c63b9e3a-716f-423a-9c9b-0bcaa1b9f35d",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query에 대한 직접적인 답변 없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "270",
+      "query": "나무 생태계 하 역할",
+      "tier": "existing_2",
+      "baseline_top1": "a729b4f2-c734-4c60-9205-1518ba762593",
+      "candidate_top1": "d54c5350-be49-4cc9-8c7d-fc147436365d",
+      "baseline_relevance": 0.705357,
+      "candidate_relevance": 0.705357,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "d54c5350-be49-4cc9-8c7d-fc147436365d",
+        "a729b4f2-c734-4c60-9205-1518ba762593",
+        "191c4b9f-6feb-49dd-90ad-9f2eebb6113e"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "a729b4f2-c734-4c60-9205-1518ba762593",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "104",
+      "query": "혼합물 특성",
+      "tier": "existing_2",
+      "baseline_top1": "778661ac-836f-4d41-87ce-74ada9cdb276",
+      "candidate_top1": "73089763-06d2-4395-b235-aa3e6a399531",
+      "baseline_relevance": 0.9375,
+      "candidate_relevance": 0.9375,
+      "relevance_delta": 0.0,
+      "candidate_topk": [
+        "73089763-06d2-4395-b235-aa3e6a399531",
+        "778661ac-836f-4d41-87ce-74ada9cdb276",
+        "3549df30-3ce1-4d57-bfcd-0c465229c81d"
+      ],
+      "reject_stage": "topic",
+      "judge_winner": "baseline",
+      "judge_docid": "778661ac-836f-4d41-87ce-74ada9cdb276",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    }
+  ]
+}

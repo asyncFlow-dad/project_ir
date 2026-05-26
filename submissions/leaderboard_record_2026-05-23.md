@@ -746,3 +746,66 @@
 - Decision:
   - Keep current best as `submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval205.jsonl`.
   - No public-result ledger change needed; eval `205` was already recorded as improved.
+
+## Solar-Pro3 Balanced Candidate Run - 2026-05-26
+
+- Implemented balanced topic-error search in `scripts/topic_error_candidates.py`.
+  - Added `--preset strict|balanced|wide`.
+  - Balanced preset uses Tier A/B recall and lower Solar confidence gate for 12-submission budget.
+  - Added `--candidate-submission-dir` to re-audit existing Solar single-row files before recommending them.
+  - Audit now records rejected candidates with judge stage, winner, confidence, and reason.
+- Baseline:
+  - `submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval205.jsonl`
+  - Public MAP/MRR: `0.9455` / `0.9500`
+- Remote command:
+  - `python3.9 scripts/topic_error_candidates.py --baseline submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval205.jsonl --corpus data/documents.jsonl --public-results submissions/public_results_2026-05-23.json --preset balanced --candidate-submission-dir submissions/solar_pro3_single_20260525 --candidate-submission-dir submissions/solar_pro3_strict_single_20260525 --accepted-limit 6 --audit-output submissions/solar_pro3_balanced_audit_20260526.json --single-output-dir submissions/solar_pro3_balanced_20260526 --name-prefix solar_pro3_balanced_eval205_base`
+- Result:
+  - Recall candidates: `38`
+  - Rejected candidates: `38`
+  - Accepted candidates: `0`
+  - Audit: `submissions/solar_pro3_balanced_audit_20260526.json`
+  - Output dir empty.
+- Decision:
+  - Do not submit from this run.
+  - Even with 12 daily submissions, no candidate met the eval205-style topic-error gate.
+  - Keep current best as `submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval205.jsonl`.
+
+## Eval246 High-Risk Submission Result - 2026-05-26
+
+- Submitted file: `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval205.jsonl`
+  - Public MAP/MRR: `0.9455` / `0.9500`
+- Reported public MAP: `0.9545`
+- Reported public MRR: `0.9591`
+- Result: new best.
+- Improvement:
+  - MAP: `+0.0090` (`0.9455` -> `0.9545`)
+  - MRR: `+0.0091` (`0.9500` -> `0.9591`)
+- Changed eval ID: `246`
+- Query: `친환경 재생 가능 재료 어떤것들 있나`
+- Decision:
+  - Eval `246` is public-improved.
+  - Use `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl` as current best baseline.
+  - High-risk fallback succeeded where strict/balanced Solar gate rejected all candidates, so next search should use eval246 baseline and include high-risk manual candidates after Solar rejection.
+
+## Eval221 Direct-Answer Submission Result - 2026-05-26
+
+- Submitted file: `submissions/solar_pro3_direct_answer_single_20260526/solar_pro3_direct_eval246_base_eval221.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`
+  - Public MAP/MRR: `0.9545` / `0.9591`
+- Reported public MAP: `0.9500`
+- Reported public MRR: `0.9545`
+- Result: regressed vs eval246 best.
+- Difference:
+  - MAP: `-0.0045` (`0.9545` -> `0.9500`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Changed eval ID: `221`
+- Query: `전구 병렬 연결될 때 전류 줄어드 원인`
+- Decision:
+  - Eval `221` is public-regressed.
+  - Keep current best as `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`.
+  - Lock out eval `221`; semantic-looking circuit explanation fix did not improve public score.
