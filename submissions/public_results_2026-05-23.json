@@ -1,0 +1,263 @@
+[
+  {
+    "eval_id": "42",
+    "outcome": "improved",
+    "map": 0.9227,
+    "mrr": 0.9273,
+    "submission": "submissions/gemma4_best_plus_eval42_20260523.jsonl"
+  },
+  {
+    "eval_id": "98",
+    "outcome": "regressed",
+    "map": 0.9121,
+    "mrr": 0.9167,
+    "submission": "submissions/gemma4_best_plus_eval98_20260523.jsonl"
+  },
+  {
+    "eval_id": "109",
+    "outcome": "regressed",
+    "map": 0.9136,
+    "mrr": 0.9182,
+    "submission": "submissions/gemma4_best_plus_eval109_20260523.jsonl"
+  },
+  {
+    "eval_id": "81",
+    "outcome": "regressed",
+    "map": 0.9136,
+    "mrr": 0.9182,
+    "submission": "submissions/gemma4_best_plus_rank2_topicdrift_20260523_eval81.jsonl"
+  },
+  {
+    "eval_id": "285",
+    "outcome": "neutral",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_285_295_20260523.jsonl"
+  },
+  {
+    "eval_id": "295",
+    "outcome": "improved",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_295_20260523.jsonl"
+  },
+  {
+    "eval_id": "53",
+    "outcome": "neutral",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_295_53_20260523.jsonl"
+  },
+  {
+    "eval_id": "26",
+    "outcome": "neutral",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_295_26_20260523.jsonl"
+  },
+  {
+    "eval_id": "225",
+    "outcome": "neutral",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_295_225_20260523.jsonl"
+  },
+  {
+    "eval_id": "9",
+    "outcome": "neutral",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_295_generated_eval9_20260524.jsonl"
+  },
+  {
+    "eval_id": "3",
+    "outcome": "neutral",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_295_consensus_eval3_20260525.jsonl"
+  },
+  {
+    "eval_id": "106",
+    "outcome": "neutral",
+    "map": 0.9273,
+    "mrr": 0.9318,
+    "submission": "submissions/gemma4_best_plus_eval42_295_eval106_direct_20260525.jsonl"
+  },
+  {
+    "eval_id": "66",
+    "outcome": "improved",
+    "map": 0.9364,
+    "mrr": 0.9409,
+    "submission": "submissions/gemma4_best_plus_eval42_295_bm25_eval66_20260525.jsonl"
+  },
+  {
+    "eval_id": "0",
+    "outcome": "neutral",
+    "map": 0.9364,
+    "mrr": 0.9409,
+    "submission": "submissions/gemma4_best_plus_eval42_295_66_bm25_eval0_20260525.jsonl"
+  },
+  {
+    "eval_id": "46",
+    "outcome": "neutral",
+    "map": 0.9364,
+    "mrr": 0.9409,
+    "submission": "submissions/gemma4_best_plus_eval42_295_66_eval46_b_hepatitis_20260525.jsonl"
+  },
+  {
+    "eval_id": "18",
+    "outcome": "regressed",
+    "map": 0.9318,
+    "mrr": 0.9364,
+    "submission": "submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval18.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "100",
+    "outcome": "regressed",
+    "map": 0.9326,
+    "mrr": 0.9364,
+    "submission": "submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval100.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "205",
+    "outcome": "improved",
+    "map": 0.9455,
+    "mrr": 0.95,
+    "submission": "submissions/solar_pro3_single_20260525/solar_pro3_best_plus_eval205.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "231",
+    "outcome": "regressed",
+    "map": 0.9439,
+    "mrr": 0.9485,
+    "submission": "submissions/solar_pro3_strict_single_20260525/solar_pro3_strict_eval205_base_eval231.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "43",
+    "outcome": "regressed",
+    "map": 0.9417,
+    "mrr": 0.9455,
+    "submission": "submissions/solar_pro3_strict_single_20260525/solar_pro3_strict_eval205_base_eval43.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "5",
+    "outcome": "regressed",
+    "map": 0.9409,
+    "mrr": 0.9455,
+    "submission": "submissions/solar_pro3_strict_single_20260525/solar_pro3_strict_eval205_base_eval5.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "302",
+    "outcome": "neutral",
+    "map": 0.9455,
+    "mrr": 0.95,
+    "submission": "submissions/solar_pro3_topic_error_single_20260525/solar_pro3_topic_error_eval205_base_eval302.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "269",
+    "outcome": "manual_rejected",
+    "reason": "candidate is phototropism; baseline better matches plant height-growth mechanism"
+  },
+  {
+    "eval_id": "74",
+    "outcome": "manual_rejected",
+    "reason": "candidate is packet-filter firewall; baseline directly explains IP protocol"
+  },
+  {
+    "eval_id": "15",
+    "outcome": "manual_rejected",
+    "reason": "baseline better matches scientific skepticism and verification as researcher attitude"
+  },
+  {
+    "eval_id": "219",
+    "outcome": "manual_rejected",
+    "reason": "baseline names salivary amylase and carbohydrate digestion"
+  },
+  {
+    "eval_id": "35",
+    "outcome": "manual_rejected",
+    "reason": "generated candidate is about deuterium/body-water measurement, not neutron properties"
+  },
+  {
+    "eval_id": "300",
+    "outcome": "manual_rejected",
+    "reason": "generated candidate is about convoy/social support, not Social Security for retirees"
+  },
+  {
+    "eval_id": "56",
+    "outcome": "manual_rejected",
+    "reason": "generated candidate is about paper recycling, not fly ecosystem impact"
+  },
+  {
+    "eval_id": "248",
+    "outcome": "manual_rejected",
+    "reason": "generated candidate is about longshore current, not deep-sea ecosystem impact"
+  },
+  {
+    "eval_id": "273",
+    "outcome": "manual_rejected",
+    "reason": "generated candidate is about solar effects broadly, not sea-land weather influence"
+  },
+  {
+    "eval_id": "61",
+    "outcome": "manual_rejected",
+    "reason": "baseline conductivity test better answers generic metal identification than candidate iron-magnet test"
+  },
+  {
+    "eval_id": "65",
+    "outcome": "manual_rejected",
+    "reason": "baseline directly answers vinegar and baking soda reaction; candidate only discusses acid neutralization"
+  },
+  {
+    "eval_id": "73",
+    "outcome": "manual_rejected",
+    "reason": "baseline directly answers DNA-degrading enzyme role; candidate discusses sticky ends from restriction enzymes"
+  },
+  {
+    "eval_id": "84",
+    "outcome": "manual_rejected",
+    "reason": "baseline directly explains photosynthesis; candidate narrows to Calvin cycle"
+  },
+  {
+    "eval_id": "86",
+    "outcome": "manual_rejected",
+    "reason": "baseline correctly says ice sheets hold most freshwater; candidate focuses on mountain glaciers"
+  },
+  {
+    "eval_id": "91",
+    "outcome": "manual_rejected",
+    "reason": "candidate discusses diamond structure, not method for identifying carbon internal structure"
+  },
+  {
+    "eval_id": "96",
+    "outcome": "manual_rejected",
+    "reason": "baseline better answers what crust is made of; candidate gives broad Earth layer overview"
+  },
+  {
+    "eval_id": "224",
+    "outcome": "manual_rejected",
+    "reason": "baseline directly explains traffic sniffing; candidate discusses packet filter firewall"
+  },
+  {
+    "eval_id": "308",
+    "outcome": "manual_rejected",
+    "reason": "baseline directly answers magnetic field strength/flux unit; candidate is NMR gyromagnetic ratio"
+  },
+  {
+    "eval_id": "239",
+    "outcome": "manual_rejected",
+    "reason": "query expansion candidate discusses lunar day length; baseline directly answers moon orbits Earth about 13 times per year"
+  },
+  {
+    "eval_id": "264",
+    "outcome": "manual_rejected",
+    "reason": "query expansion candidate only defines genital vasocongestion; baseline better answers sexual stimulus to lubrication/blood-flow process"
+  }
+]
