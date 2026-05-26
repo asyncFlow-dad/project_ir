@@ -920,3 +920,24 @@
   - Eval `23` is public-neutral.
   - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
   - Lock out eval `23`; manual rank2 promotion looked broader but did not improve public score.
+
+## Eval34 Manual Submission Result - 2026-05-26
+
+- Submitted file: `submissions/manual_single_20260526/manual_eval309_base_eval34.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9515`
+- Reported public MRR: `0.9545`
+- Result: regressed vs current best.
+- Difference:
+  - MAP: `-0.0046` (`0.9561` -> `0.9515`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Changed eval ID: `34`
+- Query: `씨앗 기능 자세히`
+- Decision:
+  - Eval `34` is public-regressed.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `34`; broader/more detailed candidate hurt public score.
+  - Do not submit more “more detailed but same topic” promotions today.
