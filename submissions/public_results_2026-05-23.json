@@ -319,5 +319,13 @@
     "eval_id": "303",
     "outcome": "manual_rejected",
     "reason": "baseline already directly explains camouflage survival; candidate contains lower-quality examples and no clear answer-span gain"
+  },
+  {
+    "eval_id": "23",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_single_20260526/manual_eval309_base_eval23.jsonl",
+    "model": "solar-pro3"
   }
 ]

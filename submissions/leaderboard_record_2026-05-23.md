@@ -903,3 +903,20 @@
 - Decision:
   - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
   - Strict quote gate successfully prevents weak semantic overclaims, but it found no public-score candidate in current residual pool.
+
+## Eval23 Manual Submission Result - 2026-05-26
+
+- Submitted file: `submissions/manual_single_20260526/manual_eval309_base_eval23.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9561`
+- Reported public MRR: `0.9591`
+- Result: tied current best.
+- Changed eval ID: `23`
+- Query: `식물 동물중 누 번식력 높다고 할 수 있어`
+- Decision:
+  - Eval `23` is public-neutral.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `23`; manual rank2 promotion looked broader but did not improve public score.
