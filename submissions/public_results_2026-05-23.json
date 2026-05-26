@@ -275,5 +275,13 @@
     "mrr": 0.9545,
     "submission": "submissions/solar_pro3_direct_answer_single_20260526/solar_pro3_direct_eval246_base_eval221.jsonl",
     "model": "solar-pro3"
+  },
+  {
+    "eval_id": "252",
+    "outcome": "neutral",
+    "map": 0.9545,
+    "mrr": 0.9591,
+    "submission": "submissions/residual_single_strict_20260526/residual_eval246_base_eval252.jsonl",
+    "model": "solar-pro3"
   }
 ]

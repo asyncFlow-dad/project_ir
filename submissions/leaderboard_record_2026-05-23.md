@@ -809,3 +809,21 @@
   - Eval `221` is public-regressed.
   - Keep current best as `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`.
   - Lock out eval `221`; semantic-looking circuit explanation fix did not improve public score.
+
+## Eval252 Residual Submission Result - 2026-05-26
+
+- Submitted file: `submissions/residual_single_strict_20260526/residual_eval246_base_eval252.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`
+  - Public MAP/MRR: `0.9545` / `0.9591`
+- Reported public MAP: `0.9545`
+- Reported public MRR: `0.9591`
+- Result: tied current best.
+- Changed eval ID: `252`
+- Query: `해구 생겨나 원리`
+- Decision:
+  - Eval `252` is public-neutral.
+  - Keep current best as `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`.
+  - Lock out eval `252`; candidate beat current top-1 but did not improve public score, so next residual mining must require candidate to beat current top-k alternatives, not only baseline top-1.
+  - Do not submit loose-gate file `submissions/residual_single_20260526/residual_eval246_base_eval7.jsonl`.
