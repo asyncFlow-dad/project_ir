@@ -259,5 +259,13 @@
     "eval_id": "264",
     "outcome": "manual_rejected",
     "reason": "query expansion candidate only defines genital vasocongestion; baseline better answers sexual stimulus to lubrication/blood-flow process"
+  },
+  {
+    "eval_id": "246",
+    "outcome": "improved",
+    "map": 0.9545,
+    "mrr": 0.9591,
+    "submission": "submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl",
+    "model": "solar-pro3"
   }
 ]
