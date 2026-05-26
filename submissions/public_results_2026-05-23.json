@@ -335,5 +335,37 @@
     "mrr": 0.9545,
     "submission": "submissions/manual_single_20260526/manual_eval309_base_eval34.jsonl",
     "model": "solar-pro3"
+  },
+  {
+    "eval_id": "31",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval31.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "85",
+    "outcome": "regressed",
+    "map": 0.9538,
+    "mrr": 0.9545,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval85.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "214",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval214.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "87",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval87.jsonl",
+    "model": "solar-pro3"
   }
 ]

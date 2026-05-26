@@ -962,3 +962,46 @@
   - Do not spend remaining daily submissions on this run.
   - High-score rejected rows remain risky: `241` has arithmetic contradiction, `85` has conflicting formula interpretations, `31` is not clearly better than baseline for generic sound propagation.
   - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+
+## Remaining4 Manual Submission Results - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Previous best public MAP/MRR: `0.9561` / `0.9591`
+
+### Eval31
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval31.jsonl`
+- Reported public MAP/MRR: `0.9561` / `0.9591`
+- Result: tied current best.
+- Decision: lock out eval `31`; sound propagation candidate did not improve public score.
+
+### Eval85
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval85.jsonl`
+- Reported public MAP/MRR: `0.9538` / `0.9545`
+- Result: regressed vs current best.
+- Difference:
+  - MAP: `-0.0023` (`0.9561` -> `0.9538`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Decision: lock out eval `85`; formula-interpretation candidate is publicly harmful.
+
+### Eval214
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval214.jsonl`
+- Reported public MAP/MRR: `0.9561` / `0.9591`
+- Result: tied current best.
+- Decision: lock out eval `214`; more complete atomic-structure candidate did not improve public score.
+
+### Eval87
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval87.jsonl`
+- Reported public MAP/MRR: `0.9561` / `0.9591`
+- Result: tied current best.
+- Decision: lock out eval `87`; Jupiter internal-heat candidate did not improve public score.
+
+### Summary
+
+- New best: none.
+- Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+- Remaining4 experiment confirms that same-topic/detail/formula candidates are unreliable; future submissions should require stronger public proxy or stop when accepted candidates are absent.
