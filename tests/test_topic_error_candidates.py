@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import importlib.util
 import json
 import sys
@@ -200,3 +202,104 @@ class TopicErrorCandidateTests(TestCase):
         self.assertEqual(accepted, [])
         self.assertEqual(len(rejected), 1)
         self.assertEqual(rejected[0].stage, "pairwise")
+
+    def test_direct_answer_review_does_not_require_baseline_wrong_flag(self) -> None:
+        topic = _load_module()
+        candidate = topic.RecallCandidate(
+            eval_id="246",
+            query="친환경 재생 가능 재료 어떤것들 있나",
+            tier="direct",
+            baseline_top1="old-a",
+            candidate_top1="new-a",
+            baseline_relevance=0.28,
+            candidate_relevance=0.41,
+            relevance_delta=0.13,
+            candidate_topk=["new-a", "old-a"],
+        )
+
+        with patch.object(topic, "judge_direct_answer_candidate") as direct_judge, patch.object(
+            topic, "judge_pairwise_candidate"
+        ) as pairwise_judge:
+            direct_judge.return_value = topic.Judgement(
+                winner="candidate",
+                docid="new-a",
+                confidence=0.86,
+                reason="candidate names recyclable materials",
+                baseline_is_wrong=False,
+                candidate_direct_answer=True,
+                candidate_offtopic=False,
+                submit_risk="medium",
+            )
+            pairwise_judge.return_value = topic.Judgement(
+                winner="candidate",
+                docid="new-a",
+                confidence=0.84,
+                reason="재생 및 재활용 가능한 재료",
+            )
+
+            accepted = topic.review_recall_candidates(
+                candidates=[candidate],
+                doc_texts={"old-a": "재생 가능 자원 장점", "new-a": "재생 및 재활용 가능한 재료"},
+                provider="upstage",
+                model="solar-pro3",
+                host="https://api.upstage.ai/v1",
+                api_key="secret-key",
+                min_topic_confidence=0.80,
+                min_pairwise_confidence=0.80,
+                limit=1,
+                review_mode="direct_answer",
+            )
+
+        self.assertEqual([item.recall.eval_id for item in accepted], ["246"])
+        self.assertEqual(accepted[0].topic_confidence, 0.86)
+
+    def test_direct_answer_review_rejects_candidate_offtopic_flag(self) -> None:
+        topic = _load_module()
+        candidate = topic.RecallCandidate(
+            eval_id="88",
+            query="자연보호구역 필요한 이유",
+            tier="direct",
+            baseline_top1="old-a",
+            candidate_top1="new-a",
+            baseline_relevance=0.12,
+            candidate_relevance=0.60,
+            relevance_delta=0.48,
+            candidate_topk=["new-a", "old-a"],
+        )
+
+        with patch.object(topic, "judge_direct_answer_candidate") as direct_judge:
+            direct_judge.return_value = topic.Judgement(
+                winner="candidate",
+                docid="new-a",
+                confidence=0.95,
+                reason="candidate is production not reserve reason",
+                baseline_is_wrong=False,
+                candidate_direct_answer=False,
+                candidate_offtopic=True,
+                submit_risk="high",
+            )
+
+            rejected = []
+            accepted = topic.review_recall_candidates(
+                candidates=[candidate],
+                doc_texts={"old-a": "자연 보호구역은 생물 다양성을 유지합니다.", "new-a": "순일차 생산성"},
+                provider="upstage",
+                model="solar-pro3",
+                host="https://api.upstage.ai/v1",
+                api_key="secret-key",
+                min_topic_confidence=0.80,
+                min_pairwise_confidence=0.80,
+                limit=1,
+                rejected=rejected,
+                review_mode="direct_answer",
+            )
+
+        self.assertEqual(accepted, [])
+        self.assertEqual(len(rejected), 1)
+        self.assertEqual(rejected[0].stage, "direct_answer")
+
+    def test_default_host_uses_ollama_for_ollama_provider(self) -> None:
+        topic = _load_module()
+
+        self.assertEqual(topic.default_host("ollama"), "http://localhost:11434")
+        self.assertEqual(topic.default_host("upstage"), "https://api.upstage.ai/v1")

@@ -1,0 +1,742 @@
+{
+  "recall_candidates": [
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "d239aacb-29fe-48fa-9263-492cfda160f0",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "d239aacb-29fe-48fa-9263-492cfda160f0",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "bb33e3f3-d470-4276-80ca-168d4102b932",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "bb33e3f3-d470-4276-80ca-168d4102b932",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "9306246e-9aab-400f-ac13-cde110e9bc1a",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "9306246e-9aab-400f-ac13-cde110e9bc1a",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "943f11af-707a-4a95-b146-7508b186f01c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "943f11af-707a-4a95-b146-7508b186f01c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "79cad82b-570c-4112-b726-3701a37b4466",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "79cad82b-570c-4112-b726-3701a37b4466",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "88935197-f45b-49d3-b9ab-a9dede55b731",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "88935197-f45b-49d3-b9ab-a9dede55b731",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "b965108a-9221-47d3-8fa5-858f10a042c1",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "b965108a-9221-47d3-8fa5-858f10a042c1",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "672b3d37-063e-4f90-99aa-302cc17d4704",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "672b3d37-063e-4f90-99aa-302cc17d4704",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.532738,
+      "relevance_delta": 0.255952,
+      "candidate_topk": [
+        "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "c7733506-e361-403a-9d55-bd572b80e838",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "c7733506-e361-403a-9d55-bd572b80e838",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자연보호구역 필요한 이유에 대해 기술한 내용이 baseline에 포함되어 있습니다."
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자연 보호구역 필요한 이유에 대한 구체적인 설명이 baseline에 포함되어 있으며, candidate는 전동기 관련 내용으로 완전히 off-topic입니다."
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "d239aacb-29fe-48fa-9263-492cfda160f0",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "d239aacb-29fe-48fa-9263-492cfda160f0",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자연 보호구역 필요한 이유에 대한 구체적인 설명이 baseline에 포함되어 있습니다."
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "tier_a",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "bb33e3f3-d470-4276-80ca-168d4102b932",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "bb33e3f3-d470-4276-80ca-168d4102b932",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자연 보호구역의 필요 이유에 대한 구체적인 설명이 baseline에 포함되어 있으며, candidate는 사회 보장과 관련된 내용으로 완전히 off-topic입니다."
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "9306246e-9aab-400f-ac13-cde110e9bc1a",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "9306246e-9aab-400f-ac13-cde110e9bc1a",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "현미경은 물체를 50배로 확대할 수 있습니다."
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "tier_a",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 1.0,
+      "judge_reason": "현미경은 물체를 50배로 확대할 수 있습니다."
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "동일한 독감 변종에 두 번 감염된 경우 기억 세포가 관련이 있음."
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "943f11af-707a-4a95-b146-7508b186f01c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "943f11af-707a-4a95-b146-7508b186f01c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "동일한 독감 변종에 두 번 감염된 경우 기억 세포가 관련이 있습니다."
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "tier_a",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "79cad82b-570c-4112-b726-3701a37b4466",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "79cad82b-570c-4112-b726-3701a37b4466",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "기억 세포의 역할에 대한 설명이 직접적으로 동일한 독감 다시 감염 이유를 답변한다."
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "원자번호와 양성자 관계 설명"
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "88935197-f45b-49d3-b9ab-a9dede55b731",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "88935197-f45b-49d3-b9ab-a9dede55b731",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "원자번호와 양성자 관계 설명"
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "b965108a-9221-47d3-8fa5-858f10a042c1",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "b965108a-9221-47d3-8fa5-858f10a042c1",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "원자번호와 양성자 관계 설명"
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "tier_a",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "672b3d37-063e-4f90-99aa-302cc17d4704",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "672b3d37-063e-4f90-99aa-302cc17d4704",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "원자번호와 양성자 관계 설명"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "기억 상실증의 원인에 대한 정보가 baseline에 포함되어 있으며, candidate는 무관한 실험 종이에 관한 내용입니다."
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "tier_a",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "기억 상실증의 원인에 대한 구체적인 정보가 baseline에 포함되어 있으며, candidate는 기억 상실과 관련된 일반적인 오차에 대해 언급하지만 질문의 요구 사항을 충족시키지 못합니다."
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "물고기 호흡에 대한 정확한 설명이 baseline에 포함되어 있으며, candidate는 관련 없는 환자 목 부상 사례로 off-topic입니다."
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "tier_a",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "물고기가 물 속에서 산소를 흡입하여 호흡하는 과정을 명확히 설명한 문장이 있습니다."
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.532738,
+      "relevance_delta": 0.255952,
+      "candidate_topk": [
+        "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자성체에서 가장 해로운 불순물은 탄소입니다."
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "c7733506-e361-403a-9d55-bd572b80e838",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "c7733506-e361-403a-9d55-bd572b80e838",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자성체의 불순물 중 탄소가 가장 큰 영향을 주는 것으로 명시됨."
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "7f7dcbf8-d428-48de-b2e6-500598fe8a9b",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자성체에서 가장 해로운 불순물은 탄소입니다."
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "tier_b",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "1b0fe20b-34d9-493e-bf7f-75e1fe45a183",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "direct_answer",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.9,
+      "judge_reason": "자성체에서 가장 해로운 불순물은 탄소입니다."
+    }
+  ]
+}

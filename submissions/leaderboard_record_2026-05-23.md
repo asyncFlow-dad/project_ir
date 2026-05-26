@@ -789,3 +789,41 @@
   - Eval `246` is public-improved.
   - Use `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl` as current best baseline.
   - High-risk fallback succeeded where strict/balanced Solar gate rejected all candidates, so next search should use eval246 baseline and include high-risk manual candidates after Solar rejection.
+
+## Eval221 Direct-Answer Submission Result - 2026-05-26
+
+- Submitted file: `submissions/solar_pro3_direct_answer_single_20260526/solar_pro3_direct_eval246_base_eval221.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`
+  - Public MAP/MRR: `0.9545` / `0.9591`
+- Reported public MAP: `0.9500`
+- Reported public MRR: `0.9545`
+- Result: regressed vs eval246 best.
+- Difference:
+  - MAP: `-0.0045` (`0.9545` -> `0.9500`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Changed eval ID: `221`
+- Query: `전구 병렬 연결될 때 전류 줄어드 원인`
+- Decision:
+  - Eval `221` is public-regressed.
+  - Keep current best as `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`.
+  - Lock out eval `221`; semantic-looking circuit explanation fix did not improve public score.
+
+## Eval252 Residual Submission Result - 2026-05-26
+
+- Submitted file: `submissions/residual_single_strict_20260526/residual_eval246_base_eval252.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`
+  - Public MAP/MRR: `0.9545` / `0.9591`
+- Reported public MAP: `0.9545`
+- Reported public MRR: `0.9591`
+- Result: tied current best.
+- Changed eval ID: `252`
+- Query: `해구 생겨나 원리`
+- Decision:
+  - Eval `252` is public-neutral.
+  - Keep current best as `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`.
+  - Lock out eval `252`; candidate beat current top-1 but did not improve public score, so next residual mining must require candidate to beat current top-k alternatives, not only baseline top-1.
+  - Do not submit loose-gate file `submissions/residual_single_20260526/residual_eval246_base_eval7.jsonl`.

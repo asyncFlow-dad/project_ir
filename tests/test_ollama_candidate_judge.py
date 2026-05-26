@@ -20,12 +20,18 @@ class OllamaCandidateJudgeTests(TestCase):
     def test_parse_judgement_accepts_candidate_winner(self) -> None:
         judge = _load_judge_module()
         parsed = judge.parse_judgement(
-            '{"winner":"candidate","docid":"new-doc","confidence":0.82,"reason":"direct"}'
+            '{"winner":"candidate","docid":"new-doc","confidence":0.82,"reason":"direct",'
+            '"baseline_is_wrong":false,"candidate_direct_answer":true,'
+            '"candidate_offtopic":false,"submit_risk":"medium"}'
         )
 
         self.assertEqual(parsed.winner, "candidate")
         self.assertEqual(parsed.docid, "new-doc")
         self.assertEqual(parsed.confidence, 0.82)
+        self.assertFalse(parsed.baseline_is_wrong)
+        self.assertTrue(parsed.candidate_direct_answer)
+        self.assertFalse(parsed.candidate_offtopic)
+        self.assertEqual(parsed.submit_risk, "medium")
 
     def test_parse_judgement_rejects_unknown_winner(self) -> None:
         judge = _load_judge_module()
@@ -163,6 +169,58 @@ class OllamaCandidateJudgeTests(TestCase):
                 baseline_text="반복 실험은 재현성을 높인다.",
                 candidate_docid="new-doc",
                 candidate_text="N=0 런타임 오류는 예외 처리로 다룬다.",
+                model="solar-pro3",
+                host="https://api.upstage.ai/v1",
+                provider="upstage",
+                api_key="secret-key",
+            )
+
+        self.assertEqual(parsed.winner, "baseline")
+
+    def test_direct_answer_judge_allows_partially_relevant_baseline_when_candidate_is_direct(self) -> None:
+        judge = _load_judge_module()
+        payload = (
+            '{"winner":"candidate","docid":"new-doc","confidence":0.86,'
+            '"baseline_is_wrong":false,"candidate_direct_answer":true,'
+            '"candidate_offtopic":false,"submit_risk":"medium",'
+            '"reason":"baseline gives generic renewable-resource benefits; candidate names recyclable materials"}'
+        )
+
+        with patch.object(judge, "_chat", return_value=payload) as chat:
+            parsed = judge.judge_direct_answer_candidate(
+                query="친환경 재생 가능 재료 어떤것들 있나",
+                baseline_docid="old-doc",
+                baseline_text="재생 가능 자원을 이용하는 것은 많은 장점을 가지고 있습니다.",
+                candidate_docid="new-doc",
+                candidate_text="건물들은 재생 및 재활용 가능한 재료를 사용하여 지어졌습니다.",
+                model="solar-pro3",
+                host="https://api.upstage.ai/v1",
+                provider="upstage",
+                api_key="secret-key",
+            )
+
+        self.assertEqual(parsed.winner, "candidate")
+        self.assertFalse(parsed.baseline_is_wrong)
+        self.assertTrue(parsed.candidate_direct_answer)
+        self.assertFalse(parsed.candidate_offtopic)
+        self.assertIn("baseline may be partially relevant", chat.call_args.kwargs["prompt"])
+
+    def test_direct_answer_judge_rejects_offtopic_candidate_even_when_winner_says_candidate(self) -> None:
+        judge = _load_judge_module()
+        payload = (
+            '{"winner":"candidate","docid":"new-doc","confidence":0.95,'
+            '"baseline_is_wrong":true,"candidate_direct_answer":false,'
+            '"candidate_offtopic":true,"submit_risk":"high",'
+            '"reason":"candidate shares keyword but changes topic"}'
+        )
+
+        with patch.object(judge, "_chat", return_value=payload):
+            parsed = judge.judge_direct_answer_candidate(
+                query="자연보호구역 필요한 이유",
+                baseline_docid="old-doc",
+                baseline_text="자연 보호구역은 생물 다양성을 유지합니다.",
+                candidate_docid="new-doc",
+                candidate_text="순일차 생산성은 에너지를 나타냅니다.",
                 model="solar-pro3",
                 host="https://api.upstage.ai/v1",
                 provider="upstage",

@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from ir_search.indexer import CorpusDocument, build_index, search
 from scripts.ollama_candidate_judge import (
     Judgement,
+    judge_direct_answer_candidate,
     judge_pairwise_candidate,
     judge_topic_error_candidate,
     promoted_topk,
@@ -260,10 +261,12 @@ def review_recall_candidates(
     min_pairwise_confidence: float,
     limit: int,
     rejected: list[RejectedCandidate] | None = None,
+    review_mode: str = "topic_error",
 ) -> list[AcceptedCandidate]:
     accepted: list[AcceptedCandidate] = []
     for candidate in candidates:
-        topic = judge_topic_error_candidate(
+        topic = _judge_primary_candidate(
+            review_mode=review_mode,
             query=candidate.query,
             baseline_docid=candidate.baseline_top1,
             baseline_text=doc_texts.get(candidate.baseline_top1, ""),
@@ -279,7 +282,7 @@ def review_recall_candidates(
                 rejected.append(
                     RejectedCandidate(
                         recall=candidate,
-                        stage="topic",
+                        stage=review_mode,
                         winner=topic.winner,
                         docid=topic.docid,
                         confidence=topic.confidence,
@@ -402,10 +405,11 @@ def main() -> int:
     parser.add_argument("--corpus", required=True, type=Path)
     parser.add_argument("--public-results", required=True, type=Path)
     parser.add_argument("--preset", choices=("strict", "balanced", "wide"), default="strict")
+    parser.add_argument("--review-mode", choices=("topic_error", "direct_answer"), default="topic_error")
     parser.add_argument("--candidate-submission-dir", action="append", type=Path, default=[])
     parser.add_argument("--provider", choices=("ollama", "upstage"), default="upstage")
     parser.add_argument("--model", default="solar-pro3")
-    parser.add_argument("--host", default=os.environ.get("UPSTAGE_BASE_URL", "https://api.upstage.ai/v1"))
+    parser.add_argument("--host", default=None)
     parser.add_argument("--api-key", default=None)
     parser.add_argument("--candidate-pool", type=int, default=None)
     parser.add_argument("--per-eval-candidates", type=int, default=None)
@@ -454,12 +458,13 @@ def main() -> int:
         doc_texts=doc_texts,
         provider=args.provider,
         model=args.model,
-        host=args.host,
+        host=args.host or default_host(args.provider),
         api_key=args.api_key or _upstage_api_key(),
         min_topic_confidence=args.min_topic_confidence or preset.min_topic_confidence,
         min_pairwise_confidence=args.min_pairwise_confidence or preset.min_pairwise_confidence,
         limit=args.accepted_limit,
         rejected=rejected,
+        review_mode=args.review_mode,
     )
     for item in accepted:
         recall = item.recall
@@ -528,10 +533,52 @@ def _preset_defaults(name: str) -> RecallPreset:
 
 
 def _candidate_wins(judgement: Judgement, expected_docid: str, min_confidence: float) -> bool:
-    return (
-        judgement.winner == "candidate"
-        and judgement.docid == expected_docid
-        and judgement.confidence >= min_confidence
+    if judgement.winner != "candidate" or judgement.docid != expected_docid:
+        return False
+    if judgement.confidence < min_confidence:
+        return False
+    if judgement.candidate_direct_answer is False or judgement.candidate_offtopic is True:
+        return False
+    if judgement.submit_risk == "high":
+        return False
+    return True
+
+
+def _judge_primary_candidate(
+    *,
+    review_mode: str,
+    query: str,
+    baseline_docid: str,
+    baseline_text: str,
+    candidate_docid: str,
+    candidate_text: str,
+    model: str,
+    host: str,
+    provider: str,
+    api_key: str | None,
+) -> Judgement:
+    if review_mode == "direct_answer":
+        return judge_direct_answer_candidate(
+            query=query,
+            baseline_docid=baseline_docid,
+            baseline_text=baseline_text,
+            candidate_docid=candidate_docid,
+            candidate_text=candidate_text,
+            model=model,
+            host=host,
+            provider=provider,
+            api_key=api_key,
+        )
+    return judge_topic_error_candidate(
+        query=query,
+        baseline_docid=baseline_docid,
+        baseline_text=baseline_text,
+        candidate_docid=candidate_docid,
+        candidate_text=candidate_text,
+        model=model,
+        host=host,
+        provider=provider,
+        api_key=api_key,
     )
 
 
@@ -556,6 +603,12 @@ def _recall_sort_key(item: RecallCandidate) -> tuple[float, float, float, int]:
 
 def _upstage_api_key() -> str | None:
     return os.environ.get("UPSTAGE_API_SECRET_KEY") or os.environ.get("UPSTAGE_API_KEY")
+
+
+def default_host(provider: str) -> str:
+    if provider == "upstage":
+        return os.environ.get("UPSTAGE_BASE_URL", "https://api.upstage.ai/v1")
+    return "http://localhost:11434"
 
 
 def _doc_text(row: dict[str, Any]) -> str:

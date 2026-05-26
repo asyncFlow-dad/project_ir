@@ -22,6 +22,10 @@ class Judgement:
     docid: str
     confidence: float
     reason: str
+    baseline_is_wrong: bool | None = None
+    candidate_direct_answer: bool | None = None
+    candidate_offtopic: bool | None = None
+    submit_risk: str = ""
 
 
 @dataclass(frozen=True)
@@ -50,6 +54,10 @@ def parse_judgement(content: str) -> Judgement:
         docid=str(payload.get("docid") or ""),
         confidence=float(payload.get("confidence") or 0.0),
         reason=str(payload.get("reason") or ""),
+        baseline_is_wrong=_optional_bool(payload.get("baseline_is_wrong")),
+        candidate_direct_answer=_optional_bool(payload.get("candidate_direct_answer")),
+        candidate_offtopic=_optional_bool(payload.get("candidate_offtopic")),
+        submit_risk=str(payload.get("submit_risk") or ""),
     )
 
 
@@ -267,6 +275,54 @@ def judge_topic_error_candidate(
     return judgement
 
 
+def judge_direct_answer_candidate(
+    *,
+    query: str,
+    baseline_docid: str,
+    baseline_text: str,
+    candidate_docid: str,
+    candidate_text: str,
+    model: str,
+    host: str,
+    provider: str = "ollama",
+    api_key: str | None = None,
+) -> Judgement:
+    prompt = (
+        "Korean IR direct-answer judge. Submit budget is scarce, but baseline may be partially relevant. "
+        "Choose candidate only when it directly answers the query's requested entity/relation better than baseline. "
+        "Reject candidates that are off-topic, generic, adjacent, narrower, broader, or only keyword-matched. "
+        "Set candidate_direct_answer=true only when candidate contains exact evidence for the query. "
+        "Set candidate_offtopic=true for scenario drift or keyword-only matches. "
+        "Set baseline_is_wrong=true only when baseline answers a different topic; false is allowed for partial baseline. "
+        "Use submit_risk as low, medium, or high. Never choose candidate when submit_risk is high. "
+        "Output JSON only: "
+        '{"winner":"baseline|candidate|tie","docid":"candidate-docid-or-empty","confidence":0.0,'
+        '"baseline_is_wrong":true,"candidate_direct_answer":true,"candidate_offtopic":false,'
+        '"submit_risk":"low|medium|high","reason":"short Korean evidence"}\n\n'
+        f"query={query}\n"
+        f"baseline={{\"docid\":{json.dumps(baseline_docid, ensure_ascii=False)},"
+        f"\"content\":{json.dumps(baseline_text[:1300], ensure_ascii=False)}}}\n"
+        f"candidate={{\"docid\":{json.dumps(candidate_docid, ensure_ascii=False)},"
+        f"\"content\":{json.dumps(candidate_text[:1300], ensure_ascii=False)}}}"
+    )
+    content = _chat(provider=provider, host=host, model=model, prompt=prompt, api_key=api_key)
+    judgement = try_parse_judgement(content)
+    if judgement is None:
+        return Judgement(winner="baseline", docid="", confidence=0.0, reason="malformed response")
+    if judgement.candidate_offtopic or not judgement.candidate_direct_answer or judgement.submit_risk == "high":
+        return Judgement(
+            winner="baseline",
+            docid="",
+            confidence=judgement.confidence,
+            reason=judgement.reason,
+            baseline_is_wrong=judgement.baseline_is_wrong,
+            candidate_direct_answer=judgement.candidate_direct_answer,
+            candidate_offtopic=judgement.candidate_offtopic,
+            submit_risk=judgement.submit_risk,
+        )
+    return judgement
+
+
 def write_single_row_decisions(
     *,
     baseline_path: Path,
@@ -430,6 +486,20 @@ def _upstage_chat(*, base_url: str, model: str, prompt: str, api_key: str | None
 
 def _upstage_api_key() -> str | None:
     return os.environ.get("UPSTAGE_API_SECRET_KEY") or os.environ.get("UPSTAGE_API_KEY")
+
+
+def _optional_bool(value: object) -> bool | None:
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        lowered = value.strip().lower()
+        if lowered in {"true", "1", "yes"}:
+            return True
+        if lowered in {"false", "0", "no"}:
+            return False
+    return None
 
 
 def _doc_text(row: dict[str, Any]) -> str:
