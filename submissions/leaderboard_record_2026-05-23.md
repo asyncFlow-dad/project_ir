@@ -827,3 +827,202 @@
   - Keep current best as `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`.
   - Lock out eval `252`; candidate beat current top-1 but did not improve public score, so next residual mining must require candidate to beat current top-k alternatives, not only baseline top-1.
   - Do not submit loose-gate file `submissions/residual_single_20260526/residual_eval246_base_eval7.jsonl`.
+
+## Eval309 Residual High-Risk Submission Result - 2026-05-26
+
+- Submitted file: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/solar_pro3_highrisk_20260526/solar_pro3_highrisk_eval205_base_eval246.jsonl`
+  - Public MAP/MRR: `0.9545` / `0.9591`
+- Reported public MAP: `0.9561`
+- Reported public MRR: `0.9591`
+- Result: new best.
+- Improvement:
+  - MAP: `+0.0016` (`0.9545` -> `0.9561`)
+  - MRR: `+0.0000` (`0.9591` -> `0.9591`)
+- Changed eval ID: `309`
+- Query: `특정 농도 황산 sample 만드 방법`
+- Decision:
+  - Eval `309` is public-improved.
+  - Use `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl` as current best baseline.
+  - High-risk rank3 promotion can still improve MAP even when strict top-k guard rejects all candidates; next search should mine current rank2/rank3 promotions with high support, but exclude rows where current top1 already exactly answers.
+
+## Eval207 High-Risk Rank Submission Result - 2026-05-26
+
+- Submitted file: `submissions/highrisk_rank_single_remote2_20260526/highrisk_rank_eval309_base_round2_eval207.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9561`
+- Reported public MRR: `0.9591`
+- Result: tied current best.
+- Changed eval ID: `207`
+- Query: `곤충 눈 구조`
+- Decision:
+  - Eval `207` is public-neutral.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `207`; high-support rank2 promotion looked semantically plausible but did not improve public score.
+  - Next search should require stronger public-signal proxy than Solar direct-answer judgement alone: prefer rows where baseline is clearly off-topic or where multiple independent candidate sources agree and current top1 lacks the key answer span.
+
+## Answer-Span Candidate Run - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Current best public MAP/MRR: `0.9561` / `0.9591`
+- Remote audits:
+  - `submissions/answer_span_audit_20260526.json`
+  - `submissions/answer_span_audit_round2_20260526.json`
+- Result:
+  - Accepted by automated answer-span gate: `7`, `279`, `250`, `303`
+  - Submitted files generated but not recommended.
+- Manual rejection:
+  - Eval `7`: baseline and candidate are near-duplicate; baseline already directly answers light speed in nonmagnetic dielectric.
+  - Eval `279`: baseline already links literacy to social development and uses newer 2015 statistic; candidate uses older 1950 statistic.
+  - Eval `250`: baseline directly explains canyon erosion by river; candidate adds delta/river-mouth noise.
+  - Eval `303`: baseline directly explains camouflage survival; candidate has lower-quality examples and no clear answer-span gain.
+- Decision:
+  - Do not submit answer-span run files.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Answer-span Solar gate catches some weak rows but still overclaims baseline-missing facts; future gate should require literal baseline evidence absence before candidate review.
+
+## Answer-Span Strict Quote Candidate Run - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Current best public MAP/MRR: `0.9561` / `0.9591`
+- Remote audit: `submissions/answer_span_strict_quote_audit_20260526.json`
+- Gate change:
+  - Candidate must include exact quote evidence.
+  - Baseline present quote blocks acceptance.
+  - Previous manual rejects `7`, `279`, `250`, `303` remain locked out by public-result ledger.
+- Result:
+  - Accepted candidates: `0`
+  - No submission file recommended.
+- Decision:
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Strict quote gate successfully prevents weak semantic overclaims, but it found no public-score candidate in current residual pool.
+
+## Eval23 Manual Submission Result - 2026-05-26
+
+- Submitted file: `submissions/manual_single_20260526/manual_eval309_base_eval23.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9561`
+- Reported public MRR: `0.9591`
+- Result: tied current best.
+- Changed eval ID: `23`
+- Query: `식물 동물중 누 번식력 높다고 할 수 있어`
+- Decision:
+  - Eval `23` is public-neutral.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `23`; manual rank2 promotion looked broader but did not improve public score.
+
+## Eval34 Manual Submission Result - 2026-05-26
+
+- Submitted file: `submissions/manual_single_20260526/manual_eval309_base_eval34.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9515`
+- Reported public MRR: `0.9545`
+- Result: regressed vs current best.
+- Difference:
+  - MAP: `-0.0046` (`0.9561` -> `0.9515`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Changed eval ID: `34`
+- Query: `씨앗 기능 자세히`
+- Decision:
+  - Eval `34` is public-regressed.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `34`; broader/more detailed candidate hurt public score.
+  - Do not submit more “more detailed but same topic” promotions today.
+
+## Fault Candidate Run - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Current best public MAP/MRR: `0.9561` / `0.9591`
+- Submission budget remaining when planned: `4`
+- Remote audits:
+  - `submissions/fault_candidate_audit_20260526.json`
+  - `submissions/fault_candidate_lenient_audit_20260526.json`
+- Gate change:
+  - Accept only `off_topic`, `wrong_entity`, `wrong_formula`, or `contradiction` baseline faults.
+  - Reject `missing_answer`, broader/detail-richer candidates, and candidates without exact evidence quote.
+  - Keep one-row outputs only.
+- Result:
+  - Accepted candidates: `0`
+  - No submission file recommended.
+- Decision:
+  - Do not spend remaining daily submissions on this run.
+  - High-score rejected rows remain risky: `241` has arithmetic contradiction, `85` has conflicting formula interpretations, `31` is not clearly better than baseline for generic sound propagation.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+
+## Remaining4 Manual Submission Results - 2026-05-26
+
+- Baseline: `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+- Model: `solar-pro3`
+- Previous best public MAP/MRR: `0.9561` / `0.9591`
+
+### Eval31
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval31.jsonl`
+- Reported public MAP/MRR: `0.9561` / `0.9591`
+- Result: tied current best.
+- Decision: lock out eval `31`; sound propagation candidate did not improve public score.
+
+### Eval85
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval85.jsonl`
+- Reported public MAP/MRR: `0.9538` / `0.9545`
+- Result: regressed vs current best.
+- Difference:
+  - MAP: `-0.0023` (`0.9561` -> `0.9538`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Decision: lock out eval `85`; formula-interpretation candidate is publicly harmful.
+
+### Eval214
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval214.jsonl`
+- Reported public MAP/MRR: `0.9561` / `0.9591`
+- Result: tied current best.
+- Decision: lock out eval `214`; more complete atomic-structure candidate did not improve public score.
+
+### Eval87
+
+- Submitted file: `submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval87.jsonl`
+- Reported public MAP/MRR: `0.9561` / `0.9591`
+- Result: tied current best.
+- Decision: lock out eval `87`; Jupiter internal-heat candidate did not improve public score.
+
+### Summary
+
+- New best: none.
+- Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+- Remaining4 experiment confirms that same-topic/detail/formula candidates are unreliable; future submissions should require stronger public proxy or stop when accepted candidates are absent.
+
+## Highrisk Rank Submission Result - 2026-05-27
+
+- Submitted file: `submissions/highrisk_rank_single_20260527/highrisk_rank_eval309_base_eval241.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9515`
+- Reported public MRR: `0.9545`
+- Result: regressed vs current best.
+- Difference:
+  - MAP: `-0.0046` (`0.9561` -> `0.9515`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Changed eval ID: `241`
+- Query: `정육면체 가라앉지 않고 물 위 떠 있 때 수면 윗부분 해당 부피 구 방법`
+- Decision:
+  - Eval `241` is public-regressed.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `241`; the candidate had arithmetic/answer inconsistency despite high judge support.
+  - Do not submit the remaining 2026-05-27 highrisk-rank candidates without stronger manual evidence.

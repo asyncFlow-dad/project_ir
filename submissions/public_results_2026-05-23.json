@@ -283,5 +283,97 @@
     "mrr": 0.9591,
     "submission": "submissions/residual_single_strict_20260526/residual_eval246_base_eval252.jsonl",
     "model": "solar-pro3"
+  },
+  {
+    "eval_id": "309",
+    "outcome": "improved",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "207",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/highrisk_rank_single_remote2_20260526/highrisk_rank_eval309_base_round2_eval207.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "7",
+    "outcome": "manual_rejected",
+    "reason": "answer-span candidate nearly duplicates baseline; baseline already directly answers light speed in nonmagnetic dielectric"
+  },
+  {
+    "eval_id": "279",
+    "outcome": "manual_rejected",
+    "reason": "baseline already directly links literacy to social development and uses newer 2015 statistic; candidate uses older 1950 statistic"
+  },
+  {
+    "eval_id": "250",
+    "outcome": "manual_rejected",
+    "reason": "answer-span candidate adds delta/river-mouth noise; baseline already directly explains canyon erosion by river"
+  },
+  {
+    "eval_id": "303",
+    "outcome": "manual_rejected",
+    "reason": "baseline already directly explains camouflage survival; candidate contains lower-quality examples and no clear answer-span gain"
+  },
+  {
+    "eval_id": "23",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_single_20260526/manual_eval309_base_eval23.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "34",
+    "outcome": "regressed",
+    "map": 0.9515,
+    "mrr": 0.9545,
+    "submission": "submissions/manual_single_20260526/manual_eval309_base_eval34.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "31",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval31.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "85",
+    "outcome": "regressed",
+    "map": 0.9538,
+    "mrr": 0.9545,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval85.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "214",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval214.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "87",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/manual_remaining4_20260526/manual_remaining4_eval309_base_eval87.jsonl",
+    "model": "solar-pro3"
+  },
+  {
+    "eval_id": "241",
+    "outcome": "regressed",
+    "map": 0.9515,
+    "mrr": 0.9545,
+    "submission": "submissions/highrisk_rank_single_20260527/highrisk_rank_eval309_base_eval241.jsonl",
+    "model": "solar-pro3"
   }
 ]
