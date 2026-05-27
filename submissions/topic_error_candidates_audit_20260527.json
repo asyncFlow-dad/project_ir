@@ -1,0 +1,2387 @@
+{
+  "recall_candidates": [
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "5594ee21-e922-43b3-aea8-51ed12331f16",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.282853,
+      "relevance_delta": 0.193911,
+      "candidate_topk": [
+        "5594ee21-e922-43b3-aea8-51ed12331f16",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ]
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "f60e32aa-fe9b-4626-907c-5907a9eedcf2",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.204327,
+      "relevance_delta": 0.115385,
+      "candidate_topk": [
+        "f60e32aa-fe9b-4626-907c-5907a9eedcf2",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ]
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "d10ea1d2-92dd-48c6-93d4-3dff5c4b9e13",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.204327,
+      "relevance_delta": 0.115385,
+      "candidate_topk": [
+        "d10ea1d2-92dd-48c6-93d4-3dff5c4b9e13",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ]
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "96a2c24e-294b-4835-bc44-715d27ab6fed",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.204327,
+      "relevance_delta": 0.115385,
+      "candidate_topk": [
+        "96a2c24e-294b-4835-bc44-715d27ab6fed",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "d239aacb-29fe-48fa-9263-492cfda160f0",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "d239aacb-29fe-48fa-9263-492cfda160f0",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "bb33e3f3-d470-4276-80ca-168d4102b932",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "bb33e3f3-d470-4276-80ca-168d4102b932",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "9306246e-9aab-400f-ac13-cde110e9bc1a",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "9306246e-9aab-400f-ac13-cde110e9bc1a",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "75c00158-83b4-4e4c-9f00-a7defa999ff6",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.4375,
+      "relevance_delta": 0.296875,
+      "candidate_topk": [
+        "75c00158-83b4-4e4c-9f00-a7defa999ff6",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.359375,
+      "relevance_delta": 0.21875,
+      "candidate_topk": [
+        "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "answer_absence",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "71d79704-262e-4eb0-8ebc-7c9e597ea1c9",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.328125,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "71d79704-262e-4eb0-8ebc-7c9e597ea1c9",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "0e59475f-4f21-40bf-a899-2879c15640a4",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.275,
+      "candidate_topk": [
+        "0e59475f-4f21-40bf-a899-2879c15640a4",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "9aadeaea-3e90-41ef-bd8d-15c5d3662401",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.275,
+      "candidate_topk": [
+        "9aadeaea-3e90-41ef-bd8d-15c5d3662401",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "14a9c68d-ec8d-4645-a470-1cf3a32c5715",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.275,
+      "candidate_topk": [
+        "14a9c68d-ec8d-4645-a470-1cf3a32c5715",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "88935197-f45b-49d3-b9ab-a9dede55b731",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "88935197-f45b-49d3-b9ab-a9dede55b731",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "b965108a-9221-47d3-8fa5-858f10a042c1",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "b965108a-9221-47d3-8fa5-858f10a042c1",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "cb4a3d86-988e-4425-b295-bbe34317c5cb",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.392857,
+      "relevance_delta": 0.232143,
+      "candidate_topk": [
+        "cb4a3d86-988e-4425-b295-bbe34317c5cb",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ]
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "tier": "strict",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "2b239894-e1b5-4165-80ce-f9b32c331104",
+      "baseline_relevance": 0.190476,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.214286,
+      "candidate_topk": [
+        "2b239894-e1b5-4165-80ce-f9b32c331104",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f"
+      ]
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "tier": "strict",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "4f9c17dd-5c3a-4481-8ee1-fea2c738a229",
+      "baseline_relevance": 0.190476,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.214286,
+      "candidate_topk": [
+        "4f9c17dd-5c3a-4481-8ee1-fea2c738a229",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f"
+      ]
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "tier": "strict",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "bc1725f6-2fb9-487f-ac3e-1e767151e8bf",
+      "baseline_relevance": 0.190476,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.214286,
+      "candidate_topk": [
+        "bc1725f6-2fb9-487f-ac3e-1e767151e8bf",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "fa64655f-af84-4ed1-84da-7140153a16c3",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.441667,
+      "relevance_delta": 0.233334,
+      "candidate_topk": [
+        "fa64655f-af84-4ed1-84da-7140153a16c3",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "7ddfa9e7-0782-4079-930e-4758077ce4fd",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.35,
+      "relevance_delta": 0.141667,
+      "candidate_topk": [
+        "7ddfa9e7-0782-4079-930e-4758077ce4fd",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "1617fb72-b6dd-4ef9-8778-659b09eaea9d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.2125,
+      "candidate_topk": [
+        "1617fb72-b6dd-4ef9-8778-659b09eaea9d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "d7aa9ada-6128-4948-a30a-6d7dadbe10e2",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.3625,
+      "relevance_delta": 0.15,
+      "candidate_topk": [
+        "d7aa9ada-6128-4948-a30a-6d7dadbe10e2",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ]
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "7f74fa3d-e61c-4cb2-b5ef-623f3b1f8fb9",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.47549,
+      "relevance_delta": 0.25,
+      "candidate_topk": [
+        "7f74fa3d-e61c-4cb2-b5ef-623f3b1f8fb9",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ]
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "30940360-f186-49c2-8114-f3b81a4554cf",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.392157,
+      "relevance_delta": 0.166667,
+      "candidate_topk": [
+        "30940360-f186-49c2-8114-f3b81a4554cf",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ]
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "ee58ae13-aaca-4958-b9cd-d25604d08252",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.377451,
+      "relevance_delta": 0.151961,
+      "candidate_topk": [
+        "ee58ae13-aaca-4958-b9cd-d25604d08252",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ]
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "5f60484a-7aa1-4391-8fb2-a870ec732679",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.362745,
+      "relevance_delta": 0.137255,
+      "candidate_topk": [
+        "5f60484a-7aa1-4391-8fb2-a870ec732679",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ]
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "tier": "strict",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "82c49474-4338-471f-8fa4-9bedc9b6f021",
+      "baseline_relevance": 0.233333,
+      "candidate_relevance": 0.491667,
+      "relevance_delta": 0.258334,
+      "candidate_topk": [
+        "82c49474-4338-471f-8fa4-9bedc9b6f021",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34"
+      ]
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "tier": "strict",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "06e0d3e5-dd97-4ab3-b5d2-c99398e12361",
+      "baseline_relevance": 0.233333,
+      "candidate_relevance": 0.491667,
+      "relevance_delta": 0.258334,
+      "candidate_topk": [
+        "06e0d3e5-dd97-4ab3-b5d2-c99398e12361",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34"
+      ]
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "tier": "strict",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "cea6aa6e-ac06-493e-a5b1-f66d1ad8d914",
+      "baseline_relevance": 0.233333,
+      "candidate_relevance": 0.3625,
+      "relevance_delta": 0.129167,
+      "candidate_topk": [
+        "cea6aa6e-ac06-493e-a5b1-f66d1ad8d914",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34"
+      ]
+    },
+    {
+      "eval_id": "89",
+      "query": "모델링할 때 신경써야 할 사항들 뭐 있어",
+      "tier": "strict",
+      "baseline_top1": "6f8d2975-3a40-441e-9dd2-c555d7d2fd85",
+      "candidate_top1": "db60af15-8cfa-4a7e-91b5-2b05f550519d",
+      "baseline_relevance": 0.2375,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.220833,
+      "candidate_topk": [
+        "db60af15-8cfa-4a7e-91b5-2b05f550519d",
+        "6f8d2975-3a40-441e-9dd2-c555d7d2fd85",
+        "59952996-37f3-412e-a74c-a13f0cd1aafa"
+      ]
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ]
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "731e1f79-f30c-4895-982d-4cf670f8df90",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "731e1f79-f30c-4895-982d-4cf670f8df90",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ]
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "b786630c-ebfd-4285-819f-75ba6c31033b",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "b786630c-ebfd-4285-819f-75ba6c31033b",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ]
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "f67a6df2-b0ab-48b8-b732-79bde95bb20d",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "f67a6df2-b0ab-48b8-b732-79bde95bb20d",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ]
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "tier": "strict",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "553989d9-ee23-4203-b244-a941b6fa8d99",
+      "baseline_relevance": 0.267857,
+      "candidate_relevance": 0.375,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "553989d9-ee23-4203-b244-a941b6fa8d99",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc"
+      ]
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "tier": "strict",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "340485f8-4e78-44f4-a53a-2df21915367f",
+      "baseline_relevance": 0.267857,
+      "candidate_relevance": 0.375,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "340485f8-4e78-44f4-a53a-2df21915367f",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc"
+      ]
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "tier": "strict",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "8a78364e-63bf-4915-b718-fdc461bc62c9",
+      "baseline_relevance": 0.267857,
+      "candidate_relevance": 0.375,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "8a78364e-63bf-4915-b718-fdc461bc62c9",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc"
+      ]
+    },
+    {
+      "eval_id": "281",
+      "query": "지구 생겨난지 얼마나 오래 되었는지 확인 방법",
+      "tier": "strict",
+      "baseline_top1": "de5d9a1f-67f6-45ea-a4a4-0540f5b7583e",
+      "candidate_top1": "828c02d0-d692-42d4-bb5d-9941d327a46d",
+      "baseline_relevance": 0.269841,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.134921,
+      "candidate_topk": [
+        "828c02d0-d692-42d4-bb5d-9941d327a46d",
+        "de5d9a1f-67f6-45ea-a4a4-0540f5b7583e",
+        "7fa6c8b9-fe06-47c8-ad00-dcde8173cc19"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.532738,
+      "relevance_delta": 0.255952,
+      "candidate_topk": [
+        "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "c7733506-e361-403a-9d55-bd572b80e838",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "c7733506-e361-403a-9d55-bd572b80e838",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "38995c72-0caa-4a13-a5c3-d4db064a5f76",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.491071,
+      "relevance_delta": 0.214285,
+      "candidate_topk": [
+        "38995c72-0caa-4a13-a5c3-d4db064a5f76",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "3676f59a-5dd0-457f-9748-03b9f1102f3e",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.127976,
+      "candidate_topk": [
+        "3676f59a-5dd0-457f-9748-03b9f1102f3e",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "answer_absence",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "8eda83e0-281b-4538-a4ba-3b6eee390144",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.383929,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "8eda83e0-281b-4538-a4ba-3b6eee390144",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ]
+    },
+    {
+      "eval_id": "238",
+      "query": "전류 흐름 극대화 하려면 배터리 저항 어떻게 연결해야 하나",
+      "tier": "answer_absence",
+      "baseline_top1": "f48600d6-e492-43eb-b564-1860aa81da5f",
+      "candidate_top1": "79093389-32e0-4b2e-8cfb-fc03efd1ed8f",
+      "baseline_relevance": 0.304348,
+      "candidate_relevance": 0.376812,
+      "relevance_delta": 0.072464,
+      "candidate_topk": [
+        "79093389-32e0-4b2e-8cfb-fc03efd1ed8f",
+        "f48600d6-e492-43eb-b564-1860aa81da5f",
+        "dbe8518e-42c7-4178-9b63-cc08a0ca61f9"
+      ]
+    },
+    {
+      "eval_id": "28",
+      "query": "사회로부터 감정 지원 어떤 형태 나타날 수 있어",
+      "tier": "strict",
+      "baseline_top1": "03390467-c6dc-4242-a039-c7e9a8bb242f",
+      "candidate_top1": "36d4ef7a-797e-4bbb-80f2-8f84d3ab4581",
+      "baseline_relevance": 0.305556,
+      "candidate_relevance": 0.416667,
+      "relevance_delta": 0.111111,
+      "candidate_topk": [
+        "36d4ef7a-797e-4bbb-80f2-8f84d3ab4581",
+        "03390467-c6dc-4242-a039-c7e9a8bb242f",
+        "75b16dc7-ade3-4cca-b28f-cb39b6c6ca49"
+      ]
+    },
+    {
+      "eval_id": "272",
+      "query": "행성 크기 화산 얼마나 자주 폭발하는지 관련이 있어",
+      "tier": "strict",
+      "baseline_top1": "2276e958-d625-450a-8bee-b06b762e0b16",
+      "candidate_top1": "b7891224-ec2a-4aa4-b7be-d9d5f3b888c7",
+      "baseline_relevance": 0.3125,
+      "candidate_relevance": 0.433333,
+      "relevance_delta": 0.120833,
+      "candidate_topk": [
+        "b7891224-ec2a-4aa4-b7be-d9d5f3b888c7",
+        "2276e958-d625-450a-8bee-b06b762e0b16",
+        "809896bf-c244-4fb2-ba99-78819e88af8e"
+      ]
+    },
+    {
+      "eval_id": "203",
+      "query": "석탄 에너지원 사용할 때 장단점 뭐야",
+      "tier": "strict",
+      "baseline_top1": "f81c0a09-4082-4b6a-8546-12371ff89fba",
+      "candidate_top1": "de033303-fad6-4420-8386-af047087331d",
+      "baseline_relevance": 0.339286,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.142857,
+      "candidate_topk": [
+        "de033303-fad6-4420-8386-af047087331d",
+        "f81c0a09-4082-4b6a-8546-12371ff89fba",
+        "82c14a9c-625e-4a30-81bc-d05111b884ca"
+      ]
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "4c3f2037-a023-4e77-85f3-4b9169b7cbdf",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "4c3f2037-a023-4e77-85f3-4b9169b7cbdf",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ]
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "1cd925f4-2514-425f-8d8f-0121bd0f7a24",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "1cd925f4-2514-425f-8d8f-0121bd0f7a24",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ]
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "5973b08a-ef7d-431c-ac58-d31d4a57d63c",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "5973b08a-ef7d-431c-ac58-d31d4a57d63c",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ]
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "b47cafbb-25a0-4630-bc1e-f69cfaadbc0d",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "b47cafbb-25a0-4630-bc1e-f69cfaadbc0d",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ]
+    },
+    {
+      "eval_id": "216",
+      "query": "전기 흐르 회로 전선 전구 전류 동일한",
+      "tier": "answer_absence",
+      "baseline_top1": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "candidate_top1": "ae1669d3-28a8-45e2-a8bb-d58d1694c7dc",
+      "baseline_relevance": 0.388393,
+      "candidate_relevance": 0.575893,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "ae1669d3-28a8-45e2-a8bb-d58d1694c7dc",
+        "07ba99c0-c36a-464c-a896-8466cc84c501",
+        "185008d2-6091-4beb-94e4-d847d70fdea6"
+      ]
+    },
+    {
+      "eval_id": "216",
+      "query": "전기 흐르 회로 전선 전구 전류 동일한",
+      "tier": "answer_absence",
+      "baseline_top1": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "candidate_top1": "84934dd1-81ad-4bb1-95e0-ccf02d38b49b",
+      "baseline_relevance": 0.388393,
+      "candidate_relevance": 0.558036,
+      "relevance_delta": 0.169643,
+      "candidate_topk": [
+        "84934dd1-81ad-4bb1-95e0-ccf02d38b49b",
+        "07ba99c0-c36a-464c-a896-8466cc84c501",
+        "185008d2-6091-4beb-94e4-d847d70fdea6"
+      ]
+    },
+    {
+      "eval_id": "216",
+      "query": "전기 흐르 회로 전선 전구 전류 동일한",
+      "tier": "answer_absence",
+      "baseline_top1": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "candidate_top1": "a3125d12-70ef-4698-8873-0f53e40b1310",
+      "baseline_relevance": 0.388393,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.058036,
+      "candidate_topk": [
+        "a3125d12-70ef-4698-8873-0f53e40b1310",
+        "07ba99c0-c36a-464c-a896-8466cc84c501",
+        "185008d2-6091-4beb-94e4-d847d70fdea6"
+      ]
+    },
+    {
+      "eval_id": "1",
+      "query": "고체 액체 변할 때 엔트로피 어떻게 되나",
+      "tier": "answer_absence",
+      "baseline_top1": "4a8549c8-8e81-4804-9df9-852952dd5747",
+      "candidate_top1": "2c02f912-1e78-45a2-874f-1712389cbf57",
+      "baseline_relevance": 0.404762,
+      "candidate_relevance": 0.495238,
+      "relevance_delta": 0.090476,
+      "candidate_topk": [
+        "2c02f912-1e78-45a2-874f-1712389cbf57",
+        "4a8549c8-8e81-4804-9df9-852952dd5747",
+        "3fe7e12f-e099-4cdb-9d56-c082789ade21"
+      ]
+    },
+    {
+      "eval_id": "289",
+      "query": "글리코겐 분해 인체 왜 필요한",
+      "tier": "answer_absence",
+      "baseline_top1": "1f442344-084b-44f8-838b-332be289083c",
+      "candidate_top1": "1655c90b-29c7-47ef-a092-01f2550db3aa",
+      "baseline_relevance": 0.459091,
+      "candidate_relevance": 0.540909,
+      "relevance_delta": 0.081818,
+      "candidate_topk": [
+        "1655c90b-29c7-47ef-a092-01f2550db3aa",
+        "1f442344-084b-44f8-838b-332be289083c",
+        "421aac6b-49ce-4697-a68f-850152f323d7"
+      ]
+    },
+    {
+      "eval_id": "257",
+      "query": "하나 유전자 여러가지 단백질 만들어질 수 있 원인",
+      "tier": "answer_absence",
+      "baseline_top1": "c8bd9b15-8ce0-4307-9f49-0f205217178f",
+      "candidate_top1": "b2cf7b96-ad01-499d-b169-9db219521c7b",
+      "baseline_relevance": 0.480263,
+      "candidate_relevance": 0.534539,
+      "relevance_delta": 0.054276,
+      "candidate_topk": [
+        "b2cf7b96-ad01-499d-b169-9db219521c7b",
+        "c8bd9b15-8ce0-4307-9f49-0f205217178f",
+        "a78116b6-398d-4453-a42b-3b4719b730b9"
+      ]
+    },
+    {
+      "eval_id": "288",
+      "query": "건강한 입 가지고 있는지 판단할 수 있 방법",
+      "tier": "answer_absence",
+      "baseline_top1": "9954d917-170e-477f-84c9-6d1d42927eed",
+      "candidate_top1": "691e3a05-e419-4bd7-a0a1-50b645e8e13f",
+      "baseline_relevance": 0.484375,
+      "candidate_relevance": 0.59375,
+      "relevance_delta": 0.109375,
+      "candidate_topk": [
+        "691e3a05-e419-4bd7-a0a1-50b645e8e13f",
+        "9954d917-170e-477f-84c9-6d1d42927eed",
+        "24991d92-c2dd-4cee-99a6-aa922b0f2eba"
+      ]
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "5594ee21-e922-43b3-aea8-51ed12331f16",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.282853,
+      "relevance_delta": 0.193911,
+      "candidate_topk": [
+        "5594ee21-e922-43b3-aea8-51ed12331f16",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "f60e32aa-fe9b-4626-907c-5907a9eedcf2",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.204327,
+      "relevance_delta": 0.115385,
+      "candidate_topk": [
+        "f60e32aa-fe9b-4626-907c-5907a9eedcf2",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "d10ea1d2-92dd-48c6-93d4-3dff5c4b9e13",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.204327,
+      "relevance_delta": 0.115385,
+      "candidate_topk": [
+        "d10ea1d2-92dd-48c6-93d4-3dff5c4b9e13",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=산불 후 자연 회복 과정에 대한 구체적 설명이 없음; candidate_evidence=산불 이후, 야생화가 이차 천이를 시작합니다. 이러한 생물체는 산불로 인해 생태계가 파괴되고 생물 다양성이 감소한 지역에서 주로 발견됩니다. 야생화는 산불 이후에 생기는 햇빛과 영양분이 풍부한 토양을 이용하여 번성합니다. 이차 천이는 생태계의 회복과 생물 다양성의 증가에 중요한 역할을 합니다. 야생화는 다른 생물들에게도 음식과 서식지를 제공하여 생태계의 균형을 유지하는 데 도움을 줍니다. 따라서 산불 이후에는 야생화가 이차 천이를 시작하여 생태계의 회복을 이끌어내는 중요한 역할을 합니다."
+    },
+    {
+      "eval_id": "290",
+      "query": "산 불 나면 동식물 많 죽을텐데 불난 후 자연 회복 과정 어떻게 돼",
+      "tier": "answer_absence",
+      "baseline_top1": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "candidate_top1": "96a2c24e-294b-4835-bc44-715d27ab6fed",
+      "baseline_relevance": 0.088942,
+      "candidate_relevance": 0.204327,
+      "relevance_delta": 0.115385,
+      "candidate_topk": [
+        "96a2c24e-294b-4835-bc44-715d27ab6fed",
+        "93d1aa65-a113-4dd2-8959-e8204bfea616",
+        "a2a29cc0-8116-47c0-9d90-44331c6f1914"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "93d1aa65-a113-4dd2-8959-e8204bfea616",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "0aff9b38-fa65-4f50-bfa6-29b5c2616d4f",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.6,
+      "relevance_delta": 0.475,
+      "candidate_topk": [
+        "cd4f6a9d-354f-4488-bc1e-6e8dc4f7605b",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "d239aacb-29fe-48fa-9263-492cfda160f0",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "d239aacb-29fe-48fa-9263-492cfda160f0",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.0,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "88",
+      "query": "자연보호구역 필요한 이유",
+      "tier": "strict",
+      "baseline_top1": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "candidate_top1": "bb33e3f3-d470-4276-80ca-168d4102b932",
+      "baseline_relevance": 0.125,
+      "candidate_relevance": 0.575,
+      "relevance_delta": 0.45,
+      "candidate_topk": [
+        "bb33e3f3-d470-4276-80ca-168d4102b932",
+        "27422081-5e3e-4716-b7c2-883e7961640d",
+        "5fd8794e-1d2b-4c33-b40c-2fa40c6c37c8"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "27422081-5e3e-4716-b7c2-883e7961640d",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "9306246e-9aab-400f-ac13-cde110e9bc1a",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "9306246e-9aab-400f-ac13-cde110e9bc1a",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=현미경은 물체를 50배로 확대한다는 내용은 맞지만, query는 '어떤 물체 매우 크게 확대해서 볼 수 있는 기계'를 묻는 것이며, 현미경은 일반적으로 50배 정도의 배율을 가진 광학 현미경으로, query가 요구하는 '매우 크게 확대'와는 맞지 않음; candidate_evidence=경사면은 어떤 단순 기계가 부하가 이동하는 거리를 늘리고 필요한 힘을 줄이는 데 사용됩니다."
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.453125,
+      "relevance_delta": 0.3125,
+      "candidate_topk": [
+        "38e0e086-4477-4c19-83c6-2b79cbfac28e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.0,
+      "judge_reason": "baseline_failure=현미경에 대한 설명이 query와 무관함; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "75c00158-83b4-4e4c-9f00-a7defa999ff6",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.4375,
+      "relevance_delta": 0.296875,
+      "candidate_topk": [
+        "75c00158-83b4-4e4c-9f00-a7defa999ff6",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=현미경에 대한 설명이 전혀 없으며 전하 분포와 전기장에 관한 내용만 포함되어 있습니다; candidate_evidence=현미경은 물체를 50배로 확대할 수 있습니다. 따라서, 물체의 실제 길이는 상으로 보이는 길이의 1/50인 0.01cm입니다. 현미경을 사용하면 물체의 세부 사항을 더욱 자세히 관찰할 수 있습니다."
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "strict",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.359375,
+      "relevance_delta": 0.21875,
+      "candidate_topk": [
+        "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=현미경은 물체를 50배로 확대할 수 있다고만 언급했으며, query가 요구하는 '매우 크게 확대해서 볼 수 있는 기계'에 대한 구체적인 예시나 설명이 부족합니다. candidate_evidence=없음"
+    },
+    {
+      "eval_id": "255",
+      "query": "어떤 물체 매우 크게 확대해서 볼수 있 기계",
+      "tier": "answer_absence",
+      "baseline_top1": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "candidate_top1": "71d79704-262e-4eb0-8ebc-7c9e597ea1c9",
+      "baseline_relevance": 0.140625,
+      "candidate_relevance": 0.328125,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "71d79704-262e-4eb0-8ebc-7c9e597ea1c9",
+        "62cb0474-809d-4554-82b8-861ba23d8cb4",
+        "91b3fd62-9ffc-4bac-b918-bf31ebbe44ae"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "62cb0474-809d-4554-82b8-861ba23d8cb4",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=현미경은 물체를 50배로 확대할 수 있습니다. 따라서, 물체의 실제 길이는 상으로 보이는 길이의 1/50인 0.01cm입니다. 현미경을 사용하면 물체의 세부 사항을 더욱 자세히 관찰할 수 있습니다.; candidate_evidence="
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.45,
+      "relevance_delta": 0.3,
+      "candidate_topk": [
+        "078361bc-89f5-4cc9-b542-a0d6dfe0558c",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "0e59475f-4f21-40bf-a899-2879c15640a4",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.275,
+      "candidate_topk": [
+        "0e59475f-4f21-40bf-a899-2879c15640a4",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "9aadeaea-3e90-41ef-bd8d-15c5d3662401",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.275,
+      "candidate_topk": [
+        "9aadeaea-3e90-41ef-bd8d-15c5d3662401",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "44",
+      "query": "같은 독감 다시 그 이유 뭐야",
+      "tier": "strict",
+      "baseline_top1": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "candidate_top1": "14a9c68d-ec8d-4645-a470-1cf3a32c5715",
+      "baseline_relevance": 0.15,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.275,
+      "candidate_topk": [
+        "14a9c68d-ec8d-4645-a470-1cf3a32c5715",
+        "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+        "f1a8a224-0ff9-44a8-bd2b-763aef44a4d7"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "8ce9b365-0ab9-4230-af45-6cdfd9a4c25b",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "6f651be9-3795-40b1-a545-8cc2ce8f701f",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query asks about relationship between atomic number and subatomic particles, but baseline discusses copper's atomic number and protons without addressing the general relationship; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "88935197-f45b-49d3-b9ab-a9dede55b731",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "88935197-f45b-49d3-b9ab-a9dede55b731",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=질문에 원자번호와 소립자 관계를 묻는 데 반해, 답변은 구리의 원자번호와 양성자 수만을 언급하여 소립자 관계를 설명하지 않음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "b965108a-9221-47d3-8fa5-858f10a042c1",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.321429,
+      "candidate_topk": [
+        "b965108a-9221-47d3-8fa5-858f10a042c1",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query asks about relationship between atomic number and subatomic particles, but baseline discusses copper's atomic number and protons only, not the requested relationship; candidate_evidence=나무 근처 땅에 구멍을 뚫는 지렁이가 도움을 줄 수 있습니다. 지렁이는 땅 속에서 토양을 통해 공기를 흡입하고, 이를 나무 근처로 이동시킵니다. 이렇게 나무 근처에 구멍을 뚫어 산소를 공급함으로써, 지렁이는 나무의 생존을 도와줍니다. 나무와 지렁이는 서로 상생하는 관계를 형성하여 자연 생태계의 균형을 유지합니다."
+    },
+    {
+      "eval_id": "47",
+      "query": "원자번호 원자내 어떤 소립자 관계 있는",
+      "tier": "strict",
+      "baseline_top1": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "candidate_top1": "cb4a3d86-988e-4425-b295-bbe34317c5cb",
+      "baseline_relevance": 0.160714,
+      "candidate_relevance": 0.392857,
+      "relevance_delta": 0.232143,
+      "candidate_topk": [
+        "cb4a3d86-988e-4425-b295-bbe34317c5cb",
+        "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+        "deb8305a-43de-4339-b0a1-390c3cec9ccd"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "ab802e8f-4506-485e-8fe3-92f34c20ca43",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=질문에 대한 직접적인 설명이 없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "tier": "strict",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "2b239894-e1b5-4165-80ce-f9b32c331104",
+      "baseline_relevance": 0.190476,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.214286,
+      "candidate_topk": [
+        "2b239894-e1b5-4165-80ce-f9b32c331104",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "tier": "strict",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "4f9c17dd-5c3a-4481-8ee1-fea2c738a229",
+      "baseline_relevance": 0.190476,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.214286,
+      "candidate_topk": [
+        "4f9c17dd-5c3a-4481-8ee1-fea2c738a229",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "60",
+      "query": "성대 주름 긴장했는지 어떻게 알 수 있나",
+      "tier": "strict",
+      "baseline_top1": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "candidate_top1": "bc1725f6-2fb9-487f-ac3e-1e767151e8bf",
+      "baseline_relevance": 0.190476,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.214286,
+      "candidate_topk": [
+        "bc1725f6-2fb9-487f-ac3e-1e767151e8bf",
+        "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+        "87d1eda6-bfc4-49bb-9e35-5ee8e772726f"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "917b7cf4-29c9-4a12-bd8d-2421e2fd98e0",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "300866bd-cd3b-4b2c-a3e3-52215bf29b40",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=기억 상실증의 구체적인 원인에 대한 설명이 전혀 없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.475,
+      "relevance_delta": 0.266667,
+      "candidate_topk": [
+        "0e6b6ade-ba3b-4174-aed8-4b244fb549d4",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=기억 상실증의 구체적 원인을 제시하지 않고 대뇌 기능 장애라는 일반적 설명만 제공함; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "fa64655f-af84-4ed1-84da-7140153a16c3",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.441667,
+      "relevance_delta": 0.233334,
+      "candidate_topk": [
+        "fa64655f-af84-4ed1-84da-7140153a16c3",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=기억 상실증의 구체적인 원인에 대한 설명이 전혀 없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "107",
+      "query": "기억 상실증 어떤 원인 때문 발생하는지",
+      "tier": "strict",
+      "baseline_top1": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "candidate_top1": "7ddfa9e7-0782-4079-930e-4758077ce4fd",
+      "baseline_relevance": 0.208333,
+      "candidate_relevance": 0.35,
+      "relevance_delta": 0.141667,
+      "candidate_topk": [
+        "7ddfa9e7-0782-4079-930e-4758077ce4fd",
+        "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+        "df495f22-6315-42a8-9553-b43ab707b683"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "25de4ffd-cee4-4f27-907e-fd6b802c6ede",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "2b1007cf-df2f-4dd8-ae70-c7cc143d9dd9",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.48125,
+      "relevance_delta": 0.26875,
+      "candidate_topk": [
+        "4bce0fb9-52a6-413a-9f56-0a3bf88b465d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "1617fb72-b6dd-4ef9-8778-659b09eaea9d",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.425,
+      "relevance_delta": 0.2125,
+      "candidate_topk": [
+        "1617fb72-b6dd-4ef9-8778-659b09eaea9d",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "204",
+      "query": "물고기 어떻게 숨 쉬는",
+      "tier": "strict",
+      "baseline_top1": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "candidate_top1": "d7aa9ada-6128-4948-a30a-6d7dadbe10e2",
+      "baseline_relevance": 0.2125,
+      "candidate_relevance": 0.3625,
+      "relevance_delta": 0.15,
+      "candidate_topk": [
+        "d7aa9ada-6128-4948-a30a-6d7dadbe10e2",
+        "0937dbcf-7055-450c-854f-c0ff798a6856",
+        "14eab0c3-51d8-48e0-9703-47f34f64bbd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "0937dbcf-7055-450c-854f-c0ff798a6856",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "7f74fa3d-e61c-4cb2-b5ef-623f3b1f8fb9",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.47549,
+      "relevance_delta": 0.25,
+      "candidate_topk": [
+        "7f74fa3d-e61c-4cb2-b5ef-623f3b1f8fb9",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=염소 원자 빛 방출 시 발생하는 시나리오에 대한 설명이 전혀 없음; candidate_evidence=염소 원자 빛 방출 시 발생할 수 있는 시나리오에 대한 정확한 설명이 없음"
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "30940360-f186-49c2-8114-f3b81a4554cf",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.392157,
+      "relevance_delta": 0.166667,
+      "candidate_topk": [
+        "30940360-f186-49c2-8114-f3b81a4554cf",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "ee58ae13-aaca-4958-b9cd-d25604d08252",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.377451,
+      "relevance_delta": 0.151961,
+      "candidate_topk": [
+        "ee58ae13-aaca-4958-b9cd-d25604d08252",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "48",
+      "query": "염소 원자 빛 방출했 때 발생할 수 있 시나리오",
+      "tier": "strict",
+      "baseline_top1": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "candidate_top1": "5f60484a-7aa1-4391-8fb2-a870ec732679",
+      "baseline_relevance": 0.22549,
+      "candidate_relevance": 0.362745,
+      "relevance_delta": 0.137255,
+      "candidate_topk": [
+        "5f60484a-7aa1-4391-8fb2-a870ec732679",
+        "3f5468bc-4d08-445d-8f27-13034e402d01",
+        "1513372c-c97d-4594-ba58-65a05c6330dc"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "3f5468bc-4d08-445d-8f27-13034e402d01",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "tier": "strict",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "82c49474-4338-471f-8fa4-9bedc9b6f021",
+      "baseline_relevance": 0.233333,
+      "candidate_relevance": 0.491667,
+      "relevance_delta": 0.258334,
+      "candidate_topk": [
+        "82c49474-4338-471f-8fa4-9bedc9b6f021",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks for cleaning dirty engine oil, but baseline discusses environmental risks of oil disposal and general oil function; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "tier": "strict",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "06e0d3e5-dd97-4ab3-b5d2-c99398e12361",
+      "baseline_relevance": 0.233333,
+      "candidate_relevance": 0.491667,
+      "relevance_delta": 0.258334,
+      "candidate_topk": [
+        "06e0d3e5-dd97-4ab3-b5d2-c99398e12361",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks for cleaning dirty engine oil, but baseline discusses environmental risks of oil disposal and recycling; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "16",
+      "query": "더러워진 엔진오일 잘 처리 방법",
+      "tier": "strict",
+      "baseline_top1": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "candidate_top1": "cea6aa6e-ac06-493e-a5b1-f66d1ad8d914",
+      "baseline_relevance": 0.233333,
+      "candidate_relevance": 0.3625,
+      "relevance_delta": 0.129167,
+      "candidate_topk": [
+        "cea6aa6e-ac06-493e-a5b1-f66d1ad8d914",
+        "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+        "26be1648-c827-4f51-ace4-ccb045e2aa34"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "21737d6c-8ec9-40fd-80ed-50548228f0e9",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query is about cleaning dirty engine oil, but baseline discusses environmental risks of oil disposal and general oil function; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "89",
+      "query": "모델링할 때 신경써야 할 사항들 뭐 있어",
+      "tier": "strict",
+      "baseline_top1": "6f8d2975-3a40-441e-9dd2-c555d7d2fd85",
+      "candidate_top1": "db60af15-8cfa-4a7e-91b5-2b05f550519d",
+      "baseline_relevance": 0.2375,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.220833,
+      "candidate_topk": [
+        "db60af15-8cfa-4a7e-91b5-2b05f550519d",
+        "6f8d2975-3a40-441e-9dd2-c555d7d2fd85",
+        "59952996-37f3-412e-a74c-a13f0cd1aafa"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "6f8d2975-3a40-441e-9dd2-c555d7d2fd85",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query is about modeling considerations, but baseline discusses river sediment overload; candidate_evidence=전기 회로를 구축할 때 먼저 취해야 하는 안전 예방 조치는 모든 지침을 읽는 것입니다."
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "8b4e8f68-486b-49fb-882b-21dd94b85f6e",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "731e1f79-f30c-4895-982d-4cf670f8df90",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "731e1f79-f30c-4895-982d-4cf670f8df90",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query topic is about underwater sedimentation mechanism, but baseline discusses only flow velocity reduction and general sedimentation without explaining the underlying physical principle; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "b786630c-ebfd-4285-819f-75ba6c31033b",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "b786630c-ebfd-4285-819f-75ba6c31033b",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "71",
+      "query": "물속 침전 발생 원리",
+      "tier": "strict",
+      "baseline_top1": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "candidate_top1": "f67a6df2-b0ab-48b8-b732-79bde95bb20d",
+      "baseline_relevance": 0.258929,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "f67a6df2-b0ab-48b8-b732-79bde95bb20d",
+        "5043c033-841c-46dd-94a3-1b5bef034c62",
+        "acc55ae3-8cc6-411f-9324-8e32f54eac75"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "5043c033-841c-46dd-94a3-1b5bef034c62",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "tier": "strict",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "553989d9-ee23-4203-b244-a941b6fa8d99",
+      "baseline_relevance": 0.267857,
+      "candidate_relevance": 0.375,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "553989d9-ee23-4203-b244-a941b6fa8d99",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "tier": "strict",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "340485f8-4e78-44f4-a53a-2df21915367f",
+      "baseline_relevance": 0.267857,
+      "candidate_relevance": 0.375,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "340485f8-4e78-44f4-a53a-2df21915367f",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "79",
+      "query": "전선 주위 흐르 자기장 모습 어떻게 보",
+      "tier": "strict",
+      "baseline_top1": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "candidate_top1": "8a78364e-63bf-4915-b718-fdc461bc62c9",
+      "baseline_relevance": 0.267857,
+      "candidate_relevance": 0.375,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "8a78364e-63bf-4915-b718-fdc461bc62c9",
+        "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+        "c59f4bbd-71f6-4073-807f-09e8f0d3efcc"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "8394ad57-d4ab-4bf9-8ef3-90eea6459c35",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "281",
+      "query": "지구 생겨난지 얼마나 오래 되었는지 확인 방법",
+      "tier": "strict",
+      "baseline_top1": "de5d9a1f-67f6-45ea-a4a4-0540f5b7583e",
+      "candidate_top1": "828c02d0-d692-42d4-bb5d-9941d327a46d",
+      "baseline_relevance": 0.269841,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.134921,
+      "candidate_topk": [
+        "828c02d0-d692-42d4-bb5d-9941d327a46d",
+        "de5d9a1f-67f6-45ea-a4a4-0540f5b7583e",
+        "7fa6c8b9-fe06-47c8-ad00-dcde8173cc19"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "de5d9a1f-67f6-45ea-a4a4-0540f5b7583e",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.532738,
+      "relevance_delta": 0.255952,
+      "candidate_topk": [
+        "30ee5c53-1559-42f5-94c3-2ffb0b9682aa",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "c7733506-e361-403a-9d55-bd572b80e838",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.511905,
+      "relevance_delta": 0.235119,
+      "candidate_topk": [
+        "c7733506-e361-403a-9d55-bd572b80e838",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query topic mismatch; candidate_evidence=20세기에 현미경의 사용으로 가장 발전한 연구 분야는 유전자 조작입니다."
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "38995c72-0caa-4a13-a5c3-d4db064a5f76",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.491071,
+      "relevance_delta": 0.214285,
+      "candidate_topk": [
+        "38995c72-0caa-4a13-a5c3-d4db064a5f76",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "strict",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "3676f59a-5dd0-457f-9748-03b9f1102f3e",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.404762,
+      "relevance_delta": 0.127976,
+      "candidate_topk": [
+        "3676f59a-5dd0-457f-9748-03b9f1102f3e",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "260",
+      "query": "자석 세기 가장 큰 영향 주 불순물",
+      "tier": "answer_absence",
+      "baseline_top1": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "candidate_top1": "8eda83e0-281b-4538-a4ba-3b6eee390144",
+      "baseline_relevance": 0.276786,
+      "candidate_relevance": 0.383929,
+      "relevance_delta": 0.107143,
+      "candidate_topk": [
+        "8eda83e0-281b-4538-a4ba-3b6eee390144",
+        "a71c4494-a6aa-4779-8c38-8b510453f03a",
+        "5c4084f9-2d91-489a-beb5-a48350741e69"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "a71c4494-a6aa-4779-8c38-8b510453f03a",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=query topic mismatch; candidate_evidence="
+    },
+    {
+      "eval_id": "238",
+      "query": "전류 흐름 극대화 하려면 배터리 저항 어떻게 연결해야 하나",
+      "tier": "answer_absence",
+      "baseline_top1": "f48600d6-e492-43eb-b564-1860aa81da5f",
+      "candidate_top1": "79093389-32e0-4b2e-8cfb-fc03efd1ed8f",
+      "baseline_relevance": 0.304348,
+      "candidate_relevance": 0.376812,
+      "relevance_delta": 0.072464,
+      "candidate_topk": [
+        "79093389-32e0-4b2e-8cfb-fc03efd1ed8f",
+        "f48600d6-e492-43eb-b564-1860aa81da5f",
+        "dbe8518e-42c7-4178-9b63-cc08a0ca61f9"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "f48600d6-e492-43eb-b564-1860aa81da5f",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "28",
+      "query": "사회로부터 감정 지원 어떤 형태 나타날 수 있어",
+      "tier": "strict",
+      "baseline_top1": "03390467-c6dc-4242-a039-c7e9a8bb242f",
+      "candidate_top1": "36d4ef7a-797e-4bbb-80f2-8f84d3ab4581",
+      "baseline_relevance": 0.305556,
+      "candidate_relevance": 0.416667,
+      "relevance_delta": 0.111111,
+      "candidate_topk": [
+        "36d4ef7a-797e-4bbb-80f2-8f84d3ab4581",
+        "03390467-c6dc-4242-a039-c7e9a8bb242f",
+        "75b16dc7-ade3-4cca-b28f-cb39b6c6ca49"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "03390467-c6dc-4242-a039-c7e9a8bb242f",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "272",
+      "query": "행성 크기 화산 얼마나 자주 폭발하는지 관련이 있어",
+      "tier": "strict",
+      "baseline_top1": "2276e958-d625-450a-8bee-b06b762e0b16",
+      "candidate_top1": "b7891224-ec2a-4aa4-b7be-d9d5f3b888c7",
+      "baseline_relevance": 0.3125,
+      "candidate_relevance": 0.433333,
+      "relevance_delta": 0.120833,
+      "candidate_topk": [
+        "b7891224-ec2a-4aa4-b7be-d9d5f3b888c7",
+        "2276e958-d625-450a-8bee-b06b762e0b16",
+        "809896bf-c244-4fb2-ba99-78819e88af8e"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "2276e958-d625-450a-8bee-b06b762e0b16",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=화산 폭발 빈도에 대한 언급이 없음; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "203",
+      "query": "석탄 에너지원 사용할 때 장단점 뭐야",
+      "tier": "strict",
+      "baseline_top1": "f81c0a09-4082-4b6a-8546-12371ff89fba",
+      "candidate_top1": "de033303-fad6-4420-8386-af047087331d",
+      "baseline_relevance": 0.339286,
+      "candidate_relevance": 0.482143,
+      "relevance_delta": 0.142857,
+      "candidate_topk": [
+        "de033303-fad6-4420-8386-af047087331d",
+        "f81c0a09-4082-4b6a-8546-12371ff89fba",
+        "82c14a9c-625e-4a30-81bc-d05111b884ca"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "f81c0a09-4082-4b6a-8546-12371ff89fba",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query is about coal energy pros/cons but baseline discusses US communities and ecosystem damage; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "4c3f2037-a023-4e77-85f3-4b9169b7cbdf",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "4c3f2037-a023-4e77-85f3-4b9169b7cbdf",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks about reasons for competition over vertebrate territory, but baseline discusses competition over food and nesting resources in terrestrial ecosystems, not territory; candidate_evidence=아리조나 사막의 큰 선인장, Cereus giganteus는 세 가지 고유한 조류종인 flicker, 딱따구리, 그리고 엘프 올빼미에게 인기 있는 서식지입니다. 이 선인장은 그 크기와 독특한 생태계로 유명하며, 이 선인장을 찾는 새들은 다른 생태적 영역을 가지고 있습니다. 이러한 이유로 경쟁이 거의 발생하지 않는 것으로 보입니다."
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "1cd925f4-2514-425f-8d8f-0121bd0f7a24",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "1cd925f4-2514-425f-8d8f-0121bd0f7a24",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "5973b08a-ef7d-431c-ac58-d31d4a57d63c",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "5973b08a-ef7d-431c-ac58-d31d4a57d63c",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "49",
+      "query": "척추 동물 영역 가지고 다투 이유",
+      "tier": "answer_absence",
+      "baseline_top1": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "candidate_top1": "b47cafbb-25a0-4630-bc1e-f69cfaadbc0d",
+      "baseline_relevance": 0.354167,
+      "candidate_relevance": 0.458333,
+      "relevance_delta": 0.104166,
+      "candidate_topk": [
+        "b47cafbb-25a0-4630-bc1e-f69cfaadbc0d",
+        "74b5d96e-ea97-4476-850b-f78057d7c457",
+        "d9865fca-0331-4328-8a3e-d6682fd08cd2"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "74b5d96e-ea97-4476-850b-f78057d7c457",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=query asks about reasons for争夺 territory among vertebrates, but baseline only mentions competition for food and nesting resources without explaining why territory争夺 occurs; candidate_evidence=없음"
+    },
+    {
+      "eval_id": "216",
+      "query": "전기 흐르 회로 전선 전구 전류 동일한",
+      "tier": "answer_absence",
+      "baseline_top1": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "candidate_top1": "ae1669d3-28a8-45e2-a8bb-d58d1694c7dc",
+      "baseline_relevance": 0.388393,
+      "candidate_relevance": 0.575893,
+      "relevance_delta": 0.1875,
+      "candidate_topk": [
+        "ae1669d3-28a8-45e2-a8bb-d58d1694c7dc",
+        "07ba99c0-c36a-464c-a896-8466cc84c501",
+        "185008d2-6091-4beb-94e4-d847d70fdea6"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "",
+      "judge_confidence": 0.0,
+      "judge_reason": "baseline_failure=질문에 대한 정확한 답변 부재; candidate_evidence=전기 회로에서 위치 에너지의 형태는 배터리의 화학 에너지입니다."
+    },
+    {
+      "eval_id": "216",
+      "query": "전기 흐르 회로 전선 전구 전류 동일한",
+      "tier": "answer_absence",
+      "baseline_top1": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "candidate_top1": "84934dd1-81ad-4bb1-95e0-ccf02d38b49b",
+      "baseline_relevance": 0.388393,
+      "candidate_relevance": 0.558036,
+      "relevance_delta": 0.169643,
+      "candidate_topk": [
+        "84934dd1-81ad-4bb1-95e0-ccf02d38b49b",
+        "07ba99c0-c36a-464c-a896-8466cc84c501",
+        "185008d2-6091-4beb-94e4-d847d70fdea6"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "216",
+      "query": "전기 흐르 회로 전선 전구 전류 동일한",
+      "tier": "answer_absence",
+      "baseline_top1": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "candidate_top1": "a3125d12-70ef-4698-8873-0f53e40b1310",
+      "baseline_relevance": 0.388393,
+      "candidate_relevance": 0.446429,
+      "relevance_delta": 0.058036,
+      "candidate_topk": [
+        "a3125d12-70ef-4698-8873-0f53e40b1310",
+        "07ba99c0-c36a-464c-a896-8466cc84c501",
+        "185008d2-6091-4beb-94e4-d847d70fdea6"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "07ba99c0-c36a-464c-a896-8466cc84c501",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "1",
+      "query": "고체 액체 변할 때 엔트로피 어떻게 되나",
+      "tier": "answer_absence",
+      "baseline_top1": "4a8549c8-8e81-4804-9df9-852952dd5747",
+      "candidate_top1": "2c02f912-1e78-45a2-874f-1712389cbf57",
+      "baseline_relevance": 0.404762,
+      "candidate_relevance": 0.495238,
+      "relevance_delta": 0.090476,
+      "candidate_topk": [
+        "2c02f912-1e78-45a2-874f-1712389cbf57",
+        "4a8549c8-8e81-4804-9df9-852952dd5747",
+        "3fe7e12f-e099-4cdb-9d56-c082789ade21"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "4a8549c8-8e81-4804-9df9-852952dd5747",
+      "judge_confidence": 0.95,
+      "judge_reason": "baseline_failure=엔트로피 변화에 대한 설명이 없음; candidate_evidence=\"고체가 녹을 때, 엔트로피 변화도 양적으로 증가합니다.\""
+    },
+    {
+      "eval_id": "289",
+      "query": "글리코겐 분해 인체 왜 필요한",
+      "tier": "answer_absence",
+      "baseline_top1": "1f442344-084b-44f8-838b-332be289083c",
+      "candidate_top1": "1655c90b-29c7-47ef-a092-01f2550db3aa",
+      "baseline_relevance": 0.459091,
+      "candidate_relevance": 0.540909,
+      "relevance_delta": 0.081818,
+      "candidate_topk": [
+        "1655c90b-29c7-47ef-a092-01f2550db3aa",
+        "1f442344-084b-44f8-838b-332be289083c",
+        "421aac6b-49ce-4697-a68f-850152f323d7"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "1f442344-084b-44f8-838b-332be289083c",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "257",
+      "query": "하나 유전자 여러가지 단백질 만들어질 수 있 원인",
+      "tier": "answer_absence",
+      "baseline_top1": "c8bd9b15-8ce0-4307-9f49-0f205217178f",
+      "candidate_top1": "b2cf7b96-ad01-499d-b169-9db219521c7b",
+      "baseline_relevance": 0.480263,
+      "candidate_relevance": 0.534539,
+      "relevance_delta": 0.054276,
+      "candidate_topk": [
+        "b2cf7b96-ad01-499d-b169-9db219521c7b",
+        "c8bd9b15-8ce0-4307-9f49-0f205217178f",
+        "a78116b6-398d-4453-a42b-3b4719b730b9"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "c8bd9b15-8ce0-4307-9f49-0f205217178f",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    },
+    {
+      "eval_id": "288",
+      "query": "건강한 입 가지고 있는지 판단할 수 있 방법",
+      "tier": "answer_absence",
+      "baseline_top1": "9954d917-170e-477f-84c9-6d1d42927eed",
+      "candidate_top1": "691e3a05-e419-4bd7-a0a1-50b645e8e13f",
+      "baseline_relevance": 0.484375,
+      "candidate_relevance": 0.59375,
+      "relevance_delta": 0.109375,
+      "candidate_topk": [
+        "691e3a05-e419-4bd7-a0a1-50b645e8e13f",
+        "9954d917-170e-477f-84c9-6d1d42927eed",
+        "24991d92-c2dd-4cee-99a6-aa922b0f2eba"
+      ],
+      "reject_stage": "topic_error",
+      "judge_winner": "baseline",
+      "judge_docid": "9954d917-170e-477f-84c9-6d1d42927eed",
+      "judge_confidence": 1.0,
+      "judge_reason": "baseline_failure=none; candidate_evidence=none"
+    }
+  ]
+}
