@@ -1026,3 +1026,24 @@
   - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
   - Lock out eval `241`; the candidate had arithmetic/answer inconsistency despite high judge support.
   - Do not submit the remaining 2026-05-27 highrisk-rank candidates without stronger manual evidence.
+
+### Eval79
+
+- Submitted file: `submissions/highrisk_rank_single_20260527/highrisk_rank_eval309_base_eval79.jsonl`
+- Model: `solar-pro3`
+- Previous best:
+  - `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`
+  - Public MAP/MRR: `0.9561` / `0.9591`
+- Reported public MAP: `0.9515`
+- Reported public MRR: `0.9545`
+- Result: regressed vs current best.
+- Difference:
+  - MAP: `-0.0046` (`0.9561` -> `0.9515`)
+  - MRR: `-0.0046` (`0.9591` -> `0.9545`)
+- Changed eval ID: `79`
+- Query: `전선 주위 흐르 자기장 모습 어떻게 보`
+- Decision:
+  - Eval `79` is public-regressed.
+  - Keep current best as `submissions/residual_highrisk_single_20260526/residual_highrisk_eval246_base_eval309.jsonl`.
+  - Lock out eval `79`; candidate was loop-specific while baseline already answered straight-wire magnetic field.
+  - Stop submitting remaining highrisk-rank candidates from `submissions/highrisk_rank_today_audit_20260527.json`.
