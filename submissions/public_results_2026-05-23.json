@@ -383,5 +383,13 @@
     "mrr": 0.9545,
     "submission": "submissions/highrisk_rank_single_20260527/highrisk_rank_eval309_base_eval79.jsonl",
     "model": "solar-pro3"
+  },
+  {
+    "eval_id": "47",
+    "outcome": "neutral",
+    "map": 0.9561,
+    "mrr": 0.9591,
+    "submission": "submissions/eval47_single_20260530/eval47_atomic_number_base_eval309.jsonl",
+    "model": "solar-pro3"
   }
 ]
